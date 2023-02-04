@@ -24,11 +24,26 @@ The scope of this project is to create a web application where farmers can creat
 
 ## Technology Stack
 
-- Flask (Backend)
+- Flask (server-side)
 - JavaScript (Frontend)
-- Python
-- HTML/CSS
-- SQL for database management
+- Python (server-side)
+- HTML/CSS (Frontend)
+- Bootstrap (Frontend)
+- SQL for database management (MySQL)
+- SQLAlchemy for database management/ORM (Object Relational Mapping)
+
+## API's
+
+- Stripe API for payment integration
+- Google Maps API for market information display
+- Twilio API for SMS notifications **(optional)**
+- Auth0 or Firebase for user authentication
+- KAMIS API for market information display **(To display live market information)**
+
+## Project Structure
+
+The project is structured as follows:
+--- to be updated
 
 ## Deployment
 
