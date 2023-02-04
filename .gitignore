@@ -1,0 +1,23 @@
+# compiled python files
+*.pyc
+*.pyo
+
+# virtualenv
+venv/
+
+# flask environment variables
+.env
+
+# flask session files
+instance/
+
+# cache files
+.cache
+__pycache__/
+
+# local settings
+settings.py
+
+# database
+db.sqlite3
+
