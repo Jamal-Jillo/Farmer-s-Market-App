@@ -10,7 +10,7 @@ Small-scale farmers often face difficulties in reaching a large customer base an
 
 The scope of this project is to create a web application where farmers can create a profile, list their products, and market information. Consumers can search for products, view market information, and place orders.
 
-### The project will include the following features:
+### The project will include the following features
 
 1. User registration and login
 2. Product listing and management
