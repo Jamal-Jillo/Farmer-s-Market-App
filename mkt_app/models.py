@@ -1,17 +1,25 @@
 #!/usr/bin/env python3
 from datetime import datetime
-from mkt_app import db
+from mkt_app import db, login_manager
 from flask_sqlalchemy import SQLAlchemy
+from flask_login import UserMixin
 
 
-class User(db.Model):
-    """User model.
+@login_manager.user_loader
+def load_user(user_id):
+    """Load user."""
+    return User.query.get(int(user_id))
 
-    Arguments:
-        db -- Database object
 
-    Returns:
-        User object
+class User(db.Model, UserMixin):
+    """
+    This class represents a User object in the system.
+
+    It contains attributes such as id, username, email, image_file
+    and password, which are all stored in the database.
+    The class also has a one-to-many relationship with the Post object
+    through the 'posts' attribute. The repr method returns a
+    string representation of the User object.
     """
 
     id = db.Column(db.Integer, primary_key=True)
@@ -27,7 +35,14 @@ class User(db.Model):
 
 
 class Post(db.Model):
-    """Post model."""
+    """This class represents a Post object in the system.
+
+    It contains attributes such as id, title, date_posted, content,
+    and price, which are all stored in the database.
+    The class also has a one-to-many relationship with the User object
+    through the 'user_id' attribute. The repr method returns a
+    string representation of the Post object.
+    """
 
     id = db.Column(db.Integer, primary_key=True)
     title = db.Column(db.String(100), nullable=False)
