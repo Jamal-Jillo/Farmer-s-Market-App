@@ -43,7 +43,31 @@ The scope of this project is to create a web application where farmers can creat
 ## Project Structure
 
 The project is structured as follows:
---- to be updated
+.
+├── README.md
+├── blog post.md
+├── instance
+├── mkt_app
+│   ├── __init__.py
+│   ├── __pycache__
+│   │   ├── __init__.cpython-310.pyc
+│   │   ├── forms.cpython-310.pyc
+│   │   ├── models.cpython-310.pyc  
+│   │   └── routes.cpython-310.pyc  
+│   ├── firebaseauth.py
+│   ├── forms.py
+│   ├── instance
+│   │   └── site.db
+│   ├── models.py
+│   ├── routes.py
+│   ├── static
+│   │   └── main.css
+│   └── templates
+│       ├── about.html
+│       ├── index.html
+│       ├── login.html
+│       └── register.html
+└── run.py
 
 ## Deployment
 
