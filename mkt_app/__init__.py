@@ -17,3 +17,6 @@ login_manager = LoginManager(app)
 app.app_context().push()  # Flask-SQLAlchemy requires an application context
 
 from mkt_app import routes
+
+if __name__ == '__main__':
+    db.create_all(app=app)

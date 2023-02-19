@@ -9,7 +9,6 @@ from mkt_app.models import User, Post
 from flask_login import login_user, current_user, logout_user
 
 
-
 posts = [
     {
         'author': 'Corey Schafer',
@@ -60,7 +59,7 @@ def register():
         # If the form is valid, the validate_on_submit() method returns True
         # and the user is redirected to the home page, 'success' is a
         # bootstrap class
-        return redirect(url_for('login'))
+        return redirect(url_for('index'))
     return render_template('register.html', title='Register', form=form)
 
 
