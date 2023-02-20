@@ -12,7 +12,7 @@ The scope of this project is to create a web application where farmers can creat
 
 ### The project will include the following features
 
-1. User registration and login
+1. User registration and login - Completed
 2. Product listing and management
 3. Market information display
 4. User role management system
@@ -37,7 +37,6 @@ The scope of this project is to create a web application where farmers can creat
 - Stripe API for payment integration
 - Google Maps API for market information display
 - Twilio API for SMS notifications **(optional)**
-- Auth0 or Firebase for user authentication
 - KAMIS API for market information display **(To display live market information)**
 
 ## Project Structure
