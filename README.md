@@ -4,11 +4,11 @@ This project is part of the Alx-Software Engineering course and aims to create a
 
 ## Problem Statement
 
-Small-scale farmers often face difficulties in reaching a large customer base and marketing their products effectively. This project aims to create a platform for these farmers to connect with consumers and sell their products directly, increasing their exposure and sales.
+Small-scale farmers often face difficulties in reaching a large customer base and marketing their products effectively. This project aims to create a platform for these farmers to connect with consumers and sell their products directly, increasing their exposure and sales. The farmers market app is aimed at improving the supply chain of agricultural produce by eliminating intermediaries. By connecting farmers directly with buyers, the app aims to provide both parties with better prices and improved profit margins. The app will also provide farmers with market information and help them make informed decisions about their produce.
 
 ## Project Scope
 
-The scope of this project is to create a web application where farmers can create a profile, list their products, and market information. Consumers can search for products, view market information, and place orders.
+The scope of this project is to create a web application where farmers can create a profile, list their products, and market information. Consumers can search for products, view market information, and place orders. 
 
 ### The project will include the following features
 
@@ -43,7 +43,31 @@ The scope of this project is to create a web application where farmers can creat
 ## Project Structure
 
 The project is structured as follows:
---- to be updated
+.
+├── README.md
+├── blog post.md
+├── instance
+├── mkt_app
+│   ├── __init__.py
+│   ├── __pycache__
+│   │   ├── __init__.cpython-310.pyc
+│   │   ├── forms.cpython-310.pyc
+│   │   ├── models.cpython-310.pyc  
+│   │   └── routes.cpython-310.pyc  
+│   ├── firebaseauth.py
+│   ├── forms.py
+│   ├── instance
+│   │   └── site.db
+│   ├── models.py
+│   ├── routes.py
+│   ├── static
+│   │   └── main.css
+│   └── templates
+│       ├── about.html
+│       ├── index.html
+│       ├── login.html
+│       └── register.html
+└── run.py
 
 ## Deployment
 

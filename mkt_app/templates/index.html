@@ -1,27 +1,43 @@
-<!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
-    </head>
-    <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-       Home Page
-       {% for post in posts %}
-            <h1>{{post.title}}</h1>
-            <p>{{post.content}}</p> on {{post.date_posted }}
-            <p>{{post.price}}</p>
-       {% endfor %}
-        <script src="" async defer></script>
-    </body>
-</html>
+{% extends 'layout.html' %}
+{% block content %}
+<div class="d-flex justify-content-center align-items-center">
+  How We Work!
+</div>
+<div class="container-fluid mt-5">
+  <div class="row">
+    <div class="col border mx-2 text-center">
+      <div class="d-flex justify-content-center align-items-center">
+      <lottie-player src="https://assets7.lottiefiles.com/packages/lf20_Lpuvp7YT5K.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;" hover loop autoplay></lottie-player>
+      </div>
+      <i class="bi bi-people-fill"></i><p> Fresh fruits and Vegetables made by Local farmers around the Nation at your Fingertips</p>
+    </div>
+    <div class="col border mx-2 text-center">
+      <div class="d-flex justify-content-center align-items-center">
+      <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_ha1sw9v2.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;" hover loop autoplay></lottie-player>
+      </div>
+      <i class="bi bi-cart3"></i><p> Shop for all your produce, from the comfort of your home!</p>
+    </div>
+    <div class="col border mx-2 text-center">
+      <div class="d-flex justify-content-center align-items-center">
+        <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_toa6tsan.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;" hover loop autoplay></lottie-player>
+      </div>
+      <i class="bi bi-truck"></i><p>Description of process 3</p>
+    </div>
+  </div>
+  <div class="row mt-5 justify-content-center text-center">
+    <div class="col-3">
+      <button type="button" class="btn btn-info btn-lg btn-block">Start Buying</button>
+    </div>
+  </div>
+</div> 
+<div class="container">
+    <div class="row">
+      {% for post in posts%}
+        <h1>{{post.title}}</h1>
+        <p>{{post.content}}</p>
+        <p>{{post.author}}</p>
+      {% endfor %}
+    </div>
+</div>
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+{% endblock content %}
