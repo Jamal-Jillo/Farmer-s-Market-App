@@ -4,7 +4,7 @@
 
 from flask import render_template, url_for, flash, redirect
 from mkt_app import app
-from mkt_app.forms import RegistrationForm, LoginForm
+from mkt_app.forms import RegistrationForm, LoginForm, PostForm
 from mkt_app.models import User, Post
 
 
@@ -62,4 +62,11 @@ def login():
     return render_template('login.html', title='Login', form=form)
 
 
-
+@app.route("/post/new", methods=['GET', 'POST'])
+@login_required
+def new_post():
+    form = PostForm()
+    if form.validate_on_submit():
+        flash('Your post has been created!', 'success')
+        return redirect(url_for('index'))
+    return render_template('create_post.html', title='New Post', form=form)
