@@ -6,31 +6,14 @@ from flask import render_template, url_for, flash, redirect
 from mkt_app import app, db, bcrypt
 from mkt_app.forms import RegistrationForm, LoginForm, PostForm
 from mkt_app.models import User, Post
-from flask_login import login_user, current_user, logout_user
-
-
-posts = [
-    {
-        'author': 'Corey Schafer',
-        'title': 'Post 1',
-        'content': 'First post content',
-        'date_posted': 'April 20, 2023',
-        'price': '10.00'
-    },
-    {
-        'author': 'Jane Doe',
-        'title': 'Post 2',
-        'content': 'Second post content',
-        'date_posted': 'April 21, 2023',
-        'price': '20.00'
-    }
-]
+from flask_login import login_user, current_user, logout_user, login_required
 
 
 @app.route('/')
 @app.route('/home')
 def index():
     """Return the index page."""
+    posts = Post.query.all()
     return render_template('index.html', posts=posts)
 
 
@@ -85,8 +68,12 @@ def login():
 @app.route("/post/new", methods=['GET', 'POST'])
 @login_required
 def new_post():
+    """Create a new post."""
     form = PostForm()
     if form.validate_on_submit():
+        post = Post(title=form.title.data, content=form.content.data, price=form.price.data, author=current_user)
+        db.session.add(post)
+        db.session.commit()
         flash('Your post has been created!', 'success')
         return redirect(url_for('index'))
     return render_template('create_post.html', title='New Post', form=form)

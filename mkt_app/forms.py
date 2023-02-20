@@ -52,3 +52,4 @@ class PostForm(FlaskForm):
     content = TextAreaField('Content', validators=[DataRequired()])
     price = StringField('Price', validators=[DataRequired()])
     submit = SubmitField('Post')
+# ! need to add an image field to the PostForm class
