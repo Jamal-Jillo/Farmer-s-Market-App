@@ -20,18 +20,19 @@
 			rel="stylesheet"
 			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
 		/>
+		<link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
 	</head>
 	<body>
-		<header>
+		<header class="hell">
 			<!--[if lt IE 7]>
 				<p class="browsehappy">
 					You are using an <strong>outdated</strong> browser. Please
 					<a href="#">upgrade your browser</a> to improve your experience.
 				</p>
 			<![endif]-->
-			<nav class="navbar navbar-expand-lg bg-body-tertiary">
+			<nav class="navbar navbar-expand-lg">
 				<div class="container-fluid">
-					<a class="navbar-brand" href="#">Navbar</a>
+					<a class="navbar-brand" href="{{ url_for('index') }}">Navbar</a>
 					<button
 						class="navbar-toggler"
 						type="button"
@@ -46,13 +47,13 @@
 					<div class="collapse navbar-collapse" id="navbarSupportedContent">
 						<ul class="navbar-nav me-auto mb-2 mb-lg-0">
 							<li class="nav-item">
-								<a class="nav-link active" aria-current="page" href="#">
+								<a class="nav-link active" aria-current="page" href="{{ url_for('index') }}">
 									<svg
 										xmlns="http://www.w3.org/2000/svg"
 										width="16"
 										height="16"
 										fill="currentColor"
-										class="bi bi-house-fill"
+										class="bi bi-house-fill bi-lg align-middle"
 										viewBox="0 0 16 16"
 									>
 										<path
@@ -61,11 +62,11 @@
 										<path
 											d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6Z"
 										/></svg
-									>Home</a
+									><span class="align-middle">Home</span></a
 								>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="#">About</a>
+								<a class="nav-link" href="{{ url_for('about_page') }}">About</a>
 							</li>
 							<li class="nav-item dropdown">
 								<a
@@ -87,7 +88,7 @@
 								</ul>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link disabled">Disabled</a>
+								<a class="nav-link" href="#">Profile</a>
 							</li>
 						</ul>
 						<form class="d-flex" role="search">
