@@ -2,7 +2,7 @@
 """Routes for the Farmers-Market application."""
 
 
-from flask import render_template, url_for, flash, redirect
+from flask import render_template, url_for, flash, redirect, request, abort
 from mkt_app import app, db, bcrypt
 from mkt_app.forms import RegistrationForm, LoginForm, PostForm
 from mkt_app.models import User, Post
@@ -76,11 +76,50 @@ def new_post():
         db.session.commit()
         flash('Your post has been created!', 'success')
         return redirect(url_for('index'))
-    return render_template('create_post.html', title='New Post', form=form)
+    return render_template('create_post.html', title='New Post', form=form, legend='New Post')
 
 
 @app.route('/logout')
 def logout():
     """Logout a user."""
     logout_user()  # !Dont forget to change the logout button in templates
+    return redirect(url_for('index'))
+
+
+@app.route("/post/<int:post_id>")
+def post(post_id):
+    """Display specific post."""
+    post = Post.query.get_or_404(post_id)
+    return render_template('post.html', title=post.title, post=post)
+
+
+@app.route("/post/<int:post_id>/update", methods=['GET', 'POST'])
+@login_required
+def update_post(post_id):
+    post = Post.query.get_or_404(post_id)
+    if post.author != current_user:
+        abort(403)
+    form = PostForm()
+    if form.validate_on_submit():
+        post.title = form.title.data
+        post.content = form.content.data
+        db.session.commit()
+        flash('Your post has been updated!', 'success')
+        return redirect(url_for('post', post_id=post.id))
+    elif request.method == 'GET':
+        form.title.data = post.title
+        form.content.data = post.content
+        form.price.data = post.price
+    return render_template('create_post.html', title='Update Post', form=form, legend='Update Post')
+
+
+@app.route("/post/<int:post_id>/delete", methods=['POST'])
+@login_required
+def delete_post(post_id):
+    post = Post.query.get_or_404(post_id)
+    if post.author != current_user:
+        abort(403)
+    db.session.delete(post)
+    db.session.commit()
+    flash('Your post has been deleted!', 'success')
     return redirect(url_for('index'))
