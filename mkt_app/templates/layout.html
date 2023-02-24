@@ -34,13 +34,17 @@
 			<nav class="navbar navbar-expand-lg navbar-light bg-light">
 				<div class="container-fluid">
 					<a class="navbar-brand" href="#">Mazao</a>
-					<form class="d-flex">
+					<form action="{{ url_for('search') }}" method="GET" class="d-flex">
 						<input
 							class="form-control me-2 custom-search-bar"
-							type="search"
+							type="text"
+							name="query"
 							placeholder="Search for products"
 							aria-label="Search"
 						/>
+						<span class="input-group-btn">
+						<button class="btn btn-default" type="submit"><i class="fa fa-search"></i></button>
+    					</span>
 					</form>
 					<button
 						class="navbar-toggler"
@@ -143,8 +147,12 @@
     <button class="btn btn-outline-secondary" type="button"><a class="nav-link" href="#">Insights</a></button>
     <button class="btn btn-outline-secondary" type="button"><a class="nav-link" href="#">Profile</a></button>
 	<button class="btn btn-outline-secondary" type="button"><a class="nav-link" href="#">Settings</a></button>
+	{% if current_user.is_authenticated %}
+	<button class="btn btn-outline-secondary right-align" type="button"><a class="nav-link" href="{{url_for('logout')}}">Log out</a></button>
+	{% else %}
 	<button class="btn btn-outline-secondary right-align" type="button"><a class="nav-link" href="{{url_for('login')}}">Log in</a></button>
 		<button class="btn btn-outline-secondary right-align me-2" type="button"><a class="nav-link" href="{{url_for('register')}}">SignUp</a></button>
+	{% endif %}
 	</div>
 
 		</header>
