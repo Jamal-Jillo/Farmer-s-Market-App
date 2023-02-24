@@ -2,7 +2,8 @@
 """Routes for the Farmers-Market application."""
 
 
-from flask import render_template, url_for, flash, redirect, request, abort
+from flask import render_template, url_for, flash, redirect, request, abort, jsonify
+from sqlalchemy import or_
 from mkt_app import app, db, bcrypt
 from mkt_app.forms import RegistrationForm, LoginForm, PostForm
 from mkt_app.models import User, Post
@@ -123,3 +124,47 @@ def delete_post(post_id):
     db.session.commit()
     flash('Your post has been deleted!', 'success')
     return redirect(url_for('index'))
+
+
+@app.route('/search')
+def search():
+    query = request.args.get('query')
+    results = []
+
+    if query:
+        # search for posts and users that match the query
+        posts = Post.query.filter(Post.title.ilike(f'%{query}%')).all()
+        users = User.query.filter(User.username.ilike(f'%{query}%')).all()
+
+        # check if any results were found
+        if not posts and not users:
+            flash(f"No results found for '{query}'", 'danger')
+            return redirect(url_for('search'))
+
+        # combine the results into a single list
+        results = posts + users
+
+    return render_template('search_results.html', results=results, query=query)
+
+
+# used this piece of code to push random data to the database
+@app.route('/push_data', methods=['POST'])
+def push_data():
+    data = request.get_json()
+    users = data['users']
+    posts = data['posts']
+
+    # Add users to the database
+    for user_data in users:
+        user = User(username=user_data['username'], email=user_data['email'], image_file=user_data['image_file'], password=user_data['password'])
+        db.session.add(user)
+        db.session.commit()
+        
+    # Add posts to the database
+    for post_data in posts:
+        post = Post(title=post_data['title'], date_posted=post_data['date_posted'], content=post_data['content'], price=post_data['price'], user_id=post_data['user_id'])
+        db.session.add(post)
+        db.session.commit()
+    
+    return jsonify({'message': 'Data added successfully'})
+# end of the code
