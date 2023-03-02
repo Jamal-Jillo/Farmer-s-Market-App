@@ -18,6 +18,11 @@ def index():
     return render_template('index.html', posts=posts)
 
 
+@app.route('/landing')
+def landing_page():
+    """Return the landing page."""
+    return render_template('landingpage.html')
+
 @app.route('/about')
 def about_page():
     """Return the index page."""

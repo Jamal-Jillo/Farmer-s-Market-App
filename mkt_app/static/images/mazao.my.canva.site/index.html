@@ -1,0 +1,3899 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <base href="/">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mazao</title>
+    <meta name="description" content="Mazao is a farmer-to-buyer online marketplace that connects local farmers directly to their buyers. Based in Kenya." />
+    <link rel="icon" href="26387fa4f5b1e3f7b6217b27d79bf264.png" type="image/png" sizes="16x16">
+    <link rel="icon" href="2d0b56e7e51cf11036ad8734bdb67e2d.png" type="image/png" sizes="32x32">
+    <link rel="apple-touch-icon" href="725b756a69a7d4c235070e51acd85560.png" sizes="180x180">
+    <style>
+        :root {
+            --ffsd: 0px;
+            --1vw: calc((100vw - var(--sbw, 0px)) / 100);
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .animated {
+                animation: none !important;
+            }
+        }
+
+        @media not all and (min-resolution:.001dpcm) {
+            @media {
+                :root {
+                    --ffsd: 0.5px;
+                }
+            }
+        }
+
+        html {
+            zoom: var(--rzf, 1);
+            font-size: max(calc(min(var(--1vw, 1vw), 13.66px) * var(--rfso, 1)), var(--minfs, 0px));
+            -webkit-text-size-adjust: 100%;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-size: calc(1rem * var(--bfso, 1));
+        }
+
+        body,
+        html,
+        p,
+        ul,
+        ol,
+        li {
+            margin: 0;
+            padding: 0;
+            font-synthesis: none;
+            font-kerning: none;
+            font-variant-ligatures: none;
+            font-feature-settings: "kern" 0, "calt" 0, "liga" 0, "clig" 0, "dlig" 0, "hlig" 0;
+            font-family: unset;
+            -webkit-font-smoothing: subpixel-antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            text-rendering: geometricprecision;
+            white-space: normal;
+        }
+
+        li {
+            text-align: unset;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        @font-face {
+            font-family: YAEnTM9krT8-0;
+            src: url(fonts/4b6890e1422453d3538b732a24753ed0.woff2);
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: YAEnTM9krT8-0;
+            src: url(fonts/a063712d2d6b6c2872c8724cdbb1efb2.woff2);
+            font-weight: 700;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: YAEnTM9krT8-0;
+            src: url(fonts/82cd42a609ba2c92272aa783d5d1e719.woff2);
+            font-weight: 400;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: YAEnTM9krT8-0;
+            src: url(fonts/e55231b0b04c4c3b32e17fcae1a25477.woff2);
+            font-weight: 700;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: YAEnTM9krT8-0;
+            src: url(fonts/4b6890e1422453d3538b732a24753ed0.woff2);
+            font-weight: 100;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: YAEnTM9krT8-0;
+            src: url(fonts/82cd42a609ba2c92272aa783d5d1e719.woff2);
+            font-weight: 100;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: YAEnTM9krT8-0;
+            src: url(fonts/4b6890e1422453d3538b732a24753ed0.woff2);
+            font-weight: 200;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: YAEnTM9krT8-0;
+            src: url(fonts/82cd42a609ba2c92272aa783d5d1e719.woff2);
+            font-weight: 200;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: YAEnTM9krT8-0;
+            src: url(fonts/4b6890e1422453d3538b732a24753ed0.woff2);
+            font-weight: 300;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: YAEnTM9krT8-0;
+            src: url(fonts/82cd42a609ba2c92272aa783d5d1e719.woff2);
+            font-weight: 300;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: YAEnTM9krT8-0;
+            src: url(fonts/4b6890e1422453d3538b732a24753ed0.woff2);
+            font-weight: 500;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: YAEnTM9krT8-0;
+            src: url(fonts/82cd42a609ba2c92272aa783d5d1e719.woff2);
+            font-weight: 500;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: YAEnTM9krT8-0;
+            src: url(fonts/a063712d2d6b6c2872c8724cdbb1efb2.woff2);
+            font-weight: 600;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: YAEnTM9krT8-0;
+            src: url(fonts/e55231b0b04c4c3b32e17fcae1a25477.woff2);
+            font-weight: 600;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: YAEnTM9krT8-0;
+            src: url(fonts/a063712d2d6b6c2872c8724cdbb1efb2.woff2);
+            font-weight: 800;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: YAEnTM9krT8-0;
+            src: url(fonts/e55231b0b04c4c3b32e17fcae1a25477.woff2);
+            font-weight: 800;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: YAEnTM9krT8-0;
+            src: url(fonts/a063712d2d6b6c2872c8724cdbb1efb2.woff2);
+            font-weight: 900;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: YAEnTM9krT8-0;
+            src: url(fonts/e55231b0b04c4c3b32e17fcae1a25477.woff2);
+            font-weight: 900;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: YAD_cUhqUyg-0;
+            src: url(fonts/88a36cab6d7cfa75bff7e49535b9642a.woff2);
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: YAD_cUhqUyg-0;
+            src: url(fonts/c19f8e9cab364abc00a750036f731e21.woff2);
+            font-weight: 700;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: YAD_cUhqUyg-0;
+            src: url(fonts/2939e26d0be644944cd621be7bec5f5e.woff2);
+            font-weight: 400;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: YAD_cUhqUyg-0;
+            src: url(fonts/267ca74019c66328f093f6614fe3106e.woff2);
+            font-weight: 700;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: YAD_cUhqUyg-0;
+            src: url(fonts/88a36cab6d7cfa75bff7e49535b9642a.woff2);
+            font-weight: 100;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: YAD_cUhqUyg-0;
+            src: url(fonts/2939e26d0be644944cd621be7bec5f5e.woff2);
+            font-weight: 100;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: YAD_cUhqUyg-0;
+            src: url(fonts/88a36cab6d7cfa75bff7e49535b9642a.woff2);
+            font-weight: 200;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: YAD_cUhqUyg-0;
+            src: url(fonts/2939e26d0be644944cd621be7bec5f5e.woff2);
+            font-weight: 200;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: YAD_cUhqUyg-0;
+            src: url(fonts/88a36cab6d7cfa75bff7e49535b9642a.woff2);
+            font-weight: 300;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: YAD_cUhqUyg-0;
+            src: url(fonts/2939e26d0be644944cd621be7bec5f5e.woff2);
+            font-weight: 300;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: YAD_cUhqUyg-0;
+            src: url(fonts/88a36cab6d7cfa75bff7e49535b9642a.woff2);
+            font-weight: 500;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: YAD_cUhqUyg-0;
+            src: url(fonts/2939e26d0be644944cd621be7bec5f5e.woff2);
+            font-weight: 500;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: YAD_cUhqUyg-0;
+            src: url(fonts/c19f8e9cab364abc00a750036f731e21.woff2);
+            font-weight: 600;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: YAD_cUhqUyg-0;
+            src: url(fonts/267ca74019c66328f093f6614fe3106e.woff2);
+            font-weight: 600;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: YAD_cUhqUyg-0;
+            src: url(fonts/c19f8e9cab364abc00a750036f731e21.woff2);
+            font-weight: 800;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: YAD_cUhqUyg-0;
+            src: url(fonts/267ca74019c66328f093f6614fe3106e.woff2);
+            font-weight: 800;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: YAD_cUhqUyg-0;
+            src: url(fonts/c19f8e9cab364abc00a750036f731e21.woff2);
+            font-weight: 900;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: YAD_cUhqUyg-0;
+            src: url(fonts/267ca74019c66328f093f6614fe3106e.woff2);
+            font-weight: 900;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: YAD_cQGyXdk-0;
+            src: url(fonts/22ff9d894b6467b3ddab0f1989a2cb4d.woff2);
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: YAD_cQGyXdk-0;
+            src: url(fonts/6f953f3e7ac9d894a97d59a06afcfa7b.woff2);
+            font-weight: 700;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: YAD_cQGyXdk-0;
+            src: url(fonts/aeba314cd216c72b97019a6e8c17c9a5.woff2);
+            font-weight: 400;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: YAD_cQGyXdk-0;
+            src: url(fonts/b146a0e8f0e873592940bcc60a355c0c.woff2);
+            font-weight: 700;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: YAD_cQGyXdk-0;
+            src: url(fonts/22ff9d894b6467b3ddab0f1989a2cb4d.woff2);
+            font-weight: 100;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: YAD_cQGyXdk-0;
+            src: url(fonts/aeba314cd216c72b97019a6e8c17c9a5.woff2);
+            font-weight: 100;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: YAD_cQGyXdk-0;
+            src: url(fonts/22ff9d894b6467b3ddab0f1989a2cb4d.woff2);
+            font-weight: 200;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: YAD_cQGyXdk-0;
+            src: url(fonts/aeba314cd216c72b97019a6e8c17c9a5.woff2);
+            font-weight: 200;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: YAD_cQGyXdk-0;
+            src: url(fonts/22ff9d894b6467b3ddab0f1989a2cb4d.woff2);
+            font-weight: 300;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: YAD_cQGyXdk-0;
+            src: url(fonts/aeba314cd216c72b97019a6e8c17c9a5.woff2);
+            font-weight: 300;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: YAD_cQGyXdk-0;
+            src: url(fonts/22ff9d894b6467b3ddab0f1989a2cb4d.woff2);
+            font-weight: 500;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: YAD_cQGyXdk-0;
+            src: url(fonts/aeba314cd216c72b97019a6e8c17c9a5.woff2);
+            font-weight: 500;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: YAD_cQGyXdk-0;
+            src: url(fonts/6f953f3e7ac9d894a97d59a06afcfa7b.woff2);
+            font-weight: 600;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: YAD_cQGyXdk-0;
+            src: url(fonts/b146a0e8f0e873592940bcc60a355c0c.woff2);
+            font-weight: 600;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: YAD_cQGyXdk-0;
+            src: url(fonts/6f953f3e7ac9d894a97d59a06afcfa7b.woff2);
+            font-weight: 800;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: YAD_cQGyXdk-0;
+            src: url(fonts/b146a0e8f0e873592940bcc60a355c0c.woff2);
+            font-weight: 800;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: YAD_cQGyXdk-0;
+            src: url(fonts/6f953f3e7ac9d894a97d59a06afcfa7b.woff2);
+            font-weight: 900;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: YAD_cQGyXdk-0;
+            src: url(fonts/b146a0e8f0e873592940bcc60a355c0c.woff2);
+            font-weight: 900;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: YAD_cUi3FOQ-0;
+            src: url(fonts/3dae3800fab4aad097008bba4dfa94c1.woff2);
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: YAD_cUi3FOQ-0;
+            src: url(fonts/71d66fa3f70c070b9427b4baf1980061.woff2);
+            font-weight: 700;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: YAD_cUi3FOQ-0;
+            src: url(fonts/0f51da86a058aef1bb585a64cf664ab7.woff2);
+            font-weight: 400;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: YAD_cUi3FOQ-0;
+            src: url(fonts/1aaf8c95b881644a76961b6db0059fc0.woff2);
+            font-weight: 700;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: YAD_cUi3FOQ-0;
+            src: url(fonts/3dae3800fab4aad097008bba4dfa94c1.woff2);
+            font-weight: 100;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: YAD_cUi3FOQ-0;
+            src: url(fonts/0f51da86a058aef1bb585a64cf664ab7.woff2);
+            font-weight: 100;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: YAD_cUi3FOQ-0;
+            src: url(fonts/3dae3800fab4aad097008bba4dfa94c1.woff2);
+            font-weight: 200;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: YAD_cUi3FOQ-0;
+            src: url(fonts/0f51da86a058aef1bb585a64cf664ab7.woff2);
+            font-weight: 200;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: YAD_cUi3FOQ-0;
+            src: url(fonts/3dae3800fab4aad097008bba4dfa94c1.woff2);
+            font-weight: 300;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: YAD_cUi3FOQ-0;
+            src: url(fonts/0f51da86a058aef1bb585a64cf664ab7.woff2);
+            font-weight: 300;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: YAD_cUi3FOQ-0;
+            src: url(fonts/3dae3800fab4aad097008bba4dfa94c1.woff2);
+            font-weight: 500;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: YAD_cUi3FOQ-0;
+            src: url(fonts/0f51da86a058aef1bb585a64cf664ab7.woff2);
+            font-weight: 500;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: YAD_cUi3FOQ-0;
+            src: url(fonts/71d66fa3f70c070b9427b4baf1980061.woff2);
+            font-weight: 600;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: YAD_cUi3FOQ-0;
+            src: url(fonts/1aaf8c95b881644a76961b6db0059fc0.woff2);
+            font-weight: 600;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: YAD_cUi3FOQ-0;
+            src: url(fonts/71d66fa3f70c070b9427b4baf1980061.woff2);
+            font-weight: 800;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: YAD_cUi3FOQ-0;
+            src: url(fonts/1aaf8c95b881644a76961b6db0059fc0.woff2);
+            font-weight: 800;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: YAD_cUi3FOQ-0;
+            src: url(fonts/71d66fa3f70c070b9427b4baf1980061.woff2);
+            font-weight: 900;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: YAD_cUi3FOQ-0;
+            src: url(fonts/1aaf8c95b881644a76961b6db0059fc0.woff2);
+            font-weight: 900;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: YACgEUFdPdA-0;
+            src: url(fonts/5ff8dda107f94f00944ba9a5d6988867.woff2);
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: YACgEUFdPdA-0;
+            src: url(fonts/2969256c22fb5b634191a3801b8b99cc.woff2);
+            font-weight: 700;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: YACgEUFdPdA-0;
+            src: url(fonts/28b9c7965158e227e7c55f80250b1c82.woff2);
+            font-weight: 400;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: YACgEUFdPdA-0;
+            src: url(fonts/28b9c7965158e227e7c55f80250b1c82.woff2);
+            font-weight: 700;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: YACgEUFdPdA-0;
+            src: url(fonts/5ff8dda107f94f00944ba9a5d6988867.woff2);
+            font-weight: 100;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: YACgEUFdPdA-0;
+            src: url(fonts/28b9c7965158e227e7c55f80250b1c82.woff2);
+            font-weight: 100;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: YACgEUFdPdA-0;
+            src: url(fonts/5ff8dda107f94f00944ba9a5d6988867.woff2);
+            font-weight: 200;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: YACgEUFdPdA-0;
+            src: url(fonts/28b9c7965158e227e7c55f80250b1c82.woff2);
+            font-weight: 200;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: YACgEUFdPdA-0;
+            src: url(fonts/5ff8dda107f94f00944ba9a5d6988867.woff2);
+            font-weight: 300;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: YACgEUFdPdA-0;
+            src: url(fonts/28b9c7965158e227e7c55f80250b1c82.woff2);
+            font-weight: 300;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: YACgEUFdPdA-0;
+            src: url(fonts/5ff8dda107f94f00944ba9a5d6988867.woff2);
+            font-weight: 500;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: YACgEUFdPdA-0;
+            src: url(fonts/28b9c7965158e227e7c55f80250b1c82.woff2);
+            font-weight: 500;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: YACgEUFdPdA-0;
+            src: url(fonts/2969256c22fb5b634191a3801b8b99cc.woff2);
+            font-weight: 600;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: YACgEUFdPdA-0;
+            src: url(fonts/28b9c7965158e227e7c55f80250b1c82.woff2);
+            font-weight: 600;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: YACgEUFdPdA-0;
+            src: url(fonts/2969256c22fb5b634191a3801b8b99cc.woff2);
+            font-weight: 800;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: YACgEUFdPdA-0;
+            src: url(fonts/28b9c7965158e227e7c55f80250b1c82.woff2);
+            font-weight: 800;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: YACgEUFdPdA-0;
+            src: url(fonts/2969256c22fb5b634191a3801b8b99cc.woff2);
+            font-weight: 900;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: YACgEUFdPdA-0;
+            src: url(fonts/28b9c7965158e227e7c55f80250b1c82.woff2);
+            font-weight: 900;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: YACgEZ1cb1Q-0;
+            src: url(fonts/f8f199f09526f79e87644ed227e0f651.woff2);
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: YACgEZ1cb1Q-0;
+            src: url(fonts/98c4d2c0223fc8474641c77f923528e9.woff2);
+            font-weight: 700;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: YACgEZ1cb1Q-0;
+            src: url(fonts/d257a7100844bc3f98c9021168b6249e.woff2);
+            font-weight: 400;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: YACgEZ1cb1Q-0;
+            src: url(fonts/1060345c54d396e76d73f1da7ee200bd.woff2);
+            font-weight: 700;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: YACgEZ1cb1Q-0;
+            src: url(fonts/f8f199f09526f79e87644ed227e0f651.woff2);
+            font-weight: 100;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: YACgEZ1cb1Q-0;
+            src: url(fonts/d257a7100844bc3f98c9021168b6249e.woff2);
+            font-weight: 100;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: YACgEZ1cb1Q-0;
+            src: url(fonts/f8f199f09526f79e87644ed227e0f651.woff2);
+            font-weight: 200;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: YACgEZ1cb1Q-0;
+            src: url(fonts/d257a7100844bc3f98c9021168b6249e.woff2);
+            font-weight: 200;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: YACgEZ1cb1Q-0;
+            src: url(fonts/f8f199f09526f79e87644ed227e0f651.woff2);
+            font-weight: 300;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: YACgEZ1cb1Q-0;
+            src: url(fonts/d257a7100844bc3f98c9021168b6249e.woff2);
+            font-weight: 300;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: YACgEZ1cb1Q-0;
+            src: url(fonts/f8f199f09526f79e87644ed227e0f651.woff2);
+            font-weight: 500;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: YACgEZ1cb1Q-0;
+            src: url(fonts/d257a7100844bc3f98c9021168b6249e.woff2);
+            font-weight: 500;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: YACgEZ1cb1Q-0;
+            src: url(fonts/98c4d2c0223fc8474641c77f923528e9.woff2);
+            font-weight: 600;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: YACgEZ1cb1Q-0;
+            src: url(fonts/1060345c54d396e76d73f1da7ee200bd.woff2);
+            font-weight: 600;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: YACgEZ1cb1Q-0;
+            src: url(fonts/98c4d2c0223fc8474641c77f923528e9.woff2);
+            font-weight: 800;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: YACgEZ1cb1Q-0;
+            src: url(fonts/1060345c54d396e76d73f1da7ee200bd.woff2);
+            font-weight: 800;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: YACgEZ1cb1Q-0;
+            src: url(fonts/98c4d2c0223fc8474641c77f923528e9.woff2);
+            font-weight: 900;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: YACgEZ1cb1Q-0;
+            src: url(fonts/1060345c54d396e76d73f1da7ee200bd.woff2);
+            font-weight: 900;
+            font-style: italic;
+        }
+
+        #verticalMenu {
+            border: 12px solid #ffffff;
+            padding: 0;
+            margin: 0 0 0 auto;
+            z-index: 2;
+            font-size: 1.5rem;
+            right: 0px;
+            box-sizing: border-box;
+            transition: all 0.35s;
+            background-color: #ffffff;
+            transform: translateX(400px);
+            overflow: auto;
+            max-width: 80vw;
+            top: 0px;
+            width: 400px;
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+            position: fixed;
+            height: 100%;
+        }
+
+        #menuToggle:checked~#verticalMenu {
+            transform: translateX(0px);
+        }
+
+        #menuButton {
+            z-index: 3;
+            color: #0e1318;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #menuButton:hover {
+            cursor: pointer;
+            text-decoration-line: none;
+            color: hsla(210, 26%, 7%, 1);
+        }
+
+        .navMenuLinkContent:hover {
+            color: hsla(210, 26%, 7%, 1);
+        }
+
+        .navMenuLink {
+            color: hsla(210, 26%, 7%, 0.7);
+            list-style-type: none;
+            white-space: nowrap;
+            display: flex;
+            align-items: center;
+        }
+
+        #horizontalMenu>.navMenuLink {
+            max-width: 148px;
+        }
+
+        .navMenuLinkContent {
+            padding: 10px 16px;
+            text-decoration-line: none;
+            overflow: hidden;
+            color: hsla(210, 26%, 7%, 0.7);
+            white-space: nowrap;
+            font-weight: 700;
+            display: inline-block;
+            font-size: 15px;
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+            text-overflow: ellipsis;
+            margin-right: auto;
+        }
+
+        #menuToggle:checked~#menuButton {
+            background-color: rgba(30, 41, 51, 45);
+            z-index: 2;
+            top: 0px;
+            width: 100vw;
+            position: fixed;
+            opacity: 0.55;
+            height: 100vh;
+        }
+
+        #menuToggle:checked~#menuButton>#menuButtonIcon {
+            display: none;
+        }
+
+        #horizontalMenu {
+            display: flex;
+        }
+
+        @media (max-width: 74px) {
+            #horizontalMenu {
+                display: none;
+            }
+        }
+
+        @media (min-width: 75px) {
+            #menuButton,
+            #verticalMenu {
+                display: none;
+            }
+        }
+
+        html {
+            scroll-padding-top: 50px;
+        }
+
+        @media (max-width: 375px) {
+            #i2aDghrv3brpetjm {
+                grid-area: 2 / 2 / 3 / 3;
+            }
+            #QwcGCsfVV4aOwizM {
+                grid-template-columns: 0 444.48338692%;
+                left: -172.24169346%;
+                grid-template-rows: 0 100%;
+            }
+            #NzPqDmvxqJpHkbeu {
+                min-width: 15.18894186rem;
+            }
+            #XpLlijKtWIvVfZRy {
+                grid-area: 2 / 7 / 7 / 12;
+            }
+            #hjCOdpIMO2oDuhNr {
+                font-size: max(0px, calc(2.10652606em - var(--ffsd)));
+            }
+            #xOsFxDpp2VDBRrAC {
+                transform: translateX(calc(max(0px, 2.10652606em) * 0.0645));
+                margin-top: calc(max(0px, 2.10652606em) * 0.1);
+                margin-bottom: calc(max(0px, 2.10652606em) * 0.1);
+            }
+            #TsMdRSxJvfSIYQZo {
+                min-width: 9.30977394rem;
+            }
+            #ggnq5cnUlDJhKCKj {
+                grid-area: 4 / 8 / 5 / 10;
+            }
+            #Dp0DLXT5cE6FomR9 {
+                grid-area: 3 / 9 / 8 / 15;
+            }
+            #hEQYhFZmUT7xuqXb {
+                grid-area: 6 / 11 / 9 / 16;
+            }
+            #vNyc7pRC9DtJvsnz {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(5.04173873em - var(--ffsd)));
+            }
+            #yK94s82vRaY3CXi0 {
+                transform: translateX(calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 5.04173873em) * 0.087));
+                margin-top: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 5.04173873em) * -0.1);
+                margin-bottom: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 5.04173873em) * -0.1);
+            }
+            #PKIS1uMORJHtZcQN {
+                min-width: 91.6rem;
+            }
+            #l6IyTdOp6PuqfuEN {
+                grid-area: 10 / 4 / 11 / 18;
+            }
+            #oGjPlZpvA2AlYcMa {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(13.35152599em - var(--ffsd)));
+            }
+            #LZXvdPZkR0aTLRhT {
+                transform: translateX(0);
+                margin-top: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 13.35152599em) * 0.1);
+                margin-bottom: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 13.35152599em) * 0.1);
+            }
+            #R0X0QoafxVFjWfv3 {
+                min-width: 91.6rem;
+            }
+            #vXx7S4AicSRYTOUg {
+                grid-area: 12 / 3 / 13 / 17;
+            }
+            #hefNuHeOPHFwtcwI {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(4.42660433em - var(--ffsd)));
+            }
+            #fnPdPXDGlXqa0bFy {
+                transform: translateX(0);
+                margin-top: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 4.42660433em) * -0.195);
+                margin-bottom: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 4.42660433em) * -0.195);
+            }
+            #zF4FMBSprUMX32nE {
+                min-width: 91.6rem;
+            }
+            #m8dGRcAoWNTJZGaj {
+                grid-area: 14 / 5 / 15 / 19;
+            }
+            #fL2OupIxRXLDE2kw {
+                stroke-width: calc(100rem * 0.0 / 375.0);
+            }
+            #DGegepRQYkifTdAx {
+                grid-area: 16 / 2 / 19 / 14;
+            }
+            #N9c0JQW92kBsIci0 {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(5.68888em - var(--ffsd)));
+            }
+            #SNCaxSM0b8Ohzcwx {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 5.68888em) * -0.1);
+            }
+            #EQ3O10nhFaifPZ7j {
+                min-width: 50.37517603rem;
+            }
+            #R4h5yzfGUiHpmdaQ {
+                grid-area: 17 / 6 / 18 / 13;
+            }
+            #T7Y0HzthEjJwbIYq {
+                grid-template-columns: 4.26666667rem 0 0 0 1.06666667rem 0.93690952rem 2.95001686rem 4.5777874rem 4.5986532rem 0.99713282rem 1.93201824rem 34.24932464rem 1.06666667rem 32.24434352rem 6.84714711rem 0 0 0 4.26666667rem;
+                grid-template-rows: minmax(8.41828897rem, max-content) minmax(4.57413215rem, max-content) minmax(1.64466233rem, max-content) minmax(2.4775791rem, max-content) minmax(3.36832653rem, max-content) minmax(2.91210954rem, max-content) minmax(81.419781rem, max-content) minmax(6.77897019rem, max-content) minmax(6.4rem, max-content) minmax(6.05005118rem, max-content) minmax(23.81645972rem, max-content) minmax(29.13492525rem, max-content) minmax(7.63632092rem, max-content) minmax(29.81203453rem, max-content) minmax(13.86323808rem, max-content) minmax(1.06666667rem, max-content) minmax(13.05967088rem, max-content) minmax(1.06666667rem, max-content) minmax(6.4rem, max-content);
+            }
+            #home {
+                min-height: 19.8996958vh;
+            }
+            #cX65LIBkRRMuMaZl {
+                grid-area: 2 / 2 / 3 / 3;
+            }
+            #E5SVrMfC3aUDzNB7 {
+                grid-template-columns: 0 483.4219625%;
+                left: -191.71098125%;
+                grid-template-rows: 0 100%;
+            }
+            #n1WrDN01URwDEn4r {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(14.93333333em - var(--ffsd)));
+            }
+            #FFo0hSmlOy1Po9M4 {
+                transform: translateX(0);
+                margin-top: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 14.93333333em) * 0.1);
+                margin-bottom: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 14.93333333em) * 0.1);
+            }
+            #q0E9kC9xE1z8eZNG {
+                min-width: 91.6rem;
+            }
+            #eEpmK8pZZDR8cMFk {
+                grid-area: 2 / 2 / 3 / 10;
+            }
+            #fEtl6FFS11RKLAh8 {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(4.40889067em - var(--ffsd)));
+            }
+            #nnU2xiW4PrWF0GA9 {
+                transform: translateX(0);
+                margin-top: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 4.40889067em) * -0.195);
+                margin-bottom: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 4.40889067em) * -0.195);
+            }
+            #IjGzzSlwc20mMyQM {
+                min-width: 91.6rem;
+            }
+            #IlQQP4LtqfagdtY8 {
+                grid-area: 4 / 3 / 5 / 11;
+            }
+            #UdR2Omyqk3twQhqT {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(14.93333333em - var(--ffsd)));
+            }
+            #DajSwzBB4e1PP7Mm {
+                transform: translateX(0);
+                margin-top: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 14.93333333em) * 0.1);
+                margin-bottom: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 14.93333333em) * 0.1);
+            }
+            #tL5MGulV64gXM0Vb {
+                min-width: 91.6rem;
+            }
+            #AURqC4jUUy6gMYS6 {
+                grid-area: 6 / 4 / 7 / 12;
+            }
+            #w2nsjhdLaCZNQk9Z {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(4.40889067em - var(--ffsd)));
+            }
+            #KN16WNfa4LGZsFuo {
+                transform: translateX(0);
+                margin-top: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 4.40889067em) * -0.195);
+                margin-bottom: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 4.40889067em) * -0.195);
+            }
+            #qtdNTMt5lmLw7vpN {
+                min-width: 91.6rem;
+            }
+            #plSYgwbrc8xZsQrX {
+                grid-area: 8 / 5 / 9 / 13;
+            }
+            #j2HZbZAJlmfIDQjb {
+                grid-area: 10 / 6 / 12 / 8;
+            }
+            #EKRsnmapgL9VwDp7 {
+                grid-area: 11 / 7 / 13 / 9;
+            }
+            #ti7SWPVzR2deQ0CR {
+                grid-template-columns: 4.26666667rem 0 0 0 0.00000001rem 6.85444663rem 77.75777338rem 6.85444663rem 0.00000001rem 0 0 0 4.26666667rem;
+                grid-template-rows: minmax(6.4rem, max-content) minmax(29.10109853rem, max-content) minmax(14.91872058rem, max-content) minmax(27.02339216rem, max-content) minmax(14.93333333rem, max-content) minmax(29.10109853rem, max-content) minmax(14.8355534rem, max-content) minmax(9.95226713rem, max-content) minmax(6.4rem, max-content) minmax(6.85120833rem, max-content) minmax(99.02426258rem, max-content) minmax(6.85120833rem, max-content) minmax(6.4rem, max-content);
+            }
+            #j9tHm8itqhtunyeX {
+                min-height: 21.64299112vh;
+            }
+            #ovO4CKEtuktQnwIR {
+                grid-area: 2 / 2 / 3 / 3;
+            }
+            #IQgIrKSkRwZzbpv4 {
+                grid-template-columns: 0 364.26666667%;
+                left: -132.13333333%;
+                grid-template-rows: 0 100%;
+            }
+            #leRLQz9BoCuDx6nm {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(11.79639726em - var(--ffsd)));
+            }
+            #vSGXYvcjYdlqr3LU {
+                transform: translateX(0);
+                margin-top: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 11.79639726em) * 0.1);
+                margin-bottom: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 11.79639726em) * 0.1);
+            }
+            #vr5A4vmJMRL18zbY {
+                min-width: 91.6rem;
+            }
+            #ISR0Wdik7bIAn5Qp {
+                grid-area: 2 / 2 / 3 / 8;
+            }
+            #PyQ47pNCjbIas3MD {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(4.40889067em - var(--ffsd)));
+            }
+            #hAVOIly6GsqrJEam {
+                transform: translateX(0);
+                margin-top: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 4.40889067em) * -0.195);
+                margin-bottom: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 4.40889067em) * -0.195);
+            }
+            #Z1TvSDzwjrSlUiRM {
+                min-width: 91.6rem;
+            }
+            #PlqtGp8Nhxm0SGrW {
+                grid-area: 4 / 3 / 5 / 9;
+            }
+            #HBGeFFWoEe09AFO1 {
+                grid-area: 6 / 4 / 8 / 6;
+            }
+            #sPtNTSjrqBMzkRmd {
+                grid-area: 7 / 5 / 9 / 7;
+            }
+            #a5AUZLui6QjXyNOI {
+                grid-template-columns: 4.26666667rem 0 0.00000001rem 6.85444663rem 77.75777338rem 6.85444663rem 0.00000001rem 0 4.26666667rem;
+                grid-template-rows: minmax(13.46907332rem, max-content) minmax(14.15567671rem, max-content) minmax(17.55610525rem, max-content) minmax(27.02339216rem, max-content) minmax(6.4rem, max-content) minmax(6.85120833rem, max-content) minmax(99.02426258rem, max-content) minmax(6.85120833rem, max-content) minmax(13.46907332rem, max-content);
+            }
+            #poWzJDcOTrIvtRDG {
+                min-height: 16.30836173vh;
+            }
+            #x2bHGCvxZqJhO2Qz {
+                grid-area: 2 / 2 / 3 / 3;
+            }
+            #yes53Xpb5Rp05GQf {
+                grid-template-columns: 0 401.00378547%;
+                left: -150.50189274%;
+                grid-template-rows: 0 100%;
+            }
+            #KD82cc7grXDtesZf {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(14.93333333em - var(--ffsd)));
+            }
+            #jmd28tfNBdHkDVZb {
+                transform: translateX(0);
+                margin-top: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 14.93333333em) * 0.1);
+                margin-bottom: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 14.93333333em) * 0.1);
+            }
+            #elbMlWyNa8tvQl1N {
+                min-width: 91.6rem;
+            }
+            #ipjxRmnK7AAphmMq {
+                grid-area: 2 / 2 / 3 / 8;
+            }
+            #scy9hpWlsnuYWz2f {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(4.40889067em - var(--ffsd)));
+            }
+            #MEV9DPF4sFPDRHuf {
+                transform: translateX(0);
+                margin-top: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 4.40889067em) * -0.195);
+                margin-bottom: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 4.40889067em) * -0.195);
+            }
+            #CFe4jGSxnGC9lpIu {
+                min-width: 91.6rem;
+            }
+            #dvWeJUZJIpLQRaET {
+                grid-area: 4 / 3 / 5 / 9;
+            }
+            #brImLex5u2LVkIRl {
+                grid-area: 6 / 4 / 8 / 6;
+            }
+            #UJ1kyLK2PvPpsJCB {
+                grid-area: 7 / 5 / 9 / 7;
+            }
+            #boGbpjQIIimcEdO6 {
+                grid-template-columns: 4.26666667rem 0 0.00000001rem 6.85444663rem 77.75777338rem 6.85444663rem 0.00000001rem 0 4.26666667rem;
+                grid-template-rows: minmax(6.4rem, max-content) minmax(42.32887058rem, max-content) minmax(24.17560212rem, max-content) minmax(27.02339216rem, max-content) minmax(6.4rem, max-content) minmax(6.85120833rem, max-content) minmax(99.02426258rem, max-content) minmax(6.85120833rem, max-content) minmax(6.4rem, max-content);
+            }
+            #Zaa8MwJZn3dAiM1L {
+                min-height: 17.95309696vh;
+            }
+            #kid9e3orKpYnE7PG {
+                grid-area: 2 / 2 / 3 / 3;
+            }
+            #TihdRUjG5d4zQyJZ {
+                grid-template-columns: 0 540.44320185%;
+                left: -220.22160092%;
+                grid-template-rows: 0 100%;
+            }
+            #nyLZID3QVBmez8vS {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(14.93333333em - var(--ffsd)));
+            }
+            #cp3CY8VnZAoz0mhG {
+                transform: translateX(0);
+                margin-top: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 14.93333333em) * 0.1);
+                margin-bottom: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 14.93333333em) * 0.1);
+            }
+            #G9BkZw3cr2EXTQej {
+                min-width: 91.6rem;
+            }
+            #qJETCYR6sMykJCK9 {
+                grid-area: 2 / 6 / 3 / 28;
+            }
+            #lhDTqvyLGxhNexJh {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(4.93977927em - var(--ffsd)));
+            }
+            #oX5akv1MVSng2TXY {
+                transform: translateX(0);
+                margin-top: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 4.93977927em) * 0.15);
+                margin-bottom: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 4.93977927em) * -0.15);
+            }
+            #Y4bhIhpZhI5pnDoC {
+                min-width: 91.6rem;
+            }
+            #ECUOPI8XUw9EGL9i {
+                grid-area: 4 / 7 / 5 / 29;
+            }
+            #l40kzTATdCsqziHD {
+                display: none;
+            }
+            #qSGYYNyolPZ1bqkA {
+                display: none;
+            }
+            #uRDB8csPMbu1GnHF {
+                display: block;
+            }
+            #lLyDD1g1PQ1zaXOh {
+                grid-area: 6 / 2 / 11 / 25;
+            }
+            #DD5eNDjy4rxdrVDR {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(5.01315826em - var(--ffsd)));
+            }
+            #nljAFs3nv1LXssvs {
+                transform: translateX(0);
+                margin-top: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 5.01315826em) * -0.15);
+                margin-bottom: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 5.01315826em) * -0.15);
+            }
+            #K3gbnIYJ3U2Myovf {
+                min-width: 78.8rem;
+            }
+            #yNasv1r0PJnFCbFk {
+                grid-area: 7 / 13 / 8 / 20;
+            }
+            #eHTgvlI1cxBIolvo {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(4.33778133em - var(--ffsd)));
+            }
+            #elTHyz0rZADXmZmg {
+                transform: translateX(0);
+                margin-top: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 4.33778133em) * -0.195);
+                margin-bottom: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 4.33778133em) * -0.195);
+            }
+            #q1CqUC4Xg6TYmRvA {
+                min-width: 78.8rem;
+            }
+            #GVOJr5boTGK1P2Ii {
+                grid-area: 9 / 10 / 10 / 17;
+            }
+            #S73OUgiLgFXR8tTN {
+                grid-area: 12 / 3 / 16 / 24;
+            }
+            #Fr42FEuNdepH6uOG {
+                font-size: max(0px, calc(3.55059718em - var(--ffsd)));
+            }
+            #t1NdaTdOxzlacrhX {
+                transform: translateX(0);
+                margin-top: calc(max(0px, 3.55059718em) * -0.15);
+                margin-bottom: calc(max(0px, 3.55059718em) * -0.15);
+            }
+            #J8LMm6vWiX7otcEB {
+                min-width: 64.84734141rem;
+            }
+            #HfyI6bg6oA8hEqKL {
+                grid-area: 13 / 9 / 14 / 16;
+            }
+            #JE7rz5GouJYiEKxL {
+                font-size: max(0px, calc(2.56431936em - var(--ffsd)));
+            }
+            #Tcjasw5UALyuZjgP {
+                transform: translateX(0);
+                margin-top: calc(max(0px, 2.56431936em) * -0.195);
+                margin-bottom: calc(max(0px, 2.56431936em) * -0.195);
+            }
+            #Y8dGMaxyvK6k72rT {
+                min-width: 85.71305226rem;
+            }
+            #vz9KMXX2aZLbLW5P {
+                grid-area: 15 / 8 / 17 / 23;
+            }
+            #rArnWNMGcN4P8icR {
+                display: none;
+            }
+            #rYMTbpi9t9OONFLH {
+                display: none;
+            }
+            #ANk9qHxRRLGDMeuo {
+                display: block;
+            }
+            #AZLO9zvBm3xJ27lF {
+                grid-area: 18 / 4 / 23 / 26;
+            }
+            #G7SQkxqABkSDav8r {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(4.69333867em - var(--ffsd)));
+            }
+            #DOSHBPgDlzxxaWLi {
+                transform: translateX(0);
+                margin-top: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 4.69333867em) * -0.15);
+                margin-bottom: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 4.69333867em) * -0.15);
+            }
+            #nLM9M0n8qki4brfH {
+                min-width: 78.8rem;
+            }
+            #fI4ZB8uH1KKpFp61 {
+                grid-area: 19 / 14 / 20 / 21;
+            }
+            #Pe7z3yuTonmLzKfA {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(4.33778133em - var(--ffsd)));
+            }
+            #gzProIsKu2rA6Sz6 {
+                transform: translateX(0);
+                margin-top: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 4.33778133em) * -0.195);
+                margin-bottom: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 4.33778133em) * -0.195);
+            }
+            #OEXGKHoJ1U8ecaZB {
+                min-width: 78.8rem;
+            }
+            #DYC4seJOHdXxKaIH {
+                grid-area: 21 / 11 / 22 / 18;
+            }
+            #vK41tVXMX8QnOgsL {
+                display: none;
+            }
+            #JWE849U9GoD3Bs9U {
+                display: none;
+            }
+            #VuzjrTaTwJDodEVk {
+                display: block;
+            }
+            #kKwu0Tru7OuJtuNs {
+                grid-area: 24 / 5 / 29 / 27;
+            }
+            #akkN36hysD7XvE38 {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(4.69333867em - var(--ffsd)));
+            }
+            #ypy78Tbex0kgM8lS {
+                transform: translateX(0);
+                margin-top: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 4.69333867em) * -0.15);
+                margin-bottom: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 4.69333867em) * -0.15);
+            }
+            #BYebr8hbLEATZY0R {
+                min-width: 78.8rem;
+            }
+            #KJFAZy6xvPWKvGVE {
+                grid-area: 25 / 15 / 26 / 22;
+            }
+            #zvI7mtkiw9RsxUJB {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(4.33778133em - var(--ffsd)));
+            }
+            #liYniieByPVSvhDW {
+                transform: translateX(0);
+                margin-top: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 4.33778133em) * -0.195);
+                margin-bottom: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 4.33778133em) * -0.195);
+            }
+            #h1YQF5dNXPGLXwm5 {
+                min-width: 78.8rem;
+            }
+            #kpK5SpGvtEEQDCPG {
+                grid-area: 27 / 12 / 28 / 19;
+            }
+            #DSnXd9B9Bt89JKuT {
+                grid-template-columns: 4.26666667rem 0 0 0 0 0 2.94824001rem 0 3.45175999rem 0 0 0 0 0 61.26224809rem 17.40441858rem 0 0 0 0 0 3.46129227rem 2.9387077rem 0.00000003rem 0 0 0 0 4.26666667rem;
+                grid-template-rows: minmax(6.4rem, max-content) minmax(14.93333333rem, max-content) minmax(139.39403394rem, max-content) minmax(5.9277219rem, max-content) minmax(6.4rem, max-content) minmax(4.83661299rem, max-content) minmax(6.01575858rem, max-content) minmax(2.1923501rem, max-content) minmax(10.09592361rem, max-content) minmax(6.4rem, max-content) minmax(4.26666667rem, max-content) minmax(2.68324888rem, max-content) minmax(4.26069442rem, max-content) minmax(2.36570862rem, max-content) minmax(9.8895829rem, max-content) minmax(1.09354809rem, max-content) minmax(3.36218972rem, max-content) minmax(4.83661299rem, max-content) minmax(5.03919023rem, max-content) minmax(2.55976299rem, max-content) minmax(10.09592361rem, max-content) minmax(6.4rem, max-content) minmax(3.36218972rem, max-content) minmax(4.83661299rem, max-content) minmax(5.37136578rem, max-content) minmax(4.26423993rem, max-content) minmax(13.76766435rem, max-content) minmax(6.4rem, max-content) minmax(6.4rem, max-content);
+            }
+            #ZRxdRLa9mo6Ub8xV {
+                min-height: 24.1958544vh;
+            }
+        }
+
+        @media (min-width: 375.05px) and (max-width: 480px) {
+            #i2aDghrv3brpetjm {
+                grid-area: 2 / 2 / 3 / 3;
+            }
+            #QwcGCsfVV4aOwizM {
+                grid-template-columns: 0 417.56075121%;
+                left: -158.78037561%;
+                grid-template-rows: 0 100%;
+            }
+            #NzPqDmvxqJpHkbeu {
+                min-width: 15.46703251rem;
+            }
+            #XpLlijKtWIvVfZRy {
+                grid-area: 2 / 7 / 7 / 12;
+            }
+            #hjCOdpIMO2oDuhNr {
+                font-size: max(0px, calc(2.14951639em - var(--ffsd)));
+            }
+            #xOsFxDpp2VDBRrAC {
+                transform: translateX(calc(max(0px, 2.14951639em) * 0.0645));
+                margin-top: calc(max(0px, 2.14951639em) * 0.1);
+                margin-bottom: calc(max(0px, 2.14951639em) * 0.1);
+            }
+            #TsMdRSxJvfSIYQZo {
+                min-width: 9.46788157rem;
+            }
+            #ggnq5cnUlDJhKCKj {
+                grid-area: 4 / 8 / 5 / 10;
+            }
+            #Dp0DLXT5cE6FomR9 {
+                grid-area: 3 / 9 / 8 / 15;
+            }
+            #hEQYhFZmUT7xuqXb {
+                grid-area: 6 / 11 / 9 / 16;
+            }
+            #vNyc7pRC9DtJvsnz {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(4.1666875em - var(--ffsd)));
+            }
+            #yK94s82vRaY3CXi0 {
+                transform: translateX(calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 4.1666875em) * 0.087));
+                margin-top: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 4.1666875em) * -0.1);
+                margin-bottom: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 4.1666875em) * -0.1);
+            }
+            #PKIS1uMORJHtZcQN {
+                min-width: 93.4375rem;
+            }
+            #l6IyTdOp6PuqfuEN {
+                grid-area: 10 / 4 / 11 / 18;
+            }
+            #oGjPlZpvA2AlYcMa {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(13.62400611em - var(--ffsd)));
+            }
+            #LZXvdPZkR0aTLRhT {
+                transform: translateX(0);
+                margin-top: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 13.62400611em) * 0.1);
+                margin-bottom: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 13.62400611em) * 0.1);
+            }
+            #R0X0QoafxVFjWfv3 {
+                min-width: 93.4375rem;
+            }
+            #vXx7S4AicSRYTOUg {
+                grid-area: 12 / 3 / 13 / 17;
+            }
+            #hefNuHeOPHFwtcwI {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(3.45828463em - var(--ffsd)));
+            }
+            #fnPdPXDGlXqa0bFy {
+                transform: translateX(0);
+                margin-top: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 3.45828463em) * -0.195);
+                margin-bottom: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 3.45828463em) * -0.195);
+            }
+            #zF4FMBSprUMX32nE {
+                min-width: 93.4375rem;
+            }
+            #m8dGRcAoWNTJZGaj {
+                grid-area: 14 / 5 / 15 / 19;
+            }
+            #fL2OupIxRXLDE2kw {
+                stroke-width: calc(100rem * 0.0 / 480.0);
+            }
+            #DGegepRQYkifTdAx {
+                grid-area: 16 / 2 / 19 / 14;
+            }
+            #N9c0JQW92kBsIci0 {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(4.4444375em - var(--ffsd)));
+            }
+            #SNCaxSM0b8Ohzcwx {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 4.4444375em) * -0.1);
+            }
+            #EQ3O10nhFaifPZ7j {
+                min-width: 39.35560627rem;
+            }
+            #R4h5yzfGUiHpmdaQ {
+                grid-area: 17 / 6 / 18 / 13;
+            }
+            #T7Y0HzthEjJwbIYq {
+                grid-template-columns: 3.33333333rem 0 0 0 0.83333333rem 1.21113217rem 3.01022129rem 4.67121164rem 4.69250327rem 1.01748247rem 1.97144718rem 22.6774416rem 0.83333333rem 45.42834225rem 6.9868848rem 0 0 0 3.33333333rem;
+                grid-template-rows: minmax(7.05947854rem, max-content) minmax(4.66748179rem, max-content) minmax(1.67822687rem, max-content) minmax(2.52814194rem, max-content) minmax(3.43706789rem, max-content) minmax(2.97154035rem, max-content) minmax(83.08140919rem, max-content) minmax(6.91731652rem, max-content) minmax(5rem, max-content) minmax(4.99999583rem, max-content) minmax(18.60660916rem, max-content) minmax(29.72951556rem, max-content) minmax(5.96587571rem, max-content) minmax(30.4204434rem, max-content) minmax(10.83065475rem, max-content) minmax(0.83333333rem, max-content) minmax(10.20286788rem, max-content) minmax(0.83333333rem, max-content) minmax(5rem, max-content);
+            }
+            #home {
+                min-height: 21.01381911vh;
+            }
+            #cX65LIBkRRMuMaZl {
+                grid-area: 2 / 2 / 3 / 3;
+            }
+            #E5SVrMfC3aUDzNB7 {
+                grid-template-columns: 0 422.3981616%;
+                left: -161.1990808%;
+                grid-template-rows: 0 100%;
+            }
+            #n1WrDN01URwDEn4r {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(11.66666667em - var(--ffsd)));
+            }
+            #FFo0hSmlOy1Po9M4 {
+                transform: translateX(0);
+                margin-top: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 11.66666667em) * 0.1);
+                margin-bottom: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 11.66666667em) * 0.1);
+            }
+            #q0E9kC9xE1z8eZNG {
+                min-width: 93.4375rem;
+            }
+            #eEpmK8pZZDR8cMFk {
+                grid-area: 2 / 2 / 3 / 10;
+            }
+            #fEtl6FFS11RKLAh8 {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(3.73752721em - var(--ffsd)));
+            }
+            #nnU2xiW4PrWF0GA9 {
+                transform: translateX(0);
+                margin-top: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 3.73752721em) * -0.195);
+                margin-bottom: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 3.73752721em) * -0.195);
+            }
+            #IjGzzSlwc20mMyQM {
+                min-width: 93.4375rem;
+            }
+            #IlQQP4LtqfagdtY8 {
+                grid-area: 4 / 3 / 5 / 11;
+            }
+            #UdR2Omyqk3twQhqT {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(11.66666667em - var(--ffsd)));
+            }
+            #DajSwzBB4e1PP7Mm {
+                transform: translateX(0);
+                margin-top: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 11.66666667em) * 0.1);
+                margin-bottom: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 11.66666667em) * 0.1);
+            }
+            #tL5MGulV64gXM0Vb {
+                min-width: 93.4375rem;
+            }
+            #AURqC4jUUy6gMYS6 {
+                grid-area: 6 / 4 / 7 / 12;
+            }
+            #w2nsjhdLaCZNQk9Z {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(3.73752721em - var(--ffsd)));
+            }
+            #KN16WNfa4LGZsFuo {
+                transform: translateX(0);
+                margin-top: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 3.73752721em) * -0.195);
+                margin-bottom: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 3.73752721em) * -0.195);
+            }
+            #qtdNTMt5lmLw7vpN {
+                min-width: 93.4375rem;
+            }
+            #plSYgwbrc8xZsQrX {
+                grid-area: 8 / 5 / 9 / 13;
+            }
+            #j2HZbZAJlmfIDQjb {
+                grid-area: 10 / 6 / 12 / 8;
+            }
+            #EKRsnmapgL9VwDp7 {
+                grid-area: 11 / 7 / 13 / 9;
+            }
+            #ti7SWPVzR2deQ0CR {
+                grid-template-columns: 3.33333333rem 0 0 0 0 6.9943333rem 79.34466673rem 6.9943333rem 0 0 0 0 3.33333333rem;
+                grid-template-rows: minmax(5rem, max-content) minmax(17.40666294rem, max-content) minmax(11.65525045rem, max-content) minmax(27.57488996rem, max-content) minmax(11.66666667rem, max-content) minmax(17.40666294rem, max-content) minmax(11.5902761rem, max-content) minmax(10.15537462rem, max-content) minmax(5rem, max-content) minmax(6.99102891rem, max-content) minmax(101.04516591rem, max-content) minmax(6.99102891rem, max-content) minmax(5rem, max-content);
+            }
+            #j9tHm8itqhtunyeX {
+                min-height: 21.25726265vh;
+            }
+            #ovO4CKEtuktQnwIR {
+                grid-area: 2 / 2 / 3 / 3;
+            }
+            #IQgIrKSkRwZzbpv4 {
+                grid-template-columns: 0 328.84837756%;
+                left: -114.42418878%;
+                grid-template-rows: 0 100%;
+            }
+            #leRLQz9BoCuDx6nm {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(11.66666667em - var(--ffsd)));
+            }
+            #vSGXYvcjYdlqr3LU {
+                transform: translateX(0);
+                margin-top: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 11.66666667em) * 0.1);
+                margin-bottom: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 11.66666667em) * 0.1);
+            }
+            #vr5A4vmJMRL18zbY {
+                min-width: 93.4375rem;
+            }
+            #ISR0Wdik7bIAn5Qp {
+                grid-area: 2 / 2 / 3 / 8;
+            }
+            #PyQ47pNCjbIas3MD {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(3.73752721em - var(--ffsd)));
+            }
+            #hAVOIly6GsqrJEam {
+                transform: translateX(0);
+                margin-top: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 3.73752721em) * -0.195);
+                margin-bottom: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 3.73752721em) * -0.195);
+            }
+            #Z1TvSDzwjrSlUiRM {
+                min-width: 93.4375rem;
+            }
+            #PlqtGp8Nhxm0SGrW {
+                grid-area: 4 / 3 / 5 / 9;
+            }
+            #HBGeFFWoEe09AFO1 {
+                grid-area: 6 / 4 / 8 / 6;
+            }
+            #sPtNTSjrqBMzkRmd {
+                grid-area: 7 / 5 / 9 / 7;
+            }
+            #a5AUZLui6QjXyNOI {
+                grid-template-columns: 3.33333333rem 0 0 6.9943333rem 79.34466673rem 6.9943333rem 0 0 3.33333333rem;
+                grid-template-rows: minmax(5rem, max-content) minmax(13.56911464rem, max-content) minmax(13.71570722rem, max-content) minmax(27.57488996rem, max-content) minmax(5rem, max-content) minmax(6.99102891rem, max-content) minmax(101.04516591rem, max-content) minmax(6.99102891rem, max-content) minmax(5rem, max-content);
+            }
+            #poWzJDcOTrIvtRDG {
+                min-height: 16.54935312vh;
+            }
+            #x2bHGCvxZqJhO2Qz {
+                grid-area: 2 / 2 / 3 / 3;
+            }
+            #yes53Xpb5Rp05GQf {
+                grid-template-columns: 0 358.94511005%;
+                left: -129.47255502%;
+                grid-template-rows: 0 100%;
+            }
+            #KD82cc7grXDtesZf {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(11.66666667em - var(--ffsd)));
+            }
+            #jmd28tfNBdHkDVZb {
+                transform: translateX(0);
+                margin-top: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 11.66666667em) * 0.1);
+                margin-bottom: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 11.66666667em) * 0.1);
+            }
+            #elbMlWyNa8tvQl1N {
+                min-width: 93.4375rem;
+            }
+            #ipjxRmnK7AAphmMq {
+                grid-area: 2 / 2 / 3 / 8;
+            }
+            #scy9hpWlsnuYWz2f {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(3.73752721em - var(--ffsd)));
+            }
+            #MEV9DPF4sFPDRHuf {
+                transform: translateX(0);
+                margin-top: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 3.73752721em) * -0.195);
+                margin-bottom: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 3.73752721em) * -0.195);
+            }
+            #CFe4jGSxnGC9lpIu {
+                min-width: 93.4375rem;
+            }
+            #dvWeJUZJIpLQRaET {
+                grid-area: 4 / 3 / 5 / 9;
+            }
+            #brImLex5u2LVkIRl {
+                grid-area: 6 / 4 / 8 / 6;
+            }
+            #UJ1kyLK2PvPpsJCB {
+                grid-area: 7 / 5 / 9 / 7;
+            }
+            #boGbpjQIIimcEdO6 {
+                grid-template-columns: 3.33333333rem 0 0 6.9943333rem 79.34466673rem 6.9943333rem 0 0 3.33333333rem;
+                grid-template-rows: minmax(5rem, max-content) minmax(25.31878245rem, max-content) minmax(18.88718915rem, max-content) minmax(27.57488996rem, max-content) minmax(5rem, max-content) minmax(6.99102891rem, max-content) minmax(101.04516591rem, max-content) minmax(6.99102891rem, max-content) minmax(5rem, max-content);
+            }
+            #Zaa8MwJZn3dAiM1L {
+                min-height: 18.06397654vh;
+            }
+            #kid9e3orKpYnE7PG {
+                grid-area: 2 / 2 / 3 / 3;
+            }
+            #TihdRUjG5d4zQyJZ {
+                grid-template-columns: 0 459.32452774%;
+                left: -179.66226387%;
+                grid-template-rows: 0 100%;
+            }
+            #nyLZID3QVBmez8vS {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(11.66666667em - var(--ffsd)));
+            }
+            #cp3CY8VnZAoz0mhG {
+                transform: translateX(0);
+                margin-top: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 11.66666667em) * 0.1);
+                margin-bottom: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 11.66666667em) * 0.1);
+            }
+            #G9BkZw3cr2EXTQej {
+                min-width: 93.4375rem;
+            }
+            #qJETCYR6sMykJCK9 {
+                grid-area: 2 / 6 / 3 / 28;
+            }
+            #lhDTqvyLGxhNexJh {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(3.88889583em - var(--ffsd)));
+            }
+            #oX5akv1MVSng2TXY {
+                transform: translateX(0);
+                margin-top: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 3.88889583em) * 0.15);
+                margin-bottom: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 3.88889583em) * -0.15);
+            }
+            #Y4bhIhpZhI5pnDoC {
+                min-width: 93.4375rem;
+            }
+            #ECUOPI8XUw9EGL9i {
+                grid-area: 4 / 7 / 5 / 29;
+            }
+            #l40kzTATdCsqziHD {
+                display: none;
+            }
+            #qSGYYNyolPZ1bqkA {
+                display: block;
+            }
+            #uRDB8csPMbu1GnHF {
+                display: none;
+            }
+            #lLyDD1g1PQ1zaXOh {
+                grid-area: 6 / 2 / 11 / 25;
+            }
+            #DD5eNDjy4rxdrVDR {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(5.00002083em - var(--ffsd)));
+            }
+            #nljAFs3nv1LXssvs {
+                transform: translateX(0);
+                margin-top: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 5.00002083em) * -0.15);
+                margin-bottom: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 5.00002083em) * -0.15);
+            }
+            #K3gbnIYJ3U2Myovf {
+                min-width: 83.4375rem;
+            }
+            #yNasv1r0PJnFCbFk {
+                grid-area: 7 / 13 / 8 / 20;
+            }
+            #eHTgvlI1cxBIolvo {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(3.38889167em - var(--ffsd)));
+            }
+            #elTHyz0rZADXmZmg {
+                transform: translateX(0);
+                margin-top: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 3.38889167em) * -0.195);
+                margin-bottom: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 3.38889167em) * -0.195);
+            }
+            #q1CqUC4Xg6TYmRvA {
+                min-width: 83.4375rem;
+            }
+            #GVOJr5boTGK1P2Ii {
+                grid-area: 9 / 10 / 10 / 17;
+            }
+            #S73OUgiLgFXR8tTN {
+                grid-area: 12 / 3 / 16 / 24;
+            }
+            #Fr42FEuNdepH6uOG {
+                font-size: max(0px, calc(3.62305834em - var(--ffsd)));
+            }
+            #t1NdaTdOxzlacrhX {
+                transform: translateX(0);
+                margin-top: calc(max(0px, 3.62305834em) * -0.15);
+                margin-bottom: calc(max(0px, 3.62305834em) * -0.15);
+            }
+            #J8LMm6vWiX7otcEB {
+                min-width: 66.1388688rem;
+            }
+            #HfyI6bg6oA8hEqKL {
+                grid-area: 13 / 9 / 14 / 16;
+            }
+            #JE7rz5GouJYiEKxL {
+                font-size: max(0px, calc(2.61665241em - var(--ffsd)));
+            }
+            #Tcjasw5UALyuZjgP {
+                transform: translateX(0);
+                margin-top: calc(max(0px, 2.61665241em) * -0.195);
+                margin-bottom: calc(max(0px, 2.61665241em) * -0.195);
+            }
+            #Y8dGMaxyvK6k72rT {
+                min-width: 87.43041049rem;
+            }
+            #vz9KMXX2aZLbLW5P {
+                grid-area: 15 / 8 / 17 / 23;
+            }
+            #rArnWNMGcN4P8icR {
+                display: none;
+            }
+            #rYMTbpi9t9OONFLH {
+                display: block;
+            }
+            #ANk9qHxRRLGDMeuo {
+                display: none;
+            }
+            #AZLO9zvBm3xJ27lF {
+                grid-area: 18 / 4 / 23 / 26;
+            }
+            #G7SQkxqABkSDav8r {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(4.44846087em - var(--ffsd)));
+            }
+            #DOSHBPgDlzxxaWLi {
+                transform: translateX(0);
+                margin-top: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 4.44846087em) * -0.15);
+                margin-bottom: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 4.44846087em) * -0.15);
+            }
+            #nLM9M0n8qki4brfH {
+                min-width: 83.4375rem;
+            }
+            #fI4ZB8uH1KKpFp61 {
+                grid-area: 19 / 14 / 20 / 21;
+            }
+            #Pe7z3yuTonmLzKfA {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(3.38889167em - var(--ffsd)));
+            }
+            #gzProIsKu2rA6Sz6 {
+                transform: translateX(0);
+                margin-top: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 3.38889167em) * -0.195);
+                margin-bottom: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 3.38889167em) * -0.195);
+            }
+            #OEXGKHoJ1U8ecaZB {
+                min-width: 83.4375rem;
+            }
+            #DYC4seJOHdXxKaIH {
+                grid-area: 21 / 11 / 22 / 18;
+            }
+            #vK41tVXMX8QnOgsL {
+                display: none;
+            }
+            #JWE849U9GoD3Bs9U {
+                display: block;
+            }
+            #VuzjrTaTwJDodEVk {
+                display: none;
+            }
+            #kKwu0Tru7OuJtuNs {
+                grid-area: 24 / 5 / 29 / 27;
+            }
+            #akkN36hysD7XvE38 {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(4.74169647em - var(--ffsd)));
+            }
+            #ypy78Tbex0kgM8lS {
+                transform: translateX(0);
+                margin-top: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 4.74169647em) * -0.15);
+                margin-bottom: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 4.74169647em) * -0.15);
+            }
+            #BYebr8hbLEATZY0R {
+                min-width: 83.4375rem;
+            }
+            #KJFAZy6xvPWKvGVE {
+                grid-area: 25 / 15 / 26 / 22;
+            }
+            #zvI7mtkiw9RsxUJB {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(3.38889167em - var(--ffsd)));
+            }
+            #liYniieByPVSvhDW {
+                transform: translateX(0);
+                margin-top: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 3.38889167em) * -0.195);
+                margin-bottom: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 3.38889167em) * -0.195);
+            }
+            #h1YQF5dNXPGLXwm5 {
+                min-width: 83.4375rem;
+            }
+            #kpK5SpGvtEEQDCPG {
+                grid-area: 27 / 12 / 28 / 19;
+            }
+            #DSnXd9B9Bt89JKuT {
+                grid-template-columns: 3.33333333rem 0 0 0 0 0 3.00840817rem 0 1.99159183rem 0 0 0 0 0 64.04311031rem 19.29022302rem 0 0 0 0 0 2.00131867rem 2.99868133rem 0 0 0 0 0 3.33333333rem;
+                grid-template-rows: minmax(5rem, max-content) minmax(11.66666667rem, max-content) minmax(108.90158901rem, max-content) minmax(4.66666458rem, max-content) minmax(7.33333333rem, max-content) minmax(3.77860389rem, max-content) minmax(5.99999375rem, max-content) minmax(1.71277352rem, max-content) minmax(10.69483433rem, max-content) minmax(5rem, max-content) minmax(3.33333333rem, max-content) minmax(2.73800907rem, max-content) minmax(4.34764737rem, max-content) minmax(2.41398839rem, max-content) minmax(10.09141112rem, max-content) minmax(1.1158654rem, max-content) minmax(2.62671072rem, max-content) minmax(3.77860389rem, max-content) minmax(5.33812524rem, max-content) minmax(1.99981483rem, max-content) minmax(10.69483433rem, max-content) minmax(5rem, max-content) minmax(2.62671072rem, max-content) minmax(3.77860389rem, max-content) minmax(5.69000613rem, max-content) minmax(3.33143745rem, max-content) minmax(14.5843902rem, max-content) minmax(5rem, max-content) minmax(5rem, max-content);
+            }
+            #ZRxdRLa9mo6Ub8xV {
+                min-height: 23.11558859vh;
+            }
+        }
+
+        @media (min-width: 480.05px) and (max-width: 768px) {
+            #i2aDghrv3brpetjm {
+                grid-area: 2 / 2 / 3 / 3;
+            }
+            #QwcGCsfVV4aOwizM {
+                grid-template-columns: 0 311.39645634%;
+                left: -105.69822817%;
+                grid-template-rows: 0 100%;
+            }
+            #NzPqDmvxqJpHkbeu {
+                min-width: 12.45876153rem;
+            }
+            #XpLlijKtWIvVfZRy {
+                grid-area: 2 / 2 / 7 / 12;
+            }
+            #hjCOdpIMO2oDuhNr {
+                font-size: max(0px, calc(1.73407552em - var(--ffsd)));
+            }
+            #xOsFxDpp2VDBRrAC {
+                transform: translateX(calc(max(0px, 1.73407552em) * 0.0645));
+                margin-top: calc(max(0px, 1.73407552em) * 0.1);
+                margin-bottom: calc(max(0px, 1.73407552em) * 0.1);
+            }
+            #TsMdRSxJvfSIYQZo {
+                min-width: 7.61907719rem;
+            }
+            #ggnq5cnUlDJhKCKj {
+                grid-area: 4 / 7 / 5 / 10;
+            }
+            #Dp0DLXT5cE6FomR9 {
+                grid-area: 3 / 9 / 8 / 15;
+            }
+            #hEQYhFZmUT7xuqXb {
+                grid-area: 6 / 11 / 9 / 19;
+            }
+            #vNyc7pRC9DtJvsnz {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(2.60417969em - var(--ffsd)));
+            }
+            #yK94s82vRaY3CXi0 {
+                transform: translateX(calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 2.60417969em) * 0.087));
+                margin-top: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 2.60417969em) * -0.1);
+                margin-bottom: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 2.60417969em) * -0.1);
+            }
+            #PKIS1uMORJHtZcQN {
+                min-width: 67.85375982rem;
+            }
+            #l6IyTdOp6PuqfuEN {
+                grid-area: 10 / 5 / 11 / 17;
+            }
+            #oGjPlZpvA2AlYcMa {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(9.72222656em - var(--ffsd)));
+            }
+            #LZXvdPZkR0aTLRhT {
+                transform: translateX(0);
+                margin-top: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 9.72222656em) * 0.1);
+                margin-bottom: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 9.72222656em) * 0.1);
+            }
+            #R0X0QoafxVFjWfv3 {
+                min-width: 67.85375982rem;
+            }
+            #vXx7S4AicSRYTOUg {
+                grid-area: 12 / 4 / 13 / 16;
+            }
+            #hefNuHeOPHFwtcwI {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(2.47380615em - var(--ffsd)));
+            }
+            #fnPdPXDGlXqa0bFy {
+                transform: translateX(0);
+                margin-top: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 2.47380615em) * -0.195);
+                margin-bottom: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 2.47380615em) * -0.195);
+            }
+            #zF4FMBSprUMX32nE {
+                min-width: 67.85375982rem;
+            }
+            #m8dGRcAoWNTJZGaj {
+                grid-area: 14 / 6 / 15 / 18;
+            }
+            #fL2OupIxRXLDE2kw {
+                stroke-width: calc(100rem * 0.0 / 768.0);
+            }
+            #DGegepRQYkifTdAx {
+                grid-area: 16 / 3 / 19 / 14;
+            }
+            #N9c0JQW92kBsIci0 {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(2.77777344em - var(--ffsd)));
+            }
+            #SNCaxSM0b8Ohzcwx {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 2.77777344em) * -0.1);
+            }
+            #EQ3O10nhFaifPZ7j {
+                min-width: 24.59725392rem;
+            }
+            #R4h5yzfGUiHpmdaQ {
+                grid-area: 17 / 8 / 18 / 13;
+            }
+            #T7Y0HzthEjJwbIYq {
+                grid-template-columns: 14.00201123rem 2.10366095rem 0 0 0 0.3247695rem 0.19606383rem 3.5723344rem 3.7855748rem 0.82083182rem 1.59042207rem 14.76298667rem 0.52083333rem 40.33131106rem 1.88352817rem 0 0 3.75298895rem 12.35268322rem;
+                grid-template-rows: minmax(5.82810612rem, max-content) minmax(3.76538926rem, max-content) minmax(1.35387297rem, max-content) minmax(2.03952344rem, max-content) minmax(2.77277965rem, max-content) minmax(2.39722544rem, max-content) minmax(67.02411707rem, max-content) minmax(5.58039442rem, max-content) minmax(4.16666667rem, max-content) minmax(3.1249974rem, max-content) minmax(11.62913072rem, max-content) minmax(20.84440023rem, max-content) minmax(3.72867232rem, max-content) minmax(22.09458174rem, max-content) minmax(6.76915922rem, max-content) minmax(0.52083333rem, max-content) minmax(6.37679242rem, max-content) minmax(0.52083333rem, max-content) minmax(4.53754509rem, max-content);
+            }
+            #home {
+                min-height: 22.07872676vh;
+            }
+            #cX65LIBkRRMuMaZl {
+                grid-area: 2 / 2 / 3 / 3;
+            }
+            #E5SVrMfC3aUDzNB7 {
+                grid-template-columns: 0 304.04155697%;
+                left: -102.02077848%;
+                grid-template-rows: 0 100%;
+            }
+            #n1WrDN01URwDEn4r {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(7.29166667em - var(--ffsd)));
+            }
+            #FFo0hSmlOy1Po9M4 {
+                transform: translateX(0);
+                margin-top: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 7.29166667em) * 0.1);
+                margin-bottom: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 7.29166667em) * 0.1);
+            }
+            #q0E9kC9xE1z8eZNG {
+                min-width: 91.73177083rem;
+            }
+            #eEpmK8pZZDR8cMFk {
+                grid-area: 2 / 2 / 3 / 10;
+            }
+            #fEtl6FFS11RKLAh8 {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(2.4305599em - var(--ffsd)));
+            }
+            #nnU2xiW4PrWF0GA9 {
+                transform: translateX(0);
+                margin-top: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 2.4305599em) * -0.195);
+                margin-bottom: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 2.4305599em) * -0.195);
+            }
+            #IjGzzSlwc20mMyQM {
+                min-width: 91.73177083rem;
+            }
+            #IlQQP4LtqfagdtY8 {
+                grid-area: 4 / 3 / 5 / 11;
+            }
+            #UdR2Omyqk3twQhqT {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(7.29166667em - var(--ffsd)));
+            }
+            #DajSwzBB4e1PP7Mm {
+                transform: translateX(0);
+                margin-top: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 7.29166667em) * 0.1);
+                margin-bottom: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 7.29166667em) * 0.1);
+            }
+            #tL5MGulV64gXM0Vb {
+                min-width: 91.73177083rem;
+            }
+            #AURqC4jUUy6gMYS6 {
+                grid-area: 6 / 4 / 7 / 12;
+            }
+            #w2nsjhdLaCZNQk9Z {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(2.4305599em - var(--ffsd)));
+            }
+            #KN16WNfa4LGZsFuo {
+                transform: translateX(0);
+                margin-top: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 2.4305599em) * -0.195);
+                margin-bottom: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 2.4305599em) * -0.195);
+            }
+            #qtdNTMt5lmLw7vpN {
+                min-width: 91.73177083rem;
+            }
+            #plSYgwbrc8xZsQrX {
+                grid-area: 8 / 5 / 9 / 13;
+            }
+            #j2HZbZAJlmfIDQjb {
+                grid-area: 10 / 6 / 12 / 8;
+            }
+            #EKRsnmapgL9VwDp7 {
+                grid-area: 11 / 7 / 13 / 9;
+            }
+            #ti7SWPVzR2deQ0CR {
+                grid-template-columns: 4.16666667rem 0 0 0 13.37724849rem 4.86447161rem 55.18322648rem 4.86447161rem 13.37724849rem 0 0 0 4.16666667rem;
+                grid-template-rows: minmax(4.16666667rem, max-content) minmax(7.29166667rem, max-content) minmax(7.28453153rem, max-content) minmax(11.87361753rem, max-content) minmax(7.29166667rem, max-content) minmax(7.29166667rem, max-content) minmax(7.24392256rem, max-content) minmax(4.3728564rem, max-content) minmax(29.95664768rem, max-content) minmax(4.86217345rem, max-content) minmax(70.27565311rem, max-content) minmax(4.86217345rem, max-content) minmax(4.16666667rem, max-content);
+            }
+            #j9tHm8itqhtunyeX {
+                min-height: 21.55724744vh;
+            }
+            #ovO4CKEtuktQnwIR {
+                grid-area: 2 / 2 / 3 / 3;
+            }
+            #IQgIrKSkRwZzbpv4 {
+                grid-template-columns: 0 227.23019941%;
+                left: -63.61509971%;
+                grid-template-rows: 0 100%;
+            }
+            #leRLQz9BoCuDx6nm {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(7.29166667em - var(--ffsd)));
+            }
+            #vSGXYvcjYdlqr3LU {
+                transform: translateX(0);
+                margin-top: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 7.29166667em) * 0.1);
+                margin-bottom: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 7.29166667em) * 0.1);
+            }
+            #vr5A4vmJMRL18zbY {
+                min-width: 91.73177083rem;
+            }
+            #ISR0Wdik7bIAn5Qp {
+                grid-area: 2 / 2 / 3 / 8;
+            }
+            #PyQ47pNCjbIas3MD {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(2.4305599em - var(--ffsd)));
+            }
+            #hAVOIly6GsqrJEam {
+                transform: translateX(0);
+                margin-top: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 2.4305599em) * -0.195);
+                margin-bottom: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 2.4305599em) * -0.195);
+            }
+            #Z1TvSDzwjrSlUiRM {
+                min-width: 91.73177083rem;
+            }
+            #PlqtGp8Nhxm0SGrW {
+                grid-area: 4 / 3 / 5 / 9;
+            }
+            #HBGeFFWoEe09AFO1 {
+                grid-area: 6 / 4 / 8 / 6;
+            }
+            #sPtNTSjrqBMzkRmd {
+                grid-area: 7 / 5 / 9 / 7;
+            }
+            #a5AUZLui6QjXyNOI {
+                grid-template-columns: 4.16666667rem 0 13.37724849rem 4.86447161rem 55.18322648rem 4.86447161rem 13.37724849rem 0 4.16666667rem;
+                grid-template-rows: minmax(4.16666667rem, max-content) minmax(7.29166667rem, max-content) minmax(8.57231702rem, max-content) minmax(11.87361753rem, max-content) minmax(11.68367244rem, max-content) minmax(4.86217345rem, max-content) minmax(70.27565311rem, max-content) minmax(4.86217345rem, max-content) minmax(4.16666667rem, max-content);
+            }
+            #poWzJDcOTrIvtRDG {
+                min-height: 16.11114508vh;
+            }
+            #x2bHGCvxZqJhO2Qz {
+                grid-area: 2 / 2 / 3 / 3;
+            }
+            #yes53Xpb5Rp05GQf {
+                grid-template-columns: 0 258.91768122%;
+                left: -79.45884061%;
+                grid-template-rows: 0 100%;
+            }
+            #KD82cc7grXDtesZf {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(7.29166667em - var(--ffsd)));
+            }
+            #jmd28tfNBdHkDVZb {
+                transform: translateX(0);
+                margin-top: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 7.29166667em) * 0.1);
+                margin-bottom: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 7.29166667em) * 0.1);
+            }
+            #elbMlWyNa8tvQl1N {
+                min-width: 91.73177083rem;
+            }
+            #ipjxRmnK7AAphmMq {
+                grid-area: 2 / 2 / 3 / 8;
+            }
+            #scy9hpWlsnuYWz2f {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(2.4305599em - var(--ffsd)));
+            }
+            #MEV9DPF4sFPDRHuf {
+                transform: translateX(0);
+                margin-top: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 2.4305599em) * -0.195);
+                margin-bottom: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 2.4305599em) * -0.195);
+            }
+            #CFe4jGSxnGC9lpIu {
+                min-width: 91.73177083rem;
+            }
+            #dvWeJUZJIpLQRaET {
+                grid-area: 4 / 3 / 5 / 9;
+            }
+            #brImLex5u2LVkIRl {
+                grid-area: 6 / 4 / 8 / 6;
+            }
+            #UJ1kyLK2PvPpsJCB {
+                grid-area: 7 / 5 / 9 / 7;
+            }
+            #boGbpjQIIimcEdO6 {
+                grid-template-columns: 4.16666667rem 0 13.37724849rem 4.86447161rem 55.18322648rem 4.86447161rem 13.37724849rem 0 4.16666667rem;
+                grid-template-rows: minmax(4.16666667rem, max-content) minmax(10.06997029rem, max-content) minmax(11.80449322rem, max-content) minmax(11.87361753rem, max-content) minmax(23.48870215rem, max-content) minmax(4.86217345rem, max-content) minmax(70.27565311rem, max-content) minmax(4.86217345rem, max-content) minmax(4.16666667rem, max-content);
+            }
+            #Zaa8MwJZn3dAiM1L {
+                min-height: 18.3578606vh;
+            }
+            #kid9e3orKpYnE7PG {
+                grid-area: 2 / 2 / 3 / 3;
+            }
+            #TihdRUjG5d4zQyJZ {
+                grid-template-columns: 0 308.80547389%;
+                left: -104.40273695%;
+                grid-template-rows: 0 100%;
+            }
+            #nyLZID3QVBmez8vS {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(7.29166667em - var(--ffsd)));
+            }
+            #cp3CY8VnZAoz0mhG {
+                transform: translateX(0);
+                margin-top: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 7.29166667em) * 0.1);
+                margin-bottom: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 7.29166667em) * 0.1);
+            }
+            #G9BkZw3cr2EXTQej {
+                min-width: 91.73177083rem;
+            }
+            #qJETCYR6sMykJCK9 {
+                grid-area: 2 / 2 / 3 / 28;
+            }
+            #lhDTqvyLGxhNexJh {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(2.4305599em - var(--ffsd)));
+            }
+            #oX5akv1MVSng2TXY {
+                transform: translateX(0);
+                margin-top: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 2.4305599em) * 0.15);
+                margin-bottom: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 2.4305599em) * -0.15);
+            }
+            #Y4bhIhpZhI5pnDoC {
+                min-width: 91.73177083rem;
+            }
+            #ECUOPI8XUw9EGL9i {
+                grid-area: 4 / 3 / 5 / 29;
+            }
+            #l40kzTATdCsqziHD {
+                display: block;
+            }
+            #qSGYYNyolPZ1bqkA {
+                display: none;
+            }
+            #uRDB8csPMbu1GnHF {
+                display: none;
+            }
+            #lLyDD1g1PQ1zaXOh {
+                grid-area: 6 / 4 / 11 / 24;
+            }
+            #DD5eNDjy4rxdrVDR {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(3.12501302em - var(--ffsd)));
+            }
+            #nljAFs3nv1LXssvs {
+                transform: translateX(0);
+                margin-top: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 3.12501302em) * -0.15);
+                margin-bottom: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 3.12501302em) * -0.15);
+            }
+            #K3gbnIYJ3U2Myovf {
+                min-width: 75.38700713rem;
+            }
+            #yNasv1r0PJnFCbFk {
+                grid-area: 7 / 11 / 8 / 20;
+            }
+            #eHTgvlI1cxBIolvo {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(2.25695312em - var(--ffsd)));
+            }
+            #elTHyz0rZADXmZmg {
+                transform: translateX(0);
+                margin-top: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 2.25695312em) * -0.195);
+                margin-bottom: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 2.25695312em) * -0.195);
+            }
+            #q1CqUC4Xg6TYmRvA {
+                min-width: 75.38700713rem;
+            }
+            #GVOJr5boTGK1P2Ii {
+                grid-area: 9 / 8 / 10 / 17;
+            }
+            #S73OUgiLgFXR8tTN {
+                grid-area: 12 / 5 / 16 / 25;
+            }
+            #Fr42FEuNdepH6uOG {
+                font-size: max(0px, calc(3.12501302em - var(--ffsd)));
+            }
+            #t1NdaTdOxzlacrhX {
+                transform: translateX(0);
+                margin-top: calc(max(0px, 3.12501302em) * -0.15);
+                margin-bottom: calc(max(0px, 3.12501302em) * -0.15);
+            }
+            #J8LMm6vWiX7otcEB {
+                min-width: 57.02231667rem;
+            }
+            #HfyI6bg6oA8hEqKL {
+                grid-area: 13 / 15 / 14 / 16;
+            }
+            #JE7rz5GouJYiEKxL {
+                font-size: max(0px, calc(2.25695312em - var(--ffsd)));
+            }
+            #Tcjasw5UALyuZjgP {
+                transform: translateX(0);
+                margin-top: calc(max(0px, 2.25695312em) * -0.195);
+                margin-bottom: calc(max(0px, 2.25695312em) * -0.195);
+            }
+            #Y8dGMaxyvK6k72rT {
+                min-width: 75.38700713rem;
+            }
+            #vz9KMXX2aZLbLW5P {
+                grid-area: 15 / 14 / 17 / 23;
+            }
+            #rArnWNMGcN4P8icR {
+                display: block;
+            }
+            #rYMTbpi9t9OONFLH {
+                display: none;
+            }
+            #ANk9qHxRRLGDMeuo {
+                display: none;
+            }
+            #AZLO9zvBm3xJ27lF {
+                grid-area: 18 / 6 / 23 / 26;
+            }
+            #G7SQkxqABkSDav8r {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(3.12501302em - var(--ffsd)));
+            }
+            #DOSHBPgDlzxxaWLi {
+                transform: translateX(0);
+                margin-top: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 3.12501302em) * -0.15);
+                margin-bottom: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 3.12501302em) * -0.15);
+            }
+            #nLM9M0n8qki4brfH {
+                min-width: 75.38700713rem;
+            }
+            #fI4ZB8uH1KKpFp61 {
+                grid-area: 19 / 12 / 20 / 21;
+            }
+            #Pe7z3yuTonmLzKfA {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(2.25695312em - var(--ffsd)));
+            }
+            #gzProIsKu2rA6Sz6 {
+                transform: translateX(0);
+                margin-top: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 2.25695312em) * -0.195);
+                margin-bottom: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 2.25695312em) * -0.195);
+            }
+            #OEXGKHoJ1U8ecaZB {
+                min-width: 75.38700713rem;
+            }
+            #DYC4seJOHdXxKaIH {
+                grid-area: 21 / 9 / 22 / 18;
+            }
+            #vK41tVXMX8QnOgsL {
+                display: block;
+            }
+            #JWE849U9GoD3Bs9U {
+                display: none;
+            }
+            #VuzjrTaTwJDodEVk {
+                display: none;
+            }
+            #kKwu0Tru7OuJtuNs {
+                grid-area: 24 / 7 / 29 / 27;
+            }
+            #akkN36hysD7XvE38 {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(3.12501302em - var(--ffsd)));
+            }
+            #ypy78Tbex0kgM8lS {
+                transform: translateX(0);
+                margin-top: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 3.12501302em) * -0.15);
+                margin-bottom: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 3.12501302em) * -0.15);
+            }
+            #BYebr8hbLEATZY0R {
+                min-width: 75.38700713rem;
+            }
+            #KJFAZy6xvPWKvGVE {
+                grid-area: 25 / 13 / 26 / 22;
+            }
+            #zvI7mtkiw9RsxUJB {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(2.25695312em - var(--ffsd)));
+            }
+            #liYniieByPVSvhDW {
+                transform: translateX(0);
+                margin-top: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 2.25695312em) * -0.195);
+                margin-bottom: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 2.25695312em) * -0.195);
+            }
+            #h1YQF5dNXPGLXwm5 {
+                min-width: 75.38700713rem;
+            }
+            #kpK5SpGvtEEQDCPG {
+                grid-area: 27 / 10 / 28 / 19;
+            }
+            #DSnXd9B9Bt89JKuT {
+                grid-template-columns: 4.16666667rem 0 5.58172071rem 0 0 0 2.59066114rem 0 0 0 0 0 0.00419487rem 0 56.9572125rem 18.36049559rem 0 0 0 0 0 0.00419487rem 2.58646627rem 0 0 0 5.58172071rem 0 4.16666667rem;
+                grid-template-rows: minmax(4.16666667rem, max-content) minmax(7.29166667rem, max-content) minmax(68.06349313rem, max-content) minmax(2.91666536rem, max-content) minmax(5.625rem, max-content) minmax(2.36162743rem, max-content) minmax(3.74999609rem, max-content) minmax(1.07048345rem, max-content) minmax(9.66666328rem, max-content) minmax(0.52083333rem, max-content) minmax(2.08333333rem, max-content) minmax(2.36162743rem, max-content) minmax(3.74999609rem, max-content) minmax(2.08214841rem, max-content) minmax(8.70419081rem, max-content) minmax(0.96247247rem, max-content) minmax(1.6416942rem, max-content) minmax(2.36162743rem, max-content) minmax(3.74999609rem, max-content) minmax(1.24988427rem, max-content) minmax(9.66666328rem, max-content) minmax(0.83226413rem, max-content) minmax(1.6416942rem, max-content) minmax(2.36162743rem, max-content) minmax(3.74999609rem, max-content) minmax(2.08214841rem, max-content) minmax(13.18228828rem, max-content) minmax(1.55489004rem, max-content) minmax(4.16666667rem, max-content);
+            }
+            #ZRxdRLa9mo6Ub8xV {
+                min-height: 21.89502013vh;
+            }
+        }
+
+        @media (min-width: 768.05px) and (max-width: 1024px) {
+            #i2aDghrv3brpetjm {
+                grid-area: 2 / 2 / 3 / 3;
+            }
+            #QwcGCsfVV4aOwizM {
+                grid-template-columns: 0 233.54734226%;
+                left: -66.77367113%;
+                grid-template-rows: 0 100%;
+            }
+            #NzPqDmvxqJpHkbeu {
+                min-width: 9.34407115rem;
+            }
+            #XpLlijKtWIvVfZRy {
+                grid-area: 2 / 2 / 7 / 12;
+            }
+            #hjCOdpIMO2oDuhNr {
+                font-size: max(0px, calc(1.30055664em - var(--ffsd)));
+            }
+            #xOsFxDpp2VDBRrAC {
+                transform: translateX(calc(max(0px, 1.30055664em) * 0.0645));
+                margin-top: calc(max(0px, 1.30055664em) * 0.1);
+                margin-bottom: calc(max(0px, 1.30055664em) * 0.1);
+            }
+            #TsMdRSxJvfSIYQZo {
+                min-width: 5.7143079rem;
+            }
+            #ggnq5cnUlDJhKCKj {
+                grid-area: 4 / 7 / 5 / 10;
+            }
+            #Dp0DLXT5cE6FomR9 {
+                grid-area: 3 / 9 / 8 / 15;
+            }
+            #hEQYhFZmUT7xuqXb {
+                grid-area: 6 / 11 / 9 / 19;
+            }
+            #vNyc7pRC9DtJvsnz {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(1.95313477em - var(--ffsd)));
+            }
+            #yK94s82vRaY3CXi0 {
+                transform: translateX(calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 1.95313477em) * 0.087));
+                margin-top: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 1.95313477em) * -0.1);
+                margin-bottom: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 1.95313477em) * -0.1);
+            }
+            #PKIS1uMORJHtZcQN {
+                min-width: 50.89031986rem;
+            }
+            #l6IyTdOp6PuqfuEN {
+                grid-area: 10 / 5 / 11 / 17;
+            }
+            #oGjPlZpvA2AlYcMa {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(7.29166992em - var(--ffsd)));
+            }
+            #LZXvdPZkR0aTLRhT {
+                transform: translateX(0);
+                margin-top: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 7.29166992em) * 0.1);
+                margin-bottom: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 7.29166992em) * 0.1);
+            }
+            #R0X0QoafxVFjWfv3 {
+                min-width: 50.89031986rem;
+            }
+            #vXx7S4AicSRYTOUg {
+                grid-area: 12 / 4 / 13 / 16;
+            }
+            #hefNuHeOPHFwtcwI {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(1.85535461em - var(--ffsd)));
+            }
+            #fnPdPXDGlXqa0bFy {
+                transform: translateX(0);
+                margin-top: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 1.85535461em) * -0.195);
+                margin-bottom: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 1.85535461em) * -0.195);
+            }
+            #zF4FMBSprUMX32nE {
+                min-width: 50.89031986rem;
+            }
+            #m8dGRcAoWNTJZGaj {
+                grid-area: 14 / 6 / 15 / 18;
+            }
+            #fL2OupIxRXLDE2kw {
+                stroke-width: calc(100rem * 0.0 / 1024.0);
+            }
+            #DGegepRQYkifTdAx {
+                grid-area: 16 / 3 / 19 / 14;
+            }
+            #N9c0JQW92kBsIci0 {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(2.08333008em - var(--ffsd)));
+            }
+            #SNCaxSM0b8Ohzcwx {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 2.08333008em) * -0.1);
+            }
+            #EQ3O10nhFaifPZ7j {
+                min-width: 18.44794044rem;
+            }
+            #R4h5yzfGUiHpmdaQ {
+                grid-area: 17 / 8 / 18 / 13;
+            }
+            #T7Y0HzthEjJwbIYq {
+                grid-template-columns: 23.00150842rem 1.57774571rem 0 0 0 0.24357713rem 0.14704787rem 2.6792508rem 2.8391811rem 0.61562386rem 1.19281655rem 11.07224rem 0.390625rem 30.2484833rem 1.41264613rem 0 0 2.81474171rem 21.76451242rem;
+                grid-template-rows: minmax(4.37107959rem, max-content) minmax(2.82404195rem, max-content) minmax(1.01540473rem, max-content) minmax(1.52964258rem, max-content) minmax(2.07958474rem, max-content) minmax(1.79791908rem, max-content) minmax(50.26808781rem, max-content) minmax(4.18529581rem, max-content) minmax(3.125rem, max-content) minmax(2.34374805rem, max-content) minmax(8.72184804rem, max-content) minmax(15.63330017rem, max-content) minmax(2.79650424rem, max-content) minmax(16.57093631rem, max-content) minmax(5.07686941rem, max-content) minmax(0.390625rem, max-content) minmax(4.78259432rem, max-content) minmax(0.390625rem, max-content) minmax(3.40315881rem, max-content);
+            }
+            #home {
+                min-height: 22.07872676vh;
+            }
+            #cX65LIBkRRMuMaZl {
+                grid-area: 2 / 2 / 3 / 3;
+            }
+            #E5SVrMfC3aUDzNB7 {
+                grid-template-columns: 0 228.03116773%;
+                left: -64.01558386%;
+                grid-template-rows: 0 100%;
+            }
+            #n1WrDN01URwDEn4r {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(5.46875em - var(--ffsd)));
+            }
+            #FFo0hSmlOy1Po9M4 {
+                transform: translateX(0);
+                margin-top: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 5.46875em) * 0.1);
+                margin-bottom: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 5.46875em) * 0.1);
+            }
+            #q0E9kC9xE1z8eZNG {
+                min-width: 93.79882812rem;
+            }
+            #eEpmK8pZZDR8cMFk {
+                grid-area: 2 / 2 / 3 / 10;
+            }
+            #fEtl6FFS11RKLAh8 {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(1.82291992em - var(--ffsd)));
+            }
+            #nnU2xiW4PrWF0GA9 {
+                transform: translateX(0);
+                margin-top: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 1.82291992em) * -0.195);
+                margin-bottom: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 1.82291992em) * -0.195);
+            }
+            #IjGzzSlwc20mMyQM {
+                min-width: 93.79882812rem;
+            }
+            #IlQQP4LtqfagdtY8 {
+                grid-area: 4 / 3 / 5 / 11;
+            }
+            #UdR2Omyqk3twQhqT {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(5.46875em - var(--ffsd)));
+            }
+            #DajSwzBB4e1PP7Mm {
+                transform: translateX(0);
+                margin-top: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 5.46875em) * 0.1);
+                margin-bottom: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 5.46875em) * 0.1);
+            }
+            #tL5MGulV64gXM0Vb {
+                min-width: 93.79882812rem;
+            }
+            #AURqC4jUUy6gMYS6 {
+                grid-area: 6 / 4 / 7 / 12;
+            }
+            #w2nsjhdLaCZNQk9Z {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(1.82291992em - var(--ffsd)));
+            }
+            #KN16WNfa4LGZsFuo {
+                transform: translateX(0);
+                margin-top: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 1.82291992em) * -0.195);
+                margin-bottom: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 1.82291992em) * -0.195);
+            }
+            #qtdNTMt5lmLw7vpN {
+                min-width: 93.79882812rem;
+            }
+            #plSYgwbrc8xZsQrX {
+                grid-area: 8 / 5 / 9 / 13;
+            }
+            #j2HZbZAJlmfIDQjb {
+                grid-area: 10 / 6 / 12 / 8;
+            }
+            #EKRsnmapgL9VwDp7 {
+                grid-area: 11 / 7 / 13 / 9;
+            }
+            #ti7SWPVzR2deQ0CR {
+                grid-template-columns: 3.125rem 0 0 0 22.53293637rem 3.6483537rem 41.38741986rem 3.6483537rem 22.53293637rem 0 0 0 3.125rem;
+                grid-template-rows: minmax(3.125rem, max-content) minmax(5.46875rem, max-content) minmax(5.46339865rem, max-content) minmax(6.53048964rem, max-content) minmax(5.46875rem, max-content) minmax(5.46875rem, max-content) minmax(5.43294192rem, max-content) minmax(2.89844268rem, max-content) minmax(25.22340889rem, max-content) minmax(3.64663008rem, max-content) minmax(52.70673983rem, max-content) minmax(3.64663008rem, max-content) minmax(3.125rem, max-content);
+            }
+            #j9tHm8itqhtunyeX {
+                min-height: 21.55724744vh;
+            }
+            #ovO4CKEtuktQnwIR {
+                grid-area: 2 / 2 / 3 / 3;
+            }
+            #IQgIrKSkRwZzbpv4 {
+                grid-template-columns: 0 170.42264956%;
+                left: -35.21132478%;
+                grid-template-rows: 0 100%;
+            }
+            #leRLQz9BoCuDx6nm {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(5.46875em - var(--ffsd)));
+            }
+            #vSGXYvcjYdlqr3LU {
+                transform: translateX(0);
+                margin-top: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 5.46875em) * 0.1);
+                margin-bottom: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 5.46875em) * 0.1);
+            }
+            #vr5A4vmJMRL18zbY {
+                min-width: 93.79882812rem;
+            }
+            #ISR0Wdik7bIAn5Qp {
+                grid-area: 2 / 2 / 3 / 8;
+            }
+            #PyQ47pNCjbIas3MD {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(1.82291992em - var(--ffsd)));
+            }
+            #hAVOIly6GsqrJEam {
+                transform: translateX(0);
+                margin-top: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 1.82291992em) * -0.195);
+                margin-bottom: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 1.82291992em) * -0.195);
+            }
+            #Z1TvSDzwjrSlUiRM {
+                min-width: 93.79882812rem;
+            }
+            #PlqtGp8Nhxm0SGrW {
+                grid-area: 4 / 3 / 5 / 9;
+            }
+            #HBGeFFWoEe09AFO1 {
+                grid-area: 6 / 4 / 8 / 6;
+            }
+            #sPtNTSjrqBMzkRmd {
+                grid-area: 7 / 5 / 9 / 7;
+            }
+            #a5AUZLui6QjXyNOI {
+                grid-template-columns: 3.125rem 0 22.53293637rem 3.6483537rem 41.38741986rem 3.6483537rem 22.53293637rem 0 3.125rem;
+                grid-template-rows: minmax(3.125rem, max-content) minmax(5.46875rem, max-content) minmax(6.42923776rem, max-content) minmax(6.53048964rem, max-content) minmax(11.13747784rem, max-content) minmax(3.64663008rem, max-content) minmax(52.70673983rem, max-content) minmax(3.64663008rem, max-content) minmax(3.125rem, max-content);
+            }
+            #poWzJDcOTrIvtRDG {
+                min-height: 16.11114508vh;
+            }
+            #x2bHGCvxZqJhO2Qz {
+                grid-area: 2 / 2 / 3 / 3;
+            }
+            #yes53Xpb5Rp05GQf {
+                grid-template-columns: 0 194.18826092%;
+                left: -47.09413046%;
+                grid-template-rows: 0 100%;
+            }
+            #KD82cc7grXDtesZf {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(5.46875em - var(--ffsd)));
+            }
+            #jmd28tfNBdHkDVZb {
+                transform: translateX(0);
+                margin-top: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 5.46875em) * 0.1);
+                margin-bottom: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 5.46875em) * 0.1);
+            }
+            #elbMlWyNa8tvQl1N {
+                min-width: 93.79882812rem;
+            }
+            #ipjxRmnK7AAphmMq {
+                grid-area: 2 / 2 / 3 / 8;
+            }
+            #scy9hpWlsnuYWz2f {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(1.82291992em - var(--ffsd)));
+            }
+            #MEV9DPF4sFPDRHuf {
+                transform: translateX(0);
+                margin-top: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 1.82291992em) * -0.195);
+                margin-bottom: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 1.82291992em) * -0.195);
+            }
+            #CFe4jGSxnGC9lpIu {
+                min-width: 93.79882812rem;
+            }
+            #dvWeJUZJIpLQRaET {
+                grid-area: 4 / 3 / 5 / 9;
+            }
+            #brImLex5u2LVkIRl {
+                grid-area: 6 / 4 / 8 / 6;
+            }
+            #UJ1kyLK2PvPpsJCB {
+                grid-area: 7 / 5 / 9 / 7;
+            }
+            #boGbpjQIIimcEdO6 {
+                grid-template-columns: 3.125rem 0 22.53293637rem 3.6483537rem 41.38741986rem 3.6483537rem 22.53293637rem 0 3.125rem;
+                grid-template-rows: minmax(3.125rem, max-content) minmax(5.53848366rem, max-content) minmax(8.85336992rem, max-content) minmax(6.53048964rem, max-content) minmax(22.00524418rem, max-content) minmax(3.64663008rem, max-content) minmax(52.70673983rem, max-content) minmax(3.64663008rem, max-content) minmax(3.125rem, max-content);
+            }
+            #Zaa8MwJZn3dAiM1L {
+                min-height: 18.3578606vh;
+            }
+            #kid9e3orKpYnE7PG {
+                grid-area: 2 / 2 / 3 / 3;
+            }
+            #TihdRUjG5d4zQyJZ {
+                grid-template-columns: 0 231.60410542%;
+                left: -65.80205271%;
+                grid-template-rows: 0 100%;
+            }
+            #nyLZID3QVBmez8vS {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(5.46875em - var(--ffsd)));
+            }
+            #cp3CY8VnZAoz0mhG {
+                transform: translateX(0);
+                margin-top: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 5.46875em) * 0.1);
+                margin-bottom: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 5.46875em) * 0.1);
+            }
+            #G9BkZw3cr2EXTQej {
+                min-width: 93.79882812rem;
+            }
+            #qJETCYR6sMykJCK9 {
+                grid-area: 2 / 2 / 3 / 28;
+            }
+            #lhDTqvyLGxhNexJh {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(1.82291992em - var(--ffsd)));
+            }
+            #oX5akv1MVSng2TXY {
+                transform: translateX(0);
+                margin-top: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 1.82291992em) * 0.15);
+                margin-bottom: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 1.82291992em) * -0.15);
+            }
+            #Y4bhIhpZhI5pnDoC {
+                min-width: 93.79882812rem;
+            }
+            #ECUOPI8XUw9EGL9i {
+                grid-area: 4 / 3 / 5 / 29;
+            }
+            #l40kzTATdCsqziHD {
+                display: block;
+            }
+            #qSGYYNyolPZ1bqkA {
+                display: none;
+            }
+            #uRDB8csPMbu1GnHF {
+                display: none;
+            }
+            #lLyDD1g1PQ1zaXOh {
+                grid-area: 6 / 4 / 11 / 24;
+            }
+            #DD5eNDjy4rxdrVDR {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(2.34375977em - var(--ffsd)));
+            }
+            #nljAFs3nv1LXssvs {
+                transform: translateX(0);
+                margin-top: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 2.34375977em) * -0.15);
+                margin-bottom: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 2.34375977em) * -0.15);
+            }
+            #K3gbnIYJ3U2Myovf {
+                min-width: 56.54025535rem;
+            }
+            #yNasv1r0PJnFCbFk {
+                grid-area: 7 / 11 / 8 / 20;
+            }
+            #eHTgvlI1cxBIolvo {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(1.69271484em - var(--ffsd)));
+            }
+            #elTHyz0rZADXmZmg {
+                transform: translateX(0);
+                margin-top: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 1.69271484em) * -0.195);
+                margin-bottom: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 1.69271484em) * -0.195);
+            }
+            #q1CqUC4Xg6TYmRvA {
+                min-width: 56.54025535rem;
+            }
+            #GVOJr5boTGK1P2Ii {
+                grid-area: 9 / 8 / 10 / 17;
+            }
+            #S73OUgiLgFXR8tTN {
+                grid-area: 12 / 5 / 16 / 25;
+            }
+            #Fr42FEuNdepH6uOG {
+                font-size: max(0px, calc(2.34375977em - var(--ffsd)));
+            }
+            #t1NdaTdOxzlacrhX {
+                transform: translateX(0);
+                margin-top: calc(max(0px, 2.34375977em) * -0.15);
+                margin-bottom: calc(max(0px, 2.34375977em) * -0.15);
+            }
+            #J8LMm6vWiX7otcEB {
+                min-width: 42.7667375rem;
+            }
+            #HfyI6bg6oA8hEqKL {
+                grid-area: 13 / 15 / 14 / 16;
+            }
+            #JE7rz5GouJYiEKxL {
+                font-size: max(0px, calc(1.69271484em - var(--ffsd)));
+            }
+            #Tcjasw5UALyuZjgP {
+                transform: translateX(0);
+                margin-top: calc(max(0px, 1.69271484em) * -0.195);
+                margin-bottom: calc(max(0px, 1.69271484em) * -0.195);
+            }
+            #Y8dGMaxyvK6k72rT {
+                min-width: 56.54025535rem;
+            }
+            #vz9KMXX2aZLbLW5P {
+                grid-area: 15 / 14 / 17 / 23;
+            }
+            #rArnWNMGcN4P8icR {
+                display: block;
+            }
+            #rYMTbpi9t9OONFLH {
+                display: none;
+            }
+            #ANk9qHxRRLGDMeuo {
+                display: none;
+            }
+            #AZLO9zvBm3xJ27lF {
+                grid-area: 18 / 6 / 23 / 26;
+            }
+            #G7SQkxqABkSDav8r {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(2.34375977em - var(--ffsd)));
+            }
+            #DOSHBPgDlzxxaWLi {
+                transform: translateX(0);
+                margin-top: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 2.34375977em) * -0.15);
+                margin-bottom: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 2.34375977em) * -0.15);
+            }
+            #nLM9M0n8qki4brfH {
+                min-width: 56.54025535rem;
+            }
+            #fI4ZB8uH1KKpFp61 {
+                grid-area: 19 / 12 / 20 / 21;
+            }
+            #Pe7z3yuTonmLzKfA {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(1.69271484em - var(--ffsd)));
+            }
+            #gzProIsKu2rA6Sz6 {
+                transform: translateX(0);
+                margin-top: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 1.69271484em) * -0.195);
+                margin-bottom: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 1.69271484em) * -0.195);
+            }
+            #OEXGKHoJ1U8ecaZB {
+                min-width: 56.54025535rem;
+            }
+            #DYC4seJOHdXxKaIH {
+                grid-area: 21 / 9 / 22 / 18;
+            }
+            #vK41tVXMX8QnOgsL {
+                display: block;
+            }
+            #JWE849U9GoD3Bs9U {
+                display: none;
+            }
+            #VuzjrTaTwJDodEVk {
+                display: none;
+            }
+            #kKwu0Tru7OuJtuNs {
+                grid-area: 24 / 7 / 29 / 27;
+            }
+            #akkN36hysD7XvE38 {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(2.34375977em - var(--ffsd)));
+            }
+            #ypy78Tbex0kgM8lS {
+                transform: translateX(0);
+                margin-top: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 2.34375977em) * -0.15);
+                margin-bottom: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 2.34375977em) * -0.15);
+            }
+            #BYebr8hbLEATZY0R {
+                min-width: 56.54025535rem;
+            }
+            #KJFAZy6xvPWKvGVE {
+                grid-area: 25 / 13 / 26 / 22;
+            }
+            #zvI7mtkiw9RsxUJB {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(1.69271484em - var(--ffsd)));
+            }
+            #liYniieByPVSvhDW {
+                transform: translateX(0);
+                margin-top: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 1.69271484em) * -0.195);
+                margin-bottom: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 1.69271484em) * -0.195);
+            }
+            #h1YQF5dNXPGLXwm5 {
+                min-width: 56.54025535rem;
+            }
+            #kpK5SpGvtEEQDCPG {
+                grid-area: 27 / 10 / 28 / 19;
+            }
+            #DSnXd9B9Bt89JKuT {
+                grid-template-columns: 3.125rem 0 16.68629054rem 0 0 0 1.94299585rem 0 0 0 0 0 0.00314615rem 0 42.71790938rem 13.77037169rem 0 0 0 0 0 0.00314615rem 1.9398497rem 0 0 0 16.68629054rem 0 3.125rem;
+                grid-template-rows: minmax(3.125rem, max-content) minmax(5.46875rem, max-content) minmax(51.04761985rem, max-content) minmax(2.18749902rem, max-content) minmax(4.21875rem, max-content) minmax(1.77122058rem, max-content) minmax(2.81249707rem, max-content) minmax(0.80286259rem, max-content) minmax(7.24999746rem, max-content) minmax(0.390625rem, max-content) minmax(1.5625rem, max-content) minmax(1.77122058rem, max-content) minmax(2.81249707rem, max-content) minmax(1.5616113rem, max-content) minmax(6.52814311rem, max-content) minmax(0.72185435rem, max-content) minmax(1.23127065rem, max-content) minmax(1.77122058rem, max-content) minmax(2.81249707rem, max-content) minmax(0.9374132rem, max-content) minmax(7.24999746rem, max-content) minmax(0.6241981rem, max-content) minmax(1.23127065rem, max-content) minmax(1.77122058rem, max-content) minmax(2.81249707rem, max-content) minmax(1.5616113rem, max-content) minmax(9.88671621rem, max-content) minmax(1.16616753rem, max-content) minmax(3.125rem, max-content);
+            }
+            #ZRxdRLa9mo6Ub8xV {
+                min-height: 21.89502013vh;
+            }
+        }
+
+        @media (min-width: 1024.05px) {
+            #i2aDghrv3brpetjm {
+                grid-area: 2 / 2 / 3 / 3;
+            }
+            #QwcGCsfVV4aOwizM {
+                grid-template-columns: 0 100%;
+                grid-template-rows: 0 100%;
+            }
+            #NzPqDmvxqJpHkbeu {
+                min-width: 7.00463313rem;
+            }
+            #XpLlijKtWIvVfZRy {
+                grid-area: 2 / 2 / 9 / 7;
+            }
+            #hjCOdpIMO2oDuhNr {
+                font-size: max(0px, calc(0.97494143em - var(--ffsd)));
+            }
+            #xOsFxDpp2VDBRrAC {
+                transform: translateX(calc(max(0px, 0.97494143em) * 0.0645));
+                margin-top: calc(max(0px, 0.97494143em) * 0.1);
+                margin-bottom: calc(max(0px, 0.97494143em) * 0.1);
+            }
+            #TsMdRSxJvfSIYQZo {
+                min-width: 4.2836393rem;
+            }
+            #ggnq5cnUlDJhKCKj {
+                grid-area: 4 / 3 / 5 / 5;
+            }
+            #Dp0DLXT5cE6FomR9 {
+                grid-area: 3 / 4 / 16 / 8;
+            }
+            #hEQYhFZmUT7xuqXb {
+                grid-area: 7 / 6 / 19 / 9;
+            }
+            #vNyc7pRC9DtJvsnz {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(1.46413616em - var(--ffsd)));
+            }
+            #yK94s82vRaY3CXi0 {
+                transform: translateX(calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 1.46413616em) * 0.087));
+                margin-top: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 1.46413616em) * -0.1);
+                margin-bottom: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 1.46413616em) * -0.1);
+            }
+            #PKIS1uMORJHtZcQN {
+                min-width: 26.59879965rem;
+            }
+            #l6IyTdOp6PuqfuEN {
+                grid-area: 6 / 14 / 8 / 18;
+            }
+            #oGjPlZpvA2AlYcMa {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(5.46608346em - var(--ffsd)));
+            }
+            #LZXvdPZkR0aTLRhT {
+                transform: translateX(0);
+                margin-top: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 5.46608346em) * 0.1);
+                margin-bottom: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 5.46608346em) * 0.1);
+            }
+            #R0X0QoafxVFjWfv3 {
+                min-width: 37.48284224rem;
+            }
+            #vXx7S4AicSRYTOUg {
+                grid-area: 10 / 11 / 11 / 17;
+            }
+            #hefNuHeOPHFwtcwI {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(1.39083684em - var(--ffsd)));
+            }
+            #fnPdPXDGlXqa0bFy {
+                transform: translateX(0);
+                margin-top: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 1.39083684em) * -0.195);
+                margin-bottom: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 1.39083684em) * -0.195);
+            }
+            #zF4FMBSprUMX32nE {
+                min-width: 38.1491124rem;
+            }
+            #m8dGRcAoWNTJZGaj {
+                grid-area: 12 / 12 / 13 / 19;
+            }
+            #fL2OupIxRXLDE2kw {
+                stroke-width: calc(100rem * 0.0 / 1366.0);
+            }
+            #DGegepRQYkifTdAx {
+                grid-area: 14 / 10 / 18 / 16;
+            }
+            #N9c0JQW92kBsIci0 {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(1.56173499em - var(--ffsd)));
+            }
+            #SNCaxSM0b8Ohzcwx {
+                transform: translateX(0);
+                margin-top: 0;
+                margin-bottom: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 1.56173499em) * -0.1);
+            }
+            #EQ3O10nhFaifPZ7j {
+                min-width: 13.82920279rem;
+            }
+            #R4h5yzfGUiHpmdaQ {
+                grid-area: 15 / 13 / 17 / 15;
+            }
+            #T7Y0HzthEjJwbIYq {
+                grid-template-columns: 4.99994618rem 1.36532547rem 2.11868949rem 2.12834659rem 0.46149256rem 0.8941758rem 31.26824353rem 3.16899352rem 9.86002293rem 0 0 0.29282577rem 10.59121683rem 3.20138274rem 0.29282577rem 23.06798791rem 0 0.66627016rem 5.62225476rem;
+                grid-template-rows: minmax(3.17694177rem, max-content) minmax(2.11699777rem, max-content) minmax(0.76118188rem, max-content) minmax(1.14667204rem, max-content) minmax(0.68045078rem, max-content) minmax(0.87847657rem, max-content) minmax(0.87847657rem, max-content) minmax(0.46930464rem, max-content) minmax(6.06888891rem, max-content) minmax(11.92777013rem, max-content) minmax(2.09635457rem, max-content) minmax(12.42213673rem, max-content) minmax(3.80579376rem, max-content) minmax(0.29282577rem, max-content) minmax(1.06889623rem, max-content) minmax(2.51629892rem, max-content) minmax(0.29282577rem, max-content) minmax(0.32831522rem, max-content) minmax(5.29393954rem, max-content);
+            }
+            #home {
+                min-height: 20vh;
+            }
+            #cX65LIBkRRMuMaZl {
+                grid-area: 2 / 2 / 3 / 3;
+            }
+            #E5SVrMfC3aUDzNB7 {
+                grid-template-columns: 0 100%;
+                grid-template-rows: 0 100%;
+            }
+            #n1WrDN01URwDEn4r {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(4.09956076em - var(--ffsd)));
+            }
+            #FFo0hSmlOy1Po9M4 {
+                transform: translateX(0);
+                margin-top: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 4.09956076em) * 0.1);
+                margin-bottom: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 4.09956076em) * 0.1);
+            }
+            #q0E9kC9xE1z8eZNG {
+                min-width: 22.27857902rem;
+            }
+            #eEpmK8pZZDR8cMFk {
+                grid-area: 3 / 4 / 5 / 6;
+            }
+            #fEtl6FFS11RKLAh8 {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(1.36652269em - var(--ffsd)));
+            }
+            #nnU2xiW4PrWF0GA9 {
+                transform: translateX(0);
+                margin-top: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 1.36652269em) * -0.195);
+                margin-bottom: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 1.36652269em) * -0.195);
+            }
+            #IjGzzSlwc20mMyQM {
+                min-width: 34.16133624rem;
+            }
+            #IlQQP4LtqfagdtY8 {
+                grid-area: 6 / 2 / 7 / 8;
+            }
+            #UdR2Omyqk3twQhqT {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(4.09956076em - var(--ffsd)));
+            }
+            #DajSwzBB4e1PP7Mm {
+                transform: translateX(0);
+                margin-top: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 4.09956076em) * 0.1);
+                margin-bottom: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 4.09956076em) * 0.1);
+            }
+            #tL5MGulV64gXM0Vb {
+                min-width: 22.27857902rem;
+            }
+            #AURqC4jUUy6gMYS6 {
+                grid-area: 8 / 5 / 9 / 7;
+            }
+            #w2nsjhdLaCZNQk9Z {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(1.36652269em - var(--ffsd)));
+            }
+            #KN16WNfa4LGZsFuo {
+                transform: translateX(0);
+                margin-top: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 1.36652269em) * -0.195);
+                margin-bottom: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 1.36652269em) * -0.195);
+            }
+            #qtdNTMt5lmLw7vpN {
+                min-width: 34.16133624rem;
+            }
+            #plSYgwbrc8xZsQrX {
+                grid-area: 10 / 3 / 12 / 9;
+            }
+            #j2HZbZAJlmfIDQjb {
+                grid-area: 2 / 10 / 11 / 12;
+            }
+            #EKRsnmapgL9VwDp7 {
+                grid-area: 4 / 11 / 13 / 13;
+            }
+            #ti7SWPVzR2deQ0CR {
+                grid-template-columns: 15.87526698rem 0 5.94137861rem 0 22.2419758rem 0 5.94137861rem 0 7.88246975rem 2.73492986rem 31.02541576rem 2.73492986rem 5.62225476rem;
+                grid-template-rows: minmax(5.62225476rem, max-content) 0 minmax(2.73363778rem, max-content) minmax(6.2853959rem, max-content) minmax(4.09554921rem, max-content) minmax(10.08199026rem, max-content) minmax(4.09956076rem, max-content) minmax(9.01903367rem, max-content) minmax(4.07271781rem, max-content) minmax(1.8565149rem, max-content) minmax(1.8565149rem, max-content) minmax(0.87712288rem, max-content) minmax(5.62225476rem, max-content);
+            }
+            #j9tHm8itqhtunyeX {
+                min-height: 20vh;
+            }
+            #ovO4CKEtuktQnwIR {
+                grid-area: 2 / 2 / 3 / 3;
+            }
+            #IQgIrKSkRwZzbpv4 {
+                grid-template-columns: 0 100%;
+                grid-template-rows: 0 100%;
+            }
+            #leRLQz9BoCuDx6nm {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(4.09956076em - var(--ffsd)));
+            }
+            #vSGXYvcjYdlqr3LU {
+                transform: translateX(0);
+                margin-top: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 4.09956076em) * 0.1);
+                margin-bottom: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 4.09956076em) * 0.1);
+            }
+            #vr5A4vmJMRL18zbY {
+                min-width: 31.82369461rem;
+            }
+            #ISR0Wdik7bIAn5Qp {
+                grid-area: 4 / 2 / 5 / 4;
+            }
+            #PyQ47pNCjbIas3MD {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(1.36652269em - var(--ffsd)));
+            }
+            #hAVOIly6GsqrJEam {
+                transform: translateX(0);
+                margin-top: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 1.36652269em) * -0.195);
+                margin-bottom: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 1.36652269em) * -0.195);
+            }
+            #Z1TvSDzwjrSlUiRM {
+                min-width: 34.16133624rem;
+            }
+            #PlqtGp8Nhxm0SGrW {
+                grid-area: 6 / 3 / 7 / 5;
+            }
+            #HBGeFFWoEe09AFO1 {
+                grid-area: 2 / 6 / 8 / 8;
+            }
+            #sPtNTSjrqBMzkRmd {
+                grid-area: 3 / 7 / 9 / 9;
+            }
+            #a5AUZLui6QjXyNOI {
+                grid-template-columns: 15.87526698rem 0 31.78709139rem 2.33764163rem 7.88246975rem 2.73492986rem 31.02541576rem 2.73492986rem 5.62225476rem;
+                grid-template-rows: minmax(5.62225476rem, max-content) minmax(2.73363778rem, max-content) minmax(3.60851931rem, max-content) minmax(4.91947291rem, max-content) minmax(4.81957501rem, max-content) minmax(10.08199026rem, max-content) minmax(16.08120501rem, max-content) minmax(2.73363778rem, max-content) minmax(5.62225476rem, max-content);
+            }
+            #poWzJDcOTrIvtRDG {
+                min-height: 20vh;
+            }
+            #x2bHGCvxZqJhO2Qz {
+                grid-area: 2 / 2 / 3 / 3;
+            }
+            #yes53Xpb5Rp05GQf {
+                grid-template-columns: 0 100%;
+                grid-template-rows: 0 100%;
+            }
+            #KD82cc7grXDtesZf {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(4.09956076em - var(--ffsd)));
+            }
+            #jmd28tfNBdHkDVZb {
+                transform: translateX(0);
+                margin-top: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 4.09956076em) * 0.1);
+                margin-bottom: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 4.09956076em) * 0.1);
+            }
+            #elbMlWyNa8tvQl1N {
+                min-width: 22.27857902rem;
+            }
+            #ipjxRmnK7AAphmMq {
+                grid-area: 4 / 2 / 5 / 4;
+            }
+            #scy9hpWlsnuYWz2f {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(1.36652269em - var(--ffsd)));
+            }
+            #MEV9DPF4sFPDRHuf {
+                transform: translateX(0);
+                margin-top: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 1.36652269em) * -0.195);
+                margin-bottom: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 1.36652269em) * -0.195);
+            }
+            #CFe4jGSxnGC9lpIu {
+                min-width: 34.16133624rem;
+            }
+            #dvWeJUZJIpLQRaET {
+                grid-area: 6 / 3 / 7 / 5;
+            }
+            #brImLex5u2LVkIRl {
+                grid-area: 2 / 6 / 8 / 8;
+            }
+            #UJ1kyLK2PvPpsJCB {
+                grid-area: 3 / 7 / 9 / 9;
+            }
+            #boGbpjQIIimcEdO6 {
+                grid-template-columns: 15.87526698rem 0 22.2419758rem 11.88275722rem 7.88246975rem 2.73492986rem 31.02541576rem 2.73492986rem 5.62225476rem;
+                grid-template-rows: minmax(5.62225476rem, max-content) minmax(2.73363778rem, max-content) 0 minmax(13.11859444rem, max-content) minmax(6.63678682rem, max-content) minmax(10.08199026rem, max-content) minmax(9.67339099rem, max-content) minmax(2.73363778rem, max-content) minmax(5.62225476rem, max-content);
+            }
+            #Zaa8MwJZn3dAiM1L {
+                min-height: 20vh;
+            }
+            #kid9e3orKpYnE7PG {
+                grid-area: 2 / 2 / 3 / 3;
+            }
+            #TihdRUjG5d4zQyJZ {
+                grid-template-columns: 0 100%;
+                grid-template-rows: 0 100%;
+            }
+            #nyLZID3QVBmez8vS {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(4.09956076em - var(--ffsd)));
+            }
+            #cp3CY8VnZAoz0mhG {
+                transform: translateX(0);
+                margin-top: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 4.09956076em) * 0.1);
+                margin-bottom: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 4.09956076em) * 0.1);
+            }
+            #G9BkZw3cr2EXTQej {
+                min-width: 20.13428087rem;
+            }
+            #qJETCYR6sMykJCK9 {
+                grid-area: 2 / 2 / 5 / 4;
+            }
+            #lhDTqvyLGxhNexJh {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(1.36652269em - var(--ffsd)));
+            }
+            #oX5akv1MVSng2TXY {
+                transform: translateX(0);
+                margin-top: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 1.36652269em) * 0.15);
+                margin-bottom: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 1.36652269em) * -0.15);
+            }
+            #Y4bhIhpZhI5pnDoC {
+                min-width: 25.33961148rem;
+            }
+            #ECUOPI8XUw9EGL9i {
+                grid-area: 26 / 3 / 27 / 5;
+            }
+            #l40kzTATdCsqziHD {
+                display: block;
+            }
+            #qSGYYNyolPZ1bqkA {
+                display: none;
+            }
+            #uRDB8csPMbu1GnHF {
+                display: none;
+            }
+            #lLyDD1g1PQ1zaXOh {
+                grid-area: 3 / 6 / 9 / 26;
+            }
+            #DD5eNDjy4rxdrVDR {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(1.75696193em - var(--ffsd)));
+            }
+            #nljAFs3nv1LXssvs {
+                transform: translateX(0);
+                margin-top: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 1.75696193em) * -0.15);
+                margin-bottom: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 1.75696193em) * -0.15);
+            }
+            #K3gbnIYJ3U2Myovf {
+                min-width: 27.60691547rem;
+            }
+            #yNasv1r0PJnFCbFk {
+                grid-area: 4 / 14 / 6 / 18;
+            }
+            #eHTgvlI1cxBIolvo {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(1.26891654em - var(--ffsd)));
+            }
+            #elTHyz0rZADXmZmg {
+                transform: translateX(0);
+                margin-top: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 1.26891654em) * -0.195);
+                margin-bottom: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 1.26891654em) * -0.195);
+            }
+            #q1CqUC4Xg6TYmRvA {
+                min-width: 42.38449596rem;
+            }
+            #GVOJr5boTGK1P2Ii {
+                grid-area: 7 / 10 / 8 / 22;
+            }
+            #S73OUgiLgFXR8tTN {
+                grid-area: 10 / 7 / 14 / 27;
+            }
+            #Fr42FEuNdepH6uOG {
+                font-size: max(0px, calc(1.75696193em - var(--ffsd)));
+            }
+            #t1NdaTdOxzlacrhX {
+                transform: translateX(0);
+                margin-top: calc(max(0px, 1.75696193em) * -0.15);
+                margin-bottom: calc(max(0px, 1.75696193em) * -0.15);
+            }
+            #J8LMm6vWiX7otcEB {
+                min-width: 32.05939912rem;
+            }
+            #HfyI6bg6oA8hEqKL {
+                grid-area: 11 / 15 / 12 / 20;
+            }
+            #JE7rz5GouJYiEKxL {
+                font-size: max(0px, calc(1.26891654em - var(--ffsd)));
+            }
+            #Tcjasw5UALyuZjgP {
+                transform: translateX(0);
+                margin-top: calc(max(0px, 1.26891654em) * -0.195);
+                margin-bottom: calc(max(0px, 1.26891654em) * -0.195);
+            }
+            #Y8dGMaxyvK6k72rT {
+                min-width: 42.38449596rem;
+            }
+            #vz9KMXX2aZLbLW5P {
+                grid-area: 13 / 11 / 15 / 23;
+            }
+            #rArnWNMGcN4P8icR {
+                display: block;
+            }
+            #rYMTbpi9t9OONFLH {
+                display: none;
+            }
+            #ANk9qHxRRLGDMeuo {
+                display: none;
+            }
+            #AZLO9zvBm3xJ27lF {
+                grid-area: 16 / 8 / 21 / 28;
+            }
+            #G7SQkxqABkSDav8r {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(1.75696193em - var(--ffsd)));
+            }
+            #DOSHBPgDlzxxaWLi {
+                transform: translateX(0);
+                margin-top: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 1.75696193em) * -0.15);
+                margin-bottom: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 1.75696193em) * -0.15);
+            }
+            #nLM9M0n8qki4brfH {
+                min-width: 32.94989585rem;
+            }
+            #fI4ZB8uH1KKpFp61 {
+                grid-area: 17 / 16 / 18 / 21;
+            }
+            #Pe7z3yuTonmLzKfA {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(1.26891654em - var(--ffsd)));
+            }
+            #gzProIsKu2rA6Sz6 {
+                transform: translateX(0);
+                margin-top: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 1.26891654em) * -0.195);
+                margin-bottom: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 1.26891654em) * -0.195);
+            }
+            #OEXGKHoJ1U8ecaZB {
+                min-width: 42.38449596rem;
+            }
+            #DYC4seJOHdXxKaIH {
+                grid-area: 19 / 12 / 20 / 24;
+            }
+            #vK41tVXMX8QnOgsL {
+                display: block;
+            }
+            #JWE849U9GoD3Bs9U {
+                display: none;
+            }
+            #VuzjrTaTwJDodEVk {
+                display: none;
+            }
+            #kKwu0Tru7OuJtuNs {
+                grid-area: 22 / 9 / 29 / 29;
+            }
+            #akkN36hysD7XvE38 {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(1.75696193em - var(--ffsd)));
+            }
+            #ypy78Tbex0kgM8lS {
+                transform: translateX(0);
+                margin-top: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 1.75696193em) * -0.15);
+                margin-bottom: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 1.75696193em) * -0.15);
+            }
+            #BYebr8hbLEATZY0R {
+                min-width: 30.91447475rem;
+            }
+            #KJFAZy6xvPWKvGVE {
+                grid-area: 23 / 17 / 24 / 19;
+            }
+            #zvI7mtkiw9RsxUJB {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(1.26891654em - var(--ffsd)));
+            }
+            #liYniieByPVSvhDW {
+                transform: translateX(0);
+                margin-top: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 1.26891654em) * -0.195);
+                margin-bottom: calc(max(calc(12px * var(--rfso, var(--bfso, 1))), 1.26891654em) * -0.195);
+            }
+            #h1YQF5dNXPGLXwm5 {
+                min-width: 42.38449596rem;
+            }
+            #kpK5SpGvtEEQDCPG {
+                grid-area: 25 / 13 / 28 / 25;
+            }
+            #DSnXd9B9Bt89JKuT {
+                grid-template-columns: 5.62225476rem 0 20.09767765rem 5.20533061rem 18.11831166rem 0 0 0 1.45889415rem 0 0 0 0 0 0 0 27.57031225rem 3.30755928rem 1.14492437rem 0.89049673rem 9.4346001rem 0 0 0 1.45417723rem 0 0 0 5.6954612rem;
+                grid-template-rows: minmax(5.77396652rem, max-content) minmax(2.45973646rem, max-content) minmax(1.32776711rem, max-content) minmax(1.13196935rem, max-content) minmax(0.97637399rem, max-content) minmax(0.60185307rem, max-content) minmax(5.43484436rem, max-content) minmax(0.29282577rem, max-content) minmax(1.17130307rem, max-content) minmax(1.32776711rem, max-content) minmax(2.10834334rem, max-content) minmax(1.17063688rem, max-content) minmax(4.89371782rem, max-content) minmax(0.54112654rem, max-content) minmax(0.9230023rem, max-content) minmax(1.32776711rem, max-content) minmax(2.10834334rem, max-content) minmax(0.70271678rem, max-content) minmax(5.43484436rem, max-content) minmax(0.4679201rem, max-content) minmax(0.9230023rem, max-content) minmax(1.32776711rem, max-content) minmax(2.10834334rem, max-content) minmax(1.17063688rem, max-content) minmax(3.25389425rem, max-content) minmax(1.63982357rem, max-content) minmax(2.51770048rem, max-content) minmax(0.87419879rem, max-content) minmax(2.23035549rem, max-content);
+            }
+            #ZRxdRLa9mo6Ub8xV {
+                min-height: 20vh;
+            }
+        }
+
+        @keyframes pulse {
+            0% {
+                background-color: rgba(226, 226, 226, 0.05);
+            }
+            50% {
+                background-color: rgba(226, 226, 226, 0.1);
+            }
+            100% {
+                background-color: rgba(226, 226, 226, 0.05);
+            }
+        }
+    </style><noscript>  <style>    .animated {      animation-play-state: running !important;    }    @keyframes pulse {}  </style></noscript>
+    <script nonce='f4951f69-ccc1-4d00-8f85-50041958d69e'>
+        ! function() {
+            "use strict";
+
+            function n(n, t) {
+                let e = (null == t ? void 0 : t.runOnLoad) ? void 0 : document.documentElement.clientWidth,
+                    o = (null == t ? void 0 : t.runOnLoad) ? void 0 : window.innerHeight;
+                const r = () => {
+                        const r = {
+                                runOnLoad: !1,
+                                runOnWidthChange: !0,
+                                runOnHeightChange: !1,
+                                ...t
+                            },
+                            i = document.documentElement.clientWidth,
+                            d = window.innerHeight,
+                            c = o !== d;
+                        (e !== i && r.runOnWidthChange || c && r.runOnHeightChange) && n(), e = i, o = d
+                    },
+                    i = function(n, t) {
+                        let e;
+                        return (...o) => {
+                            clearTimeout(e), e = setTimeout((() => {
+                                n(...o)
+                            }), t)
+                        }
+                    }(r, 100);
+                window.addEventListener("resize", i), (null == t ? void 0 : t.runOnLoad) && ("loading" === document.readyState ? window.addEventListener("DOMContentLoaded", r) : r())
+            }
+
+            function t(n, t, e = .001) {
+                return Math.abs(n - t) < e
+            }
+
+            function e(n, t) {
+                return window.getComputedStyle(n).getPropertyValue(t)
+            }
+
+            function o(n, t, e) {
+                n.style.setProperty(t, e)
+            }
+
+            function r(n, t) {
+                const o = document.createElement("div");
+                o.style.setProperty(n, t), document.body.append(o);
+                const r = e(o, n);
+                return o.remove(), r
+            }
+
+            function i() {
+                const i = function() {
+                        const n = parseFloat(r("font-size", "0.1px"));
+                        return n > 1 ? n : 0
+                    }(),
+                    d = function(n) {
+                        const t = 2 * Math.max(n, 1);
+                        return t / parseFloat(r("font-size", `${t}px`))
+                    }(i);
+                if (function(t) {
+                        if (0 === t) return;
+                        o(document.documentElement, "--minfs", `${t}px`), n((() => {
+                            const n = 100 * t,
+                                {
+                                    clientWidth: e
+                                } = document.documentElement;
+                            o(document.documentElement, "--rzf", n > e ? (e / n).toPrecision(4) : null)
+                        }), {
+                            runOnLoad: !0
+                        })
+                    }(i * Math.max(1, d)), t(d, 1)) return;
+                const c = t(parseFloat(e(document.documentElement, "font-size")), parseFloat(r("grid-template-columns", "1rem")));
+                o(document.documentElement, c ? "--rfso" : "--bfso", d.toPrecision(4))
+            }
+
+            function d() {
+                document.querySelectorAll("img, image, video, svg").forEach((n => n.addEventListener("contextmenu", (n => n.preventDefault()))))
+            }
+
+            function c() {
+                const n = window.innerWidth - document.documentElement.clientWidth;
+                var t, e, o;
+                t = document.documentElement, e = "--sbw", o = n >= 0 ? `${n}px` : null, t.style.setProperty(e, o)
+            }
+            var u;
+            const a = "undefined" != typeof window ? null === (u = window.navigator) || void 0 === u ? void 0 : u.userAgent : void 0;
+            const m = !(!a || (l = a, !l.match(/AppleWebKit\//) || l.match(/Chrome\//) || l.match(/Chromium\//)));
+            var l;
+
+            function s(n) {
+                const t = Array.from(n.children);
+                t.forEach(((n, e) => {
+                    if (n.hasAttribute("data-foreign-object-container")) n.style.transformOrigin = "", n.style.transform = "";
+                    else {
+                        const o = document.createElement("div");
+                        o.setAttribute("data-foreign-object-container", ""), o.style.willChange = "transform", n.insertAdjacentElement("beforebegin", o), n.remove(), o.append(n), t[e] = o
+                    }
+                }));
+                const e = n.getScreenCTM();
+                if (!e) return;
+                const {
+                    a: o,
+                    b: r,
+                    c: i,
+                    d: d
+                } = e;
+                t.forEach((n => {
+                    if (!n.hasAttribute("data-foreign-object-container")) return;
+                    const {
+                        style: t
+                    } = n;
+                    t.transformOrigin = "0px 0px", t.transform = `matrix(${o}, ${r}, ${i}, ${d}, 0, 0)`
+                }))
+            }
+            let f;
+
+            function h() {
+                f || (f = Array.from(document.querySelectorAll("foreignObject")).filter((n => 0 === n.getBoundingClientRect().width))), Array.from(f).forEach(s)
+            }[function() {
+                "loading" === document.readyState ? window.addEventListener("DOMContentLoaded", i) : i()
+            }, function() {
+                n(c, {
+                    runOnLoad: !0
+                })
+            }, function() {
+                m && n(h, {
+                    runOnLoad: !0
+                })
+            }, function() {
+                "loading" === document.readyState ? window.addEventListener("DOMContentLoaded", d) : d()
+            }].forEach((n => n()))
+        }();
+    </script>
+    <script nonce="f4951f69-ccc1-4d00-8f85-50041958d69e">
+        window.C_CAPTCHA_IMPLEMENTATION = 'RECAPTCHA';
+    </script>
+    <script nonce="f4951f69-ccc1-4d00-8f85-50041958d69e">
+        window.C_CAPTCHA_KEY = '6Ldk59waAAAAAMPqkICbJjfMivZLCGtTpa6Wn6zO';
+    </script>
+</head>
+
+<body>
+    <div id="root">
+        <nav style="background-color:#ffffff;z-index:1;top:0px;display:flex;font-family:-apple-system, BlinkMacSystemFont, sans-serif;justify-content:flex-end;position:sticky;align-items:center;text-overflow:ellipsis;box-sizing:border-box;border-bottom:1px solid rgba(0, 0, 0, 0.07);height:50px;"><input id="menuToggle" type="checkbox" style="display:none;"></input><label id="menuButton" for="menuToggle"><div id="menuButtonIcon" style="padding:8px;width:24px;"><svg viewBox="0 0 24.0 24.0" preserveAspectRatio="none"><path d="M5.75 5.25h12.5a.75.75 0 1 1 0 1.5H5.75a.75.75 0 0 1 0-1.5zm0 6h12.5a.75.75 0 1 1 0 1.5H5.75a.75.75 0 1 1 0-1.5zm0 6h12.5a.75.75 0 1 1 0 1.5H5.75a.75.75 0 1 1 0-1.5z"></path></svg></div></label>
+            <ul
+                id="verticalMenu">
+                <li class="navMenuLink"><a class="navMenuLinkContent" href="#home">Home</a></li>
+                </ul>
+                <ul id="horizontalMenu" style="padding:0;margin:0;">
+                    <li class="navMenuLink"><a class="navMenuLinkContent" href="#home">Home</a></li>
+                </ul>
+        </nav>
+        <section id="home" style="z-index:0;overflow:hidden;grid-template-columns:auto 100rem auto;display:grid;position:relative;align-items:center;">
+            <div id="QwcGCsfVV4aOwizM" style="display:grid;min-height:100%;position:absolute;grid-area:1 / 1 / 2 / 4;min-width:100%;">
+                <div id="i2aDghrv3brpetjm" style="z-index:0;position:relative;">
+                    <div id="ico6NYy9h1J7fxSE" style="transform:rotate(0deg);width:100%;box-sizing:border-box;height:100%;">
+                        <div id="CeS80rpj8qV7dcRl" style="width:100%;opacity:1.0;height:100%;">
+                            <div id="n5ZYnio77Peeox9Y" style="background-color:#e8e8e8;transform:scale(1, 1);overflow:hidden;width:100%;position:relative;opacity:1.0;height:100%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="T7Y0HzthEjJwbIYq" style="display:grid;position:relative;grid-area:1 / 2 / 2 / 3;">
+                <div id="XpLlijKtWIvVfZRy" style="z-index:11;position:relative;">
+                    <div id="NzPqDmvxqJpHkbeu" style="transform:rotate(18.7010654deg);width:100%;box-sizing:border-box;height:100%;">
+                        <div id="B0yqV5NXI1ZBArXA" style="transform:scale(1.5);position:absolute;"><img src="images/37680f8e357a4902d674963ec8c2d7d8.png" alt="building a valley podcast" loading="lazy" style="display:block;object-fit:cover;width:100%;height:100%;"></div>
+                    </div>
+                </div>
+                <div id="ggnq5cnUlDJhKCKj" style="z-index:12;position:relative;">
+                    <div id="TsMdRSxJvfSIYQZo" style="transform:rotate(0deg);width:100%;box-sizing:border-box;height:100%;">
+                        <div id="xOsFxDpp2VDBRrAC" style="flex-direction:column;display:flex;width:100%;justify-content:flex-start;opacity:1.0;height:100%;">
+                            <p id="hjCOdpIMO2oDuhNr" style="margin-left:0em;text-transform:uppercase;color:#7ed957;letter-spacing:0.129em;font-family:YAD_cUi3FOQ-0;line-height:1em;direction:ltr;text-align:center;"><span id="fBPA1x73nk65uhLq" style="text-decoration-line:none;color:#7ed957;font-weight:700;font-style:normal;">BAVP</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div id="Dp0DLXT5cE6FomR9" style="z-index:3;position:relative;">
+                    <div id="DQo5C0xoEClPPye5" style="padding-top:122.28623536%;transform:rotate(0deg);">
+                        <div id="AzvQf00rDimHuy0E" style="top:0px;left:0px;width:100%;position:absolute;height:100%;">
+                            <div id="oSy55OS18FhBqUiM" style="width:100%;opacity:1.0;height:100%;">
+                                <div id="yOCLqwa4fU4TI0CX" style="transform:scale(1, 1);overflow:hidden;width:100%;position:relative;height:100%;">
+                                    <div id="eGJ6X8eTR0jbO9sx" style="transform:rotate(0deg);top:0%;left:-41.80485811%;width:183.60971622%;position:absolute;height:100%;opacity:1.0;animation:pulse 1.5s ease-in-out infinite;"><img src="images/b72a487f4d4621272f34583ae351efed.jpg" alt="" loading="lazy" style="display:block;object-fit:cover;width:100%;height:100%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="hEQYhFZmUT7xuqXb" style="z-index:1;position:relative;">
+                    <div id="h2wRUZ6XHnSyeOyl" style="padding-top:119.34956413%;transform:rotate(0deg);">
+                        <div id="aytV28hNKEUTaxeM" style="top:0px;left:0px;width:100%;position:absolute;height:100%;"><svg id="BvhW3xx45is93NCN" viewBox="0 0 115.6016 137.97" style="overflow:hidden;top:0%;left:0%;width:100%;position:absolute;opacity:1.0;height:100%;"><g id="ZJGlutXXTuyPiiZv" style="transform:scale(1, 1);"><path id="AoZbz9DfaCRQ6QGZ" d="M0.0,0.0 L115.6016143776522,0.0 L115.6016143776522,137.9700228906752 L0.0,137.9700228906752 L0.0,0.0" style="fill:#00bf63;opacity:1.0;"></path></g></svg></div>
+                    </div>
+                </div>
+                <div id="l6IyTdOp6PuqfuEN" style="z-index:8;position:relative;">
+                    <div id="PKIS1uMORJHtZcQN" style="transform:rotate(0deg);width:100%;box-sizing:border-box;height:100%;">
+                        <div id="yK94s82vRaY3CXi0" style="flex-direction:column;display:flex;width:100%;justify-content:flex-start;opacity:1.0;height:100%;">
+                            <p id="vNyc7pRC9DtJvsnz" style="text-transform:uppercase;color:#112c50;letter-spacing:0.087em;font-family:YAD_cUi3FOQ-0;line-height:1.4em;text-align:right;"><span id="MZInUmOIR69bjs8K" style="color:#112c50;">Buy local, buy fresh!</span><br></p>
+                        </div>
+                    </div>
+                </div>
+                <div id="vXx7S4AicSRYTOUg" style="z-index:7;position:relative;">
+                    <div id="R0X0QoafxVFjWfv3" style="transform:rotate(0deg);width:100%;box-sizing:border-box;height:100%;">
+                        <div id="LZXvdPZkR0aTLRhT" style="flex-direction:column;display:flex;width:100%;justify-content:flex-start;opacity:1.0;height:100%;">
+                            <p id="oGjPlZpvA2AlYcMa" style="text-transform:none;color:#7ed957;letter-spacing:0em;font-family:YAD_cQGyXdk-0;line-height:1em;"><span id="fl77blCZ29Ws6YbZ" style="color:#7ed957;font-weight:700;">All About Mazao</span><br></p>
+                        </div>
+                    </div>
+                </div>
+                <div id="m8dGRcAoWNTJZGaj" style="z-index:9;position:relative;">
+                    <div id="zF4FMBSprUMX32nE" style="transform:rotate(0deg);width:100%;box-sizing:border-box;height:100%;">
+                        <div id="fnPdPXDGlXqa0bFy" style="flex-direction:column;display:flex;width:100%;justify-content:flex-start;opacity:1.0;height:100%;">
+                            <p id="hefNuHeOPHFwtcwI" style="margin-left:0em;text-transform:none;color:#112c50;letter-spacing:0em;font-family:YACgEUFdPdA-0;line-height:1.59em;direction:ltr;text-align:left;"><span id="oOuwwPGNTb1VXnpZ" style="color:#112c50;font-weight:700;">Created by a farmer for farmers, Mazao&#x27;s mission is to promote the goodness of buying local, supporting the community, and enjoying the freshest, tastiest fruits and vegetables Kenya has to offer. So why settle for bland supermarket produce when you can savor the flavor of farm-fresh Mazao?</span><br></p>
+                        </div>
+                    </div>
+                </div>
+                <div id="DGegepRQYkifTdAx" style="z-index:5;position:relative;">
+                    <div id="EgeJHBfjlzMMCmyr" style="transform:rotate(0deg);width:100%;box-sizing:border-box;height:100%;"><svg id="VEnQ3UuuMph5EQXS" viewBox="0 0 38.7964 11.2541" preserveAspectRatio="none" style="overflow:hidden;top:0%;left:0%;width:100%;position:absolute;opacity:1.0;height:100%;"><g id="PZkdQOcHNBkOQdEI" style="transform:scale(1, 1);"><g id="Rf8jbnzHiq1Xy6vl" style="clip-path:url(#Nk1oMu2pCqdLhIYt);"><clippath id="Nk1oMu2pCqdLhIYt"><path d="M0.0,0.0 L38.7964266887343,0.0 L38.7964266887343,11.25407719554022 L0.0,11.25407719554022 L0.0,0.0"></path></clippath><path id="lxLNufhwg09hYh1e" d="M0.0,0.0 L38.7964266887343,0.0 L38.7964266887343,11.25407719554022 L0.0,11.25407719554022 L0.0,0.0" style="fill:#112c50;opacity:1.0;"></path><path id="fL2OupIxRXLDE2kw" d="M0.0,0.0 L38.7964266887343,0.0 L38.7964266887343,11.25407719554022 L0.0,11.25407719554022 L0.0,0.0" style="fill:none;stroke:#000000;stroke-linecap:round;vector-effect:non-scaling-stroke;"></path></g></g></svg></div>
+                </div>
+                <div id="R4h5yzfGUiHpmdaQ" style="z-index:6;position:relative;">
+                    <div id="EQ3O10nhFaifPZ7j" style="transform:rotate(0deg);width:100%;box-sizing:border-box;height:100%;">
+                        <div id="SNCaxSM0b8Ohzcwx" style="flex-direction:column;display:flex;width:100%;justify-content:center;opacity:1.0;height:100%;">
+                            <p id="N9c0JQW92kBsIci0" style="margin-left:0em;text-transform:none;color:#f6f6f6;letter-spacing:0em;font-family:YAD_cUhqUyg-0;line-height:1.4em;direction:ltr;text-align:center;"><span id="WUvMSUuPhGqr7raM" style="color:#f6f6f6;font-weight:700;">Shop</span><br></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="j9tHm8itqhtunyeX" style="z-index:0;overflow:hidden;grid-template-columns:auto 100rem auto;display:grid;margin-top:-1px;position:relative;align-items:center;">
+            <div id="E5SVrMfC3aUDzNB7" style="display:grid;min-height:100%;position:absolute;grid-area:1 / 1 / 2 / 4;min-width:100%;">
+                <div id="cX65LIBkRRMuMaZl" style="z-index:0;position:relative;">
+                    <div id="n7bfTghhmifM2AqR" style="transform:rotate(0deg);width:100%;box-sizing:border-box;height:100%;">
+                        <div id="Myx1HiYEMjTlpuIq" style="width:100%;opacity:1.0;height:100%;">
+                            <div id="rbM25VoSXXcbXfns" style="background-color:#112c50;transform:scale(1, 1);overflow:hidden;width:100%;position:relative;opacity:1.0;height:100%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="ti7SWPVzR2deQ0CR" style="display:grid;position:relative;grid-area:1 / 2 / 2 / 3;">
+                <div id="eEpmK8pZZDR8cMFk" style="z-index:4;position:relative;">
+                    <div id="q0E9kC9xE1z8eZNG" style="transform:rotate(0deg);width:100%;box-sizing:border-box;height:100%;">
+                        <div id="FFo0hSmlOy1Po9M4" style="flex-direction:column;display:flex;width:100%;justify-content:flex-start;opacity:1.0;height:100%;">
+                            <p id="n1WrDN01URwDEn4r" style="margin-left:0em;text-transform:none;color:#7ed957;letter-spacing:0em;font-family:YAD_cQGyXdk-0;line-height:1em;direction:ltr;text-align:center;"><span id="jLTFLmTQ9bMeJf1p" style="color:#7ed957;font-weight:700;">Are you a Farmer?</span><br></p>
+                        </div>
+                    </div>
+                </div>
+                <div id="IlQQP4LtqfagdtY8" style="z-index:5;position:relative;">
+                    <div id="IjGzzSlwc20mMyQM" style="transform:rotate(0deg);width:100%;box-sizing:border-box;height:100%;">
+                        <div id="nnU2xiW4PrWF0GA9" style="flex-direction:column;display:flex;width:100%;justify-content:flex-start;opacity:1.0;height:100%;">
+                            <p id="fEtl6FFS11RKLAh8" style="margin-left:0em;text-transform:none;color:#f6f6f6;letter-spacing:0em;font-family:YACgEUFdPdA-0;line-height:1.59em;direction:ltr;text-align:center;"><span id="vVgzabSifEfnbRZy" style="color:#f6f6f6;">Do you find it hard to find Market for your fresh produce?, Do you feel like you&#x27;re not getting the right price? Here at Mazao, we believe, Farmers should be setting their own market prices. </span><br></p>
+                        </div>
+                    </div>
+                </div>
+                <div id="AURqC4jUUy6gMYS6" style="z-index:6;position:relative;">
+                    <div id="tL5MGulV64gXM0Vb" style="transform:rotate(0deg);width:100%;box-sizing:border-box;height:100%;">
+                        <div id="DajSwzBB4e1PP7Mm" style="flex-direction:column;display:flex;width:100%;justify-content:flex-start;opacity:1.0;height:100%;">
+                            <p id="UdR2Omyqk3twQhqT" style="margin-left:0em;text-transform:none;color:#7ed957;letter-spacing:0em;font-family:YAD_cQGyXdk-0;line-height:1em;direction:ltr;text-align:center;"><span id="xO1us7ceCQrrpIkF" style="color:#7ed957;font-weight:700;">Are you a Buyer?</span><br></p>
+                        </div>
+                    </div>
+                </div>
+                <div id="plSYgwbrc8xZsQrX" style="z-index:7;position:relative;">
+                    <div id="qtdNTMt5lmLw7vpN" style="transform:rotate(0deg);width:100%;box-sizing:border-box;height:100%;">
+                        <div id="KN16WNfa4LGZsFuo" style="flex-direction:column;display:flex;width:100%;justify-content:flex-start;opacity:1.0;height:100%;">
+                            <p id="w2nsjhdLaCZNQk9Z" style="margin-left:0em;text-transform:none;color:#f6f6f6;letter-spacing:0em;font-family:YACgEUFdPdA-0;line-height:1.59em;direction:ltr;text-align:center;"><span id="PbyRA5i28MdGmWRJ" style="color:#f6f6f6;font-weight:700;">Support your local farmers, by purchasing directly from them. Enjoy cheap prices!</span><br></p>
+                        </div>
+                    </div>
+                </div>
+                <div id="j2HZbZAJlmfIDQjb" style="z-index:3;position:relative;">
+                    <div id="Kv4gktwS1PGmVqn3" style="padding-top:125.13023638%;transform:rotate(0deg);">
+                        <div id="IpZ3nNSsNhuM4Cjr" style="top:0px;left:0px;width:100%;position:absolute;height:100%;">
+                            <div id="ziJ096oTLYwHy40q" style="width:100%;opacity:1.0;height:100%;">
+                                <div id="LPdnSOnVJHwJEG6p" style="transform:scale(1, 1);overflow:hidden;width:100%;position:relative;height:100%;">
+                                    <div id="J7WZNGL729Q2S53Y" style="transform:rotate(0deg);top:-10.01256731%;left:0%;width:100%;position:absolute;height:120.02513462%;opacity:1.0;animation:pulse 1.5s ease-in-out infinite;"><img src="images/7ead047bb88f7b9f9099dd2813ad706d.jpg" alt="" loading="lazy" style="display:block;object-fit:cover;width:100%;height:100%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="EKRsnmapgL9VwDp7" style="z-index:1;position:relative;">
+                    <div id="waO3PRZUztVG123F" style="padding-top:125.13023638%;transform:rotate(0deg);">
+                        <div id="V0KlSwjZTAGL6C5U" style="top:0px;left:0px;width:100%;position:absolute;height:100%;"><svg id="yuLNhgZoRq2k7MQ7" viewBox="0 0 136.3912 170.6667" style="overflow:hidden;top:0%;left:0%;width:100%;position:absolute;opacity:1.0;height:100%;"><g id="XIwnrAzgkS54YWcb" style="transform:scale(1, 1);"><path id="Shq4ob0YScqzYX3D" d="M0.0,0.0 L136.39122853083947,0.0 L136.39122853083947,170.66666666666657 L0.0,170.66666666666657 L0.0,0.0" style="fill:#ef6602;opacity:1.0;"></path></g></svg></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="poWzJDcOTrIvtRDG" style="z-index:0;overflow:hidden;grid-template-columns:auto 100rem auto;display:grid;margin-top:-1px;position:relative;align-items:center;">
+            <div id="IQgIrKSkRwZzbpv4" style="display:grid;min-height:100%;position:absolute;grid-area:1 / 1 / 2 / 4;min-width:100%;">
+                <div id="ovO4CKEtuktQnwIR" style="z-index:0;position:relative;">
+                    <div id="mKjGOXBrXXHFtgQj" style="transform:rotate(0deg);width:100%;box-sizing:border-box;height:100%;">
+                        <div id="EFTh9XqbvS8gXu9b" style="width:100%;opacity:1.0;height:100%;">
+                            <div id="o0IlVe6668Z3Dj4B" style="background-color:#e8e8e8;transform:scale(1, 1);overflow:hidden;width:100%;position:relative;opacity:1.0;height:100%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="a5AUZLui6QjXyNOI" style="display:grid;position:relative;grid-area:1 / 2 / 2 / 3;">
+                <div id="ISR0Wdik7bIAn5Qp" style="z-index:4;position:relative;">
+                    <div id="vr5A4vmJMRL18zbY" style="transform:rotate(0deg);width:100%;box-sizing:border-box;height:100%;">
+                        <div id="vSGXYvcjYdlqr3LU" style="flex-direction:column;display:flex;width:100%;justify-content:flex-start;opacity:1.0;height:100%;">
+                            <p id="leRLQz9BoCuDx6nm" style="margin-left:0em;text-transform:none;color:#7ed957;letter-spacing:0em;font-family:YAD_cQGyXdk-0;line-height:1em;direction:ltr;text-align:center;"><span id="XRslA2P5YjcxivQZ" style="color:#7ed957;font-weight:700;">Shop Fresh</span><br></p>
+                        </div>
+                    </div>
+                </div>
+                <div id="PlqtGp8Nhxm0SGrW" style="z-index:5;position:relative;">
+                    <div id="Z1TvSDzwjrSlUiRM" style="transform:rotate(0deg);width:100%;box-sizing:border-box;height:100%;">
+                        <div id="hAVOIly6GsqrJEam" style="flex-direction:column;display:flex;width:100%;justify-content:flex-start;opacity:1.0;height:100%;">
+                            <p id="PyQ47pNCjbIas3MD" style="margin-left:0em;text-transform:none;color:#112c50;letter-spacing:0em;font-family:YACgEUFdPdA-0;line-height:1.59em;direction:ltr;text-align:center;"><span id="poWTBqFxv5gesg30" style="color:#112c50;font-weight:700;">Browse our marketplace to pick the best local produce to fill their baskets. With a simple click, they can get farm-fresh goods delivered straight to their doorstep. With full transparency on pricing and availability.</span><br></p>
+                        </div>
+                    </div>
+                </div>
+                <div id="HBGeFFWoEe09AFO1" style="z-index:3;position:relative;">
+                    <div id="EWftmAFP95nHRfoK" style="padding-top:125.13023638%;transform:rotate(0deg);">
+                        <div id="hGkHqsv9UeSjGUJX" style="top:0px;left:0px;width:100%;position:absolute;height:100%;">
+                            <div id="xqbJQvd719m6sXHA" style="width:100%;opacity:1.0;height:100%;">
+                                <div id="tmNSc7KnnHPfuiTL" style="transform:scale(1, 1);overflow:hidden;width:100%;position:relative;height:100%;">
+                                    <div id="rb5Llm46yoHqpve4" style="transform:rotate(0deg);top:0%;left:-43.81835905%;width:187.6367181%;position:absolute;height:100%;opacity:1.0;animation:pulse 1.5s ease-in-out infinite;"><img src="images/5c6da4c4ddb7772580174f96d9b46107.jpg" alt="Person Buying Apple in Farmers Market" loading="lazy" style="display:block;object-fit:cover;width:100%;height:100%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="sPtNTSjrqBMzkRmd" style="z-index:1;position:relative;">
+                    <div id="QtplR1YbPYR0U099" style="padding-top:125.13023638%;transform:rotate(0deg);">
+                        <div id="zlSlEt5rdJuIhUuX" style="top:0px;left:0px;width:100%;position:absolute;height:100%;"><svg id="D6HaZgIEPogsFRTr" viewBox="0 0 136.3912 170.6667" style="overflow:hidden;top:0%;left:0%;width:100%;position:absolute;opacity:1.0;height:100%;"><g id="eCBxwmRDbUQ8PvUZ" style="transform:scale(1, 1);"><path id="a6rPaMC2PH8WRumb" d="M0.0,0.0 L136.39122853083947,0.0 L136.39122853083947,170.66666666666657 L0.0,170.66666666666657 L0.0,0.0" style="fill:#ef6602;opacity:1.0;"></path></g></svg></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="Zaa8MwJZn3dAiM1L" style="z-index:0;overflow:hidden;grid-template-columns:auto 100rem auto;display:grid;margin-top:-1px;position:relative;align-items:center;">
+            <div id="yes53Xpb5Rp05GQf" style="display:grid;min-height:100%;position:absolute;grid-area:1 / 1 / 2 / 4;min-width:100%;">
+                <div id="x2bHGCvxZqJhO2Qz" style="z-index:0;position:relative;">
+                    <div id="jg4mrXfg9IYxoySE" style="transform:rotate(0deg);width:100%;box-sizing:border-box;height:100%;">
+                        <div id="dbSVBvNe9WULW3Ya" style="width:100%;opacity:1.0;height:100%;">
+                            <div id="zAMCaTavtfRJc6f9" style="background-color:#112c50;transform:scale(1, 1);overflow:hidden;width:100%;position:relative;opacity:1.0;height:100%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="boGbpjQIIimcEdO6" style="display:grid;position:relative;grid-area:1 / 2 / 2 / 3;">
+                <div id="ipjxRmnK7AAphmMq" style="z-index:4;position:relative;">
+                    <div id="elbMlWyNa8tvQl1N" style="transform:rotate(0deg);width:100%;box-sizing:border-box;height:100%;">
+                        <div id="jmd28tfNBdHkDVZb" style="flex-direction:column;display:flex;width:100%;justify-content:flex-start;opacity:1.0;height:100%;">
+                            <p id="KD82cc7grXDtesZf" style="margin-left:0em;text-transform:none;color:#7ed957;letter-spacing:0em;font-family:YAD_cQGyXdk-0;line-height:1em;direction:ltr;text-align:center;"><span id="rUnbXBOy4B38USFz" style="color:#7ed957;font-weight:700;">Delivery and Logistics</span><br></p>
+                        </div>
+                    </div>
+                </div>
+                <div id="dvWeJUZJIpLQRaET" style="z-index:5;position:relative;">
+                    <div id="CFe4jGSxnGC9lpIu" style="transform:rotate(0deg);width:100%;box-sizing:border-box;height:100%;">
+                        <div id="MEV9DPF4sFPDRHuf" style="flex-direction:column;display:flex;width:100%;justify-content:flex-start;opacity:1.0;height:100%;">
+                            <p id="scy9hpWlsnuYWz2f" style="margin-left:0em;text-transform:none;color:#f6f6f6;letter-spacing:0em;font-family:YACgEUFdPdA-0;line-height:1.59em;direction:ltr;text-align:left;"><span id="sTORtAmmGT0lddyG" style="color:#f6f6f6;font-weight:700;">We work with local logistics companies to ensure swift and reliable delivery of produce from farms to buyers. From field to fork, we make sure every bite is a taste of Kenyan goodness.</span><br></p>
+                        </div>
+                    </div>
+                </div>
+                <div id="brImLex5u2LVkIRl" style="z-index:3;position:relative;">
+                    <div id="Yrsj3A4ve2Je9Wlf" style="padding-top:125.13023638%;transform:rotate(0deg);">
+                        <div id="prfS4DSUIID1N55W" style="top:0px;left:0px;width:100%;position:absolute;height:100%;">
+                            <div id="mEc5D2YqqO3KCSwR" style="width:100%;opacity:1.0;height:100%;">
+                                <div id="m1YUbSFXvennhJLW" style="transform:scale(1, 1);overflow:hidden;width:100%;position:relative;height:100%;">
+                                    <div id="q9mAuaU4AGXEAoBI" style="transform:rotate(0deg);top:0%;left:-43.90636877%;width:187.81273754%;position:absolute;height:100%;opacity:1.0;animation:pulse 1.5s ease-in-out infinite;"><img src="images/4d3138363ece02ceb81aeb00ddb9af7a.jpg" alt="Person Receiving Online Purchase In Shopping Bags" loading="lazy" style="display:block;object-fit:cover;width:100%;height:100%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="UJ1kyLK2PvPpsJCB" style="z-index:1;position:relative;">
+                    <div id="ot9J7S14WT4ZCqQB" style="padding-top:125.13023638%;transform:rotate(0deg);">
+                        <div id="M5SdDfCqdqqNZI0l" style="top:0px;left:0px;width:100%;position:absolute;height:100%;"><svg id="ndRzCQwSq7gAOIpV" viewBox="0 0 136.3912 170.6667" style="overflow:hidden;top:0%;left:0%;width:100%;position:absolute;opacity:1.0;height:100%;"><g id="itRNM553wjipGCWB" style="transform:scale(1, 1);"><path id="ynu66KwGwameKEEE" d="M0.0,0.0 L136.39122853083947,0.0 L136.39122853083947,170.66666666666657 L0.0,170.66666666666657 L0.0,0.0" style="fill:#ef6602;opacity:1.0;"></path></g></svg></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="ZRxdRLa9mo6Ub8xV" style="z-index:0;overflow:hidden;grid-template-columns:auto 100rem auto;display:grid;margin-top:-1px;position:relative;align-items:center;">
+            <div id="TihdRUjG5d4zQyJZ" style="display:grid;min-height:100%;position:absolute;grid-area:1 / 1 / 2 / 4;min-width:100%;">
+                <div id="kid9e3orKpYnE7PG" style="z-index:0;position:relative;">
+                    <div id="Pxq6Cj1WaX5nhR0C" style="transform:rotate(0deg);width:100%;box-sizing:border-box;height:100%;">
+                        <div id="uxdPaH0zlH3YgwAr" style="width:100%;opacity:1.0;height:100%;">
+                            <div id="GyCEa0L0AevV4jSU" style="background-color:#e8e8e8;transform:scale(1, 1);overflow:hidden;width:100%;position:relative;opacity:1.0;height:100%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="DSnXd9B9Bt89JKuT" style="display:grid;position:relative;grid-area:1 / 2 / 2 / 3;">
+                <div id="qJETCYR6sMykJCK9" style="z-index:5;position:relative;">
+                    <div id="G9BkZw3cr2EXTQej" style="transform:rotate(0deg);width:100%;box-sizing:border-box;height:100%;">
+                        <div id="cp3CY8VnZAoz0mhG" style="flex-direction:column;display:flex;width:100%;justify-content:flex-start;opacity:1.0;height:100%;">
+                            <p id="nyLZID3QVBmez8vS" style="margin-left:0em;text-transform:none;color:#7ed957;letter-spacing:0em;font-family:YAD_cQGyXdk-0;line-height:1em;direction:ltr;text-align:left;"><span id="PQ9ClJxbNhPF0MAo" style="color:#7ed957;font-weight:700;">Features</span><br></p>
+                        </div>
+                    </div>
+                </div>
+                <div id="ECUOPI8XUw9EGL9i" style="z-index:6;position:relative;">
+                    <div id="Y4bhIhpZhI5pnDoC" style="transform:rotate(0deg);width:100%;box-sizing:border-box;height:100%;">
+                        <div id="oX5akv1MVSng2TXY" style="flex-direction:column;display:flex;width:100%;justify-content:flex-end;opacity:1.0;height:100%;">
+                            <p id="lhDTqvyLGxhNexJh" style="color:#112c50;letter-spacing:0em;font-family:YAD_cQGyXdk-0;line-height:1.5em;direction:ltr;"><span id="l5YhQOc7gsCQftFO" style="color:#112c50;font-weight:700;">More features getting added ...</span><br></p>
+                        </div>
+                    </div>
+                </div>
+                <div id="lLyDD1g1PQ1zaXOh" style="z-index:1;position:relative;">
+                    <div id="iLoHMg4FEVR7TJHA" style="transform:rotate(0deg);width:100%;box-sizing:border-box;height:100%;"><svg id="l40kzTATdCsqziHD" viewBox="0 0 171.7402 37.0552" preserveAspectRatio="none" style="overflow:hidden;top:0%;left:0%;width:100%;position:absolute;opacity:1.0;height:100%;"><g id="Ny5KZhCDvzO1KrpX" style="transform:scale(1, 1);"><path id="WHtRpMw1fXkN5kDF" d="M0.0,0.0 L171.7402138452534,0.0 L171.7402138452534,37.05515432963503 L0.0,37.05515432963503 L0.0,0.0" style="fill:#f6f6f6;opacity:1.0;"></path></g></svg>
+                        <svg
+                            id="qSGYYNyolPZ1bqkA" viewBox="0 0 124.4444 36.2483" preserveAspectRatio="none" style="overflow:hidden;top:0%;left:0%;width:100%;position:absolute;opacity:1.0;height:100%;">
+                            <g id="Bga6uuq8YcewwfIQ" style="transform:scale(1, 1);">
+                                <path id="Isco9DzLxnqN2eLD" d="M0.0,0.0 L124.44444444444451,0.0 L124.44444444444451,36.248273988902326 L0.0,36.248273988902326 L0.0,0.0" style="fill:#f6f6f6;opacity:1.0;"></path>
+                            </g>
+                            </svg><svg id="uRDB8csPMbu1GnHF" viewBox="0 0 95.2778 30.7715" preserveAspectRatio="none" style="overflow:hidden;top:0%;left:0%;width:100%;position:absolute;opacity:1.0;height:100%;"><g id="hjXpyjxDaYSP2dsi" style="transform:scale(1, 1);"><path id="zfhbWM9r7yuamhJd" d="M0.0,0.0 L95.27777777777783,0.0 L95.27777777777783,30.77150550014838 L0.0,30.77150550014838 L0.0,0.0" style="fill:#f6f6f6;opacity:1.0;"></path></g></svg></div>
+                </div>
+                <div id="yNasv1r0PJnFCbFk" style="z-index:11;position:relative;">
+                    <div id="K3gbnIYJ3U2Myovf" style="transform:rotate(0deg);width:100%;box-sizing:border-box;height:100%;">
+                        <div id="nljAFs3nv1LXssvs" style="flex-direction:column;display:flex;width:100%;justify-content:flex-start;opacity:1.0;height:100%;">
+                            <p id="DD5eNDjy4rxdrVDR" style="text-transform:none;color:#7ed957;letter-spacing:0em;font-family:YAD_cUhqUyg-0;line-height:1.5em;direction:ltr;text-align:left;"><span id="i2pKvi55v8DywAuN" style="color:#7ed957;font-weight:700;">Product listings:</span><br></p>
+                        </div>
+                    </div>
+                </div>
+                <div id="GVOJr5boTGK1P2Ii" style="z-index:7;position:relative;">
+                    <div id="q1CqUC4Xg6TYmRvA" style="transform:rotate(0deg);width:100%;box-sizing:border-box;height:100%;">
+                        <div id="elTHyz0rZADXmZmg" style="flex-direction:column;display:flex;width:100%;justify-content:flex-start;opacity:1.0;height:100%;">
+                            <p id="eHTgvlI1cxBIolvo" style="margin-left:0em;text-transform:none;color:#112c50;letter-spacing:0em;font-family:YACgEUFdPdA-0;line-height:1.59em;direction:ltr;text-align:left;"><span id="A6GXbxmrJwv4sYMO" style="color:#112c50;font-weight:700;">Farmers can create listings for their produce, including photos, descriptions, and prices. Buyers can browse and search the listings to find what they want.</span><br></p>
+                        </div>
+                    </div>
+                </div>
+                <div id="S73OUgiLgFXR8tTN" style="z-index:2;position:relative;">
+                    <div id="jhzZrjrub18px0jK" style="padding-top:20.99041709%;transform:rotate(0deg);">
+                        <div id="AAb3Pa93aJwc6XSt" style="top:0px;left:0px;width:100%;position:absolute;height:100%;"><svg id="f8Tk0vnd86URWbWj" viewBox="0 0 171.7402 36.049" style="overflow:hidden;top:0%;left:0%;width:100%;position:absolute;opacity:1.0;height:100%;"><g id="wTiqaqZmGY2KIBcj" style="transform:scale(1, 1);"><path id="Haoor2oJVInlvhYF" d="M0.0,0.0 L171.7402138452534,0.0 L171.7402138452534,36.048987192840514 L0.0,36.048987192840514 L0.0,0.0" style="fill:#f6f6f6;opacity:1.0;"></path></g></svg></div>
+                    </div>
+                </div>
+                <div id="HfyI6bg6oA8hEqKL" style="z-index:12;position:relative;">
+                    <div id="J8LMm6vWiX7otcEB" style="transform:rotate(0deg);width:100%;box-sizing:border-box;height:100%;">
+                        <div id="t1NdaTdOxzlacrhX" style="flex-direction:column;display:flex;width:100%;justify-content:flex-start;opacity:1.0;height:100%;">
+                            <p id="Fr42FEuNdepH6uOG" style="text-transform:none;color:#7ed957;letter-spacing:0em;font-family:YAD_cUhqUyg-0;line-height:1.5em;direction:ltr;text-align:left;"><span id="CP5Yq6rH8N3LwQnD" style="color:#7ed957;font-weight:700;">Reviews and ratings:</span><br></p>
+                        </div>
+                    </div>
+                </div>
+                <div id="vz9KMXX2aZLbLW5P" style="z-index:8;position:relative;">
+                    <div id="Y8dGMaxyvK6k72rT" style="transform:rotate(0deg);width:100%;box-sizing:border-box;height:100%;">
+                        <div id="Tcjasw5UALyuZjgP" style="flex-direction:column;display:flex;width:100%;justify-content:flex-start;opacity:1.0;height:100%;">
+                            <p id="JE7rz5GouJYiEKxL" style="margin-left:0em;text-transform:none;color:#112c50;letter-spacing:0em;font-family:YACgEUFdPdA-0;line-height:1.59em;direction:ltr;text-align:left;"><span id="GQiZtBGnTvsh6cnI" style="color:#112c50;font-weight:700;">Buyers can leave reviews and ratings for the products and the farmers, helping to build trust and credibility in the marketplace.</span><br></p>
+                        </div>
+                    </div>
+                </div>
+                <div id="AZLO9zvBm3xJ27lF" style="z-index:3;position:relative;">
+                    <div id="tdoVjazln5hwBlDy" style="transform:rotate(0deg);width:100%;box-sizing:border-box;height:100%;"><svg id="rArnWNMGcN4P8icR" viewBox="0 0 171.7402 38.1023" preserveAspectRatio="none" style="overflow:hidden;top:0%;left:0%;width:100%;position:absolute;opacity:1.0;height:100%;"><g id="O5RDMxi4uVmPCQu3" style="transform:scale(1, 1);"><path id="oA618bEuMtQB9sF1" d="M0.0,0.0 L171.7402138452534,0.0 L171.7402138452534,38.10226179086469 L0.0,38.10226179086469 L0.0,0.0" style="fill:#f6f6f6;opacity:1.0;"></path></g></svg>
+                        <svg
+                            id="rYMTbpi9t9OONFLH" viewBox="0 0 124.4444 35.7485" preserveAspectRatio="none" style="overflow:hidden;top:0%;left:0%;width:100%;position:absolute;opacity:1.0;height:100%;">
+                            <g id="RCBGZ20DoFXpb7QK" style="transform:scale(1, 1);">
+                                <path id="kqzAouHZpIiafB6R" d="M0.0,0.0 L124.44444444444451,0.0 L124.44444444444451,35.748504396722126 L0.0,35.748504396722126 L0.0,0.0" style="fill:#f6f6f6;opacity:1.0;"></path>
+                            </g>
+                            </svg><svg id="ANk9qHxRRLGDMeuo" viewBox="0 0 95.2778 30.137" preserveAspectRatio="none" style="overflow:hidden;top:0%;left:0%;width:100%;position:absolute;opacity:1.0;height:100%;"><g id="WdoV4rEkJBvzsZgt" style="transform:scale(1, 1);"><path id="nZaLtJ0IjjrB6IhR" d="M0.0,0.0 L95.27777777777783,0.0 L95.27777777777783,30.136968547369875 L0.0,30.136968547369875 L0.0,0.0" style="fill:#f6f6f6;opacity:1.0;"></path></g></svg></div>
+                </div>
+                <div id="fI4ZB8uH1KKpFp61" style="z-index:13;position:relative;">
+                    <div id="nLM9M0n8qki4brfH" style="transform:rotate(0deg);width:100%;box-sizing:border-box;height:100%;">
+                        <div id="DOSHBPgDlzxxaWLi" style="flex-direction:column;display:flex;width:100%;justify-content:flex-start;opacity:1.0;height:100%;">
+                            <p id="G7SQkxqABkSDav8r" style="text-transform:none;color:#7ed957;letter-spacing:0em;font-family:YAD_cUhqUyg-0;line-height:1.5em;direction:ltr;text-align:left;"><span id="Ch5mtJYH1raF9N6x" style="color:#7ed957;font-weight:700;">Payment processing:</span><br></p>
+                        </div>
+                    </div>
+                </div>
+                <div id="DYC4seJOHdXxKaIH" style="z-index:9;position:relative;">
+                    <div id="OEXGKHoJ1U8ecaZB" style="transform:rotate(0deg);width:100%;box-sizing:border-box;height:100%;">
+                        <div id="gzProIsKu2rA6Sz6" style="flex-direction:column;display:flex;width:100%;justify-content:flex-start;opacity:1.0;height:100%;">
+                            <p id="Pe7z3yuTonmLzKfA" style="margin-left:0em;text-transform:none;color:#112c50;letter-spacing:0em;font-family:YACgEUFdPdA-0;line-height:1.59em;direction:ltr;text-align:left;"><span id="B1jX593y5ws0h8X3" style="color:#112c50;font-weight:700;">We have integrated a payment processor to allow buyers to pay for their orders online. This helps to streamline the purchasing process and reduce the risk of fraud.</span><br></p>
+                        </div>
+                    </div>
+                </div>
+                <div id="kKwu0Tru7OuJtuNs" style="z-index:4;position:relative;">
+                    <div id="uS6psigXaL7U93sX" style="transform:rotate(0deg);width:100%;box-sizing:border-box;height:100%;"><svg id="vK41tVXMX8QnOgsL" viewBox="0 0 171.7402 48.9194" preserveAspectRatio="none" style="overflow:hidden;top:0%;left:0%;width:100%;position:absolute;opacity:1.0;height:100%;"><g id="r98isqeRAlFwjSaj" style="transform:scale(1, 1);"><path id="QGWwJtxjePs38yNL" d="M0.0,0.0 L171.7402138452534,0.0 L171.7402138452534,48.91936053730893 L0.0,48.91936053730893 L0.0,0.0" style="fill:#f6f6f6;opacity:1.0;"></path></g></svg>
+                        <svg
+                            id="JWE849U9GoD3Bs9U" viewBox="0 0 124.4444 43.1793" preserveAspectRatio="none" style="overflow:hidden;top:0%;left:0%;width:100%;position:absolute;opacity:1.0;height:100%;">
+                            <g id="NoggXKND0TJrgLqV" style="transform:scale(1, 1);">
+                                <path id="KvrkLVH4IfsHxeq9" d="M0.0,0.0 L124.44444444444451,0.0 L124.44444444444451,43.17925022604069 L0.0,43.17925022604069 L0.0,0.0" style="fill:#f6f6f6;opacity:1.0;"></path>
+                            </g>
+                            </svg><svg id="VuzjrTaTwJDodEVk" viewBox="0 0 95.2778 36.0832" preserveAspectRatio="none" style="overflow:hidden;top:0%;left:0%;width:100%;position:absolute;opacity:1.0;height:100%;"><g id="J7sxm6yUbBGMsidv" style="transform:scale(1, 1);"><path id="mYIk70FKdumy0PGT" d="M0.0,0.0 L95.27777777777783,0.0 L95.27777777777783,36.08321151180692 L0.0,36.08321151180692 L0.0,0.0" style="fill:#f6f6f6;opacity:1.0;"></path></g></svg></div>
+                </div>
+                <div id="KJFAZy6xvPWKvGVE" style="z-index:14;position:relative;">
+                    <div id="BYebr8hbLEATZY0R" style="transform:rotate(0deg);width:100%;box-sizing:border-box;height:100%;">
+                        <div id="ypy78Tbex0kgM8lS" style="flex-direction:column;display:flex;width:100%;justify-content:flex-start;opacity:1.0;height:100%;">
+                            <p id="akkN36hysD7XvE38" style="text-transform:none;color:#7ed957;letter-spacing:0em;font-family:YAD_cUhqUyg-0;line-height:1.5em;direction:ltr;text-align:left;"><span id="De4sDoRj0ildZbsM" style="color:#7ed957;font-weight:700;">Analytics and reporting:</span><br></p>
+                        </div>
+                    </div>
+                </div>
+                <div id="kpK5SpGvtEEQDCPG" style="z-index:10;position:relative;">
+                    <div id="h1YQF5dNXPGLXwm5" style="transform:rotate(0deg);width:100%;box-sizing:border-box;height:100%;">
+                        <div id="liYniieByPVSvhDW" style="flex-direction:column;display:flex;width:100%;justify-content:flex-start;opacity:1.0;height:100%;">
+                            <p id="zvI7mtkiw9RsxUJB" style="margin-left:0em;text-transform:none;color:#112c50;letter-spacing:0em;font-family:YACgEUFdPdA-0;line-height:1.59em;direction:ltr;text-align:left;"><span id="kb82l7rgtEgOE7GU" style="color:#112c50;font-weight:700;">We provide farmers with insights into their sales performance, including data on which products are selling well, which buyers are repeat customers, and which marketing channels are most effective.</span><br></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script src="js/73ad2651535b7ecadd366d5fa045dc32c1cdb8fc38f8243601b62b64f4123420.js" async="" nonce="f4951f69-ccc1-4d00-8f85-50041958d69e"></script>
+    </div>
+    <script nonce="f4951f69-ccc1-4d00-8f85-50041958d69e">
+        const lang = navigator.language ? navigator.language : 'en';
+        fetch('_footer?lang=' + encodeURIComponent(lang)).then(response => {
+            response.text().then(footerStr => {
+                const div = document.createElement('div');
+                div.innerHTML = footerStr;
+                for (const child of [...div.children]) {
+                    if (child.tagName.toLowerCase() !== 'script') {
+                        document.body.append(child);
+                    }
+                }
+
+                (() => {
+                    ! function() {
+                        "use strict";
+                        const e = document.getElementById("modal_backdrop"),
+                            t = document.getElementById("report_form"),
+                            o = document.getElementById("report_button"),
+                            n = document.getElementById("form_report"),
+                            c = document.getElementById("form_cancel"),
+                            s = document.getElementById("form_submit_reason"),
+                            a = document.getElementById("form_go_back"),
+                            d = document.getElementById("form_submit_captcha"),
+                            l = document.getElementById("form_close"),
+                            i = document.getElementById("report_reason_0"),
+                            r = document.getElementById("error_message"),
+                            m = document.getElementById("error_message_captcha"),
+                            u = [document.getElementById("form_step_terms"), document.getElementById("form_step_report_reason"), document.getElementById("form_step_captcha"), document.getElementById("form_step_success")];
+
+                        function p() {
+                            e.classList.remove("active"), t.classList.remove("active"), o.classList.remove("active"), o.focus()
+                        }
+
+                        function E(e) {
+                            u.forEach(((t, o) => {
+                                t.style.display = o === e ? "block" : "none"
+                            }))
+                        }
+                        let _, y = !1;
+                        const f = "NETEASE" === window.C_CAPTCHA_IMPLEMENTATION ? () => _ : () => {
+                            const e = t.elements.namedItem("g-recaptcha-response");
+                            return null == e ? void 0 : e.value
+                        };
+                        e.onclick = p, c.onclick = p, l.onclick = p, o.onclick = function() {
+                            u.forEach(((e, t) => {
+                                e.style.display = 0 === t ? "block" : "none"
+                            })), e.classList.add("active"), t.classList.add("active"), o.classList.add("active"), i.checked = !0, setTimeout((() => {
+                                i.focus()
+                            }), 350)
+                        }, n.onclick = () => E(1), s.onclick = () => {
+                            E(2),
+                                function() {
+                                    if (y) return;
+                                    const e = document.createElement("script");
+                                    console.log("our window captcha: ", window.C_CAPTCHA_IMPLEMENTATION, window.C_CAPTCHA_KEY), e.src = "NETEASE" === window.C_CAPTCHA_IMPLEMENTATION ? "https://cstaticdun.126.net/load.min.js" : "https://www.google.com/recaptcha/api.js", e.async = !0, e.defer = !0, document.head.appendChild(e), y = !0, e.onload = "NETEASE" === window.C_CAPTCHA_IMPLEMENTATION ? () => {
+                                        var e;
+                                        null === (e = window.initNECaptcha) || void 0 === e || e.call(window, {
+                                            captchaId: window.C_CAPTCHA_KEY,
+                                            element: "#netease-captcha",
+                                            protocol: "https",
+                                            width: "auto",
+                                            onVerify: (e, t) => {
+                                                _ = t.validate
+                                            }
+                                        })
+                                    } : () => {}
+                                }()
+                        }, a.onclick = () => E(1), t.addEventListener("submit", (function(e) {
+                            e.preventDefault(), r.style.display = "none", m.style.display = "none";
+                            const t = function() {
+                                    let e = "";
+                                    const t = document.getElementsByName("report_reason");
+                                    for (let o = 0; o < t.length; o++) {
+                                        const n = t[o];
+                                        !0 === n.checked && (e = n.value)
+                                    }
+                                    return e
+                                }(),
+                                o = f();
+                            if (!o) return void(m.style.display = "block");
+                            const n = {
+                                    reason: t,
+                                    challenge: o
+                                },
+                                c = window.location.origin + window.location.pathname + "/_api/report";
+                            d.classList.add("loading"), fetch(c, {
+                                method: "POST",
+                                body: JSON.stringify(n),
+                                headers: {
+                                    "Content-Type": "application/json; charset=utf-8"
+                                }
+                            }).then((e => {
+                                d.classList.remove("loading"), e.ok ? E(3) : r.style.display = "block"
+                            }))
+                        }))
+                    }();
+                })();
+                window.dispatchEvent(new Event('resize'));
+            });
+        });
+    </script>
+</body>
+
+</html>

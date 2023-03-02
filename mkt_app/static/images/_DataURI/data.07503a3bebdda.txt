@@ -1,0 +1,1 @@
+chrome-extension://djgmcffbbnhhlehfnfdhjnimphikngne/static/js/content_script_bookmark.js
