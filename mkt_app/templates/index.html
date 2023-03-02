@@ -1,78 +1,104 @@
 {% extends 'layout.html' %} {% block content %}
-<div class="d-flex justify-content-center align-items-center">
-	How it Works!
+<div class="container row col0">
+	<img class="col0" src="static/img/welcomebanner1.png" alt="" />
 </div>
-<div class="container-fluid mt-1">
-	<p class="fa fa-paragraph text-center" aria-hidden="true">
-		Mazao provides a comprehensive platform for consumers who are looking to
-		make informed choices about the food they eat. By using Mazao, users can
-		easily access information about the production process of various food
-		items, including whether they are grown organically, without the use of
-		synthetic pesticides, hormones, or other excluded practices and further
-		purchase these food items from the comfort of their homes. With Mazao, you
-		can make sure that the food you are eating is not only delicious, but also
-		healthy and sustainably produced.
-	</p>
-</div>
-<div class="container-fluid mt-5">
+<div class="container gap-5">
 	<div class="row">
-		<div class="col border mx-2 text-center">
-			<div class="d-flex justify-content-center align-items-center">
-				<lottie-player
-					src="https://assets7.lottiefiles.com/packages/lf20_Lpuvp7YT5K.json"
-					background="transparent"
-					speed="1"
-					style="width: 300px; height: 300px"
-					hover
-					loop
-					autoplay
-				></lottie-player>
-			</div>
-			<i class="bi bi-people-fill"></i>
-			<p>
-				Fresh fruits and Vegetables made by Local farmers around the Nation at
-				your Fingertips
-			</p>
+		<div class="col col1 me-4">
+			<img class="one" src="static/img/offer1(1).png" alt="" />
 		</div>
-		<div class="col border mx-2 text-center">
-			<div class="d-flex justify-content-center align-items-center">
-				<lottie-player
-					src="https://assets1.lottiefiles.com/packages/lf20_ha1sw9v2.json"
-					background="transparent"
-					speed="1"
-					style="width: 300px; height: 300px"
-					hover
-					loop
-					autoplay
-				></lottie-player>
-			</div>
-			<i class="bi bi-cart3"></i>
-			<p>Shop for all your produce, from the comfort of your home!</p>
+		<div class="col col2 me-4">
+			<img class="one" src="static/img/vegetablesoffer.png" alt="" />
 		</div>
-		<div class="col border mx-2 text-center">
-			<div class="d-flex justify-content-center align-items-center">
-				<lottie-player
-					src="https://assets3.lottiefiles.com/packages/lf20_toa6tsan.json"
-					background="transparent"
-					speed="1"
-					style="width: 300px; height: 300px"
-					hover
-					loop
-					autoplay
-				></lottie-player>
-			</div>
-			<i class="bi bi-truck"></i>
-			<p>Description of process 3</p>
-		</div>
-	</div>
-	<div class="row mt-5 justify-content-center text-center">
-		<div class="col-3">
-			<button type="button" class="btn btn-info btn-lg btn-block buttons">
-				Start Buying
-			</button>
+		<div class="col col3">
+			<img class="one" src="static/img/offer3 (1).png" alt="" />
 		</div>
 	</div>
 </div>
+<div class="container">
+  <div class="row">
+    <div class="col-5">
+      <h3 class="mb-0 mt-4 mb-4">Shop By Category</h3>
+    </div>
+  </div>
+  <div class="row justify-content-center justify-content-md-start">
+    <div class="col-lg-2 col-md-4 mb-4">
+      <div class="card cards">
+        <a href="#">
+          <img class="card-img-top mt-4 img-fluid" src="static/img/vegetablecard.png" alt="">
+        </a>
+        <div class="card-body text-center">
+          <p class="font-size-sm card-title">
+            <b>Cabbages & Tomatoes</b>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-2 col-md-4 mb-4">
+      <div class="card cards">
+        <a href="#">
+          <img class="card-img-top mt-5 img-fluid" src="static/img/fruits.png" alt="">
+        </a>
+        <div class="card-body text-center mt-4">
+          <p class="font-size-sm card-title">
+            <b>Fruits</b>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-2 col-md-4 mb-4">
+      <div class="card cards">
+        <a href="#">
+          <img class="card-img-top mt-4 img-fluid" src="static/img/dairy.png" alt="">
+        </a>
+        <div class="card-body text-center mt-2">
+          <p class="font-size-sm card-title">
+            <b>Dairy Products</b>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-2 col-md-4 mb-4">
+        <div class="card cards">
+          <a href="#">
+            <img class="card-img-top mt-5 img-fluid" src="static/img/spicecard.png" alt="">
+          </a>
+          <div class="card-body text-center">
+            <p class="font-size-sm card-title mt-4">
+              <b>Spices</b>
+            </p>
+          </div>
+        </div>
+      </div>
+    <div class="col-lg-2 col-md-4 mb-4">
+      <div class="card cards">
+        <a href="#">
+          <img class="card-img-top mt-4 img-size mx-3" src="static/img/ricecard.png" alt="">
+        </a>
+        <div class="card-body text-center">
+          <p class="font-size-sm card-title mt-3">
+            <b>Rice</b>
+          </p>
+        </div>
+      </div>
+    </div>
+	<div class="col-lg-2 col-md-4 mb-4">
+      <div class="card cards">
+        <a href="#">
+          <img class="card-img-top mt-5 img-fluid" src="static/img/legumescard.png" alt="">
+        </a>
+        <div class="card-body text-center">
+          <p class="font-size-sm card-title mt-2">
+            <b>Legumes</b>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!--body-->
 <div class="container mt-5">
 	<div class="row">
 		{% for post in posts %}
