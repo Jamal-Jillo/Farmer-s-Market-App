@@ -1,40 +1,47 @@
 {% extends 'layout.html' %} {% block content %}
 <div class="container mt-5">
-	<div class="row">
-		<article class="media content-section">
-			<img
-				class="rounded-circle article-img"
-				src="{{url_for('static', filename='profile_pics/' + post.author.image_file)}}"
-			/>
-			<div class="media-body">
-				<div class="article-metadata">
-					<a class="mr-2" href="#">{{post.author.username}}</a>
-					<small class="text-muted"
-						>{{post.date_posted.strftime('%Y-%m-%d')}}</small
-					>
-					{% if post.author == current_user %}
-					<div>
-						<a
-							class="btn btn-secondary btn-sm mt-1 mb-1"
-							href="{{url_for('update_post', post_id=post.id)}}"
-							>Update</a
-						>
-						<button
-							type="button"
-							class="btn btn-danger btn-sm m-1"
-							data-toggle="modal"
-							data-target="#deleteModal"
-						>
-							Delete
-						</button>
-					</div>
-					{% endif %}
-				</div>
-				<h2 class="article-title">{{post.title}}</h2>
-				<p class="article-content">{{post.content}}</p>
-				<h7>Price: {{post.price}} Per Kg</h7>
-			</div>
-		</article>
+  <div class="row">
+    <div class="col-md-8">
+      <article class="media content-section border border-dark p-5">
+        <img class="rounded-circle article-img"
+          src="{{url_for('static', filename='profile_pics/' + post.author.image_file)}}"
+        />
+        <div class="media-body">
+          <div class="article-metadata">
+            <a class="mr-2" href="#">{{post.author.username}}</a>
+            <small class="text-muted">{{post.date_posted.strftime('%Y-%m-%d')}}</small>
+            {% if post.author == current_user %}
+			<hr>
+            <div>
+              <a class="btn btn-secondary btn-sm mt-1 mb-1"
+                href="{{url_for('update_post', post_id=post.id)}}">Update</a>
+              <button type="button" class="btn btn-danger btn-sm m-1" data-toggle="modal" data-target="#deleteModal">
+                Delete
+              </button>
+            </div>
+            {% endif %}
+          </div>
+          <h2 class="article-title">{{post.title}}</h2>
+          <p class="article-content">{{post.content}}</p>
+          <h7>Price: {{post.price}} Per Kg</h7>
+        </div>
+      </article>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Related Posts</h5>
+          <ul class="list-group">
+            {% for related_post in related_posts %}
+            <li class="list-group-item">
+              <a href="{{ url_for('post', post_id=related_post.id) }}">{{ related_post.title }}</a>
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
 		<!-- Modal -->
 		<div
 			class="modal fade"

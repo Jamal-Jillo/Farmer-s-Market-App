@@ -109,6 +109,7 @@ def update_post(post_id):
     if form.validate_on_submit():
         post.title = form.title.data
         post.content = form.content.data
+        post.price = form.price.data
         db.session.commit()
         flash('Your post has been updated!', 'success')
         return redirect(url_for('post', post_id=post.id))
@@ -173,3 +174,9 @@ def push_data():
     
     return jsonify({'message': 'Data added successfully'})
 # end of the code
+
+
+@app.route('/insights', methods=['GET', 'POST'])
+def insights():
+    """Show insights."""
+    return render_template('insights.html')
